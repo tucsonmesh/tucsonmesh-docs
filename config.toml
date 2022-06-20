@@ -1,4 +1,3 @@
-baseurl = "https://mackncheesiest.github.io/tucsonmesh-docs"
 relativeurls = true
 languageCode = "en-us"
 title = "Tucson Mesh Docs"
