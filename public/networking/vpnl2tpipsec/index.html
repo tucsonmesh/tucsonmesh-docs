@@ -1,0 +1,348 @@
+<!doctype html><html>
+<head>
+<title>
+VPN - L2TP/IPsec - Tucson Mesh Docs
+</title><meta name=viewport content="width=device-width,initial-scale=1">
+<link href=../../css/main.css rel=stylesheet>
+<meta property="og:title" content="VPN - L2TP/IPsec - Tucson Mesh Docs">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="0001-01-01">
+<meta property="og:description" content>
+<meta property="og:url" content="https://mackncheesiest.github.io/tucsonmesh-docs/networking/vpnl2tpipsec/">
+<meta property="og:site_name" content="Tucson Mesh Docs">
+<meta property="twitter:description" content>
+<meta property="twitter:title" content="VPN - L2TP/IPsec - Tucson Mesh Docs">
+</head><body class=sans-serif>
+<div class="h-100 flex-ns">
+<div id=sidebar class="relative ph4-l ph3 flex justify-end-ns br bg-near-white b--light-gray">
+<div class="mw5 w-100 overflow-y-hidden flex flex-column">
+<div class="nowrap flex items-center justify-start h3">
+<a href=../../ title=Home class="f3-ns f4 fw7 black nowrap flex items-center">
+<img src=../../img/logo.svg class="h2 mr2">
+<span class=f4>NYC Mesh
+<span class="ml1 blue f5 ttu">Docs</span></span>
+</a>
+</div><div role=button class="hideDropdown h3 w3 flex items-center justify-center" tabindex=0><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</div><div role=button class="showDropdown bg-near-white h3 w3 flex items-center justify-center" tabindex=0><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</div><div class="dn db-ns dropdown overflow-y-auto pbv4-ns mt4-ns">
+<ul class="list ma0 ph0">
+<li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/intro/ class="db black">Introduction</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/hardware/ class="db black">Hardware</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/firmware/ class="db black">Firmware</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/diy/ class="db black">DIY & Troubleshooting</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/glossary/ class="db black">Glossary</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/installs/ class="db black">Installs</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M5 11 0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"/></svg>
+<a href=../../tucsonmesh-docs/networking/ class="db black">Networking</a>
+</div><ul class="ma0 pa0 ml3 pl2">
+<a href=../../tucsonmesh-docs/networking/10-69-net-network/ class="db mv3 ml0 gray">
+10-69-net Network
+</a>
+<a href=../../tucsonmesh-docs/networking/bgp/ class="db mv3 ml0 gray">
+BGP
+</a>
+<a href=../../tucsonmesh-docs/networking/classes/ class="db mv3 ml0 gray">
+Classes
+</a>
+<a href=../../tucsonmesh-docs/networking/dns/ class="db mv3 ml0 gray">
+DNS
+</a>
+<a href=../../tucsonmesh-docs/networking/hubs/ class="db mv3 ml0 gray">
+Hubs
+</a>
+<a href=../../tucsonmesh-docs/networking/ipmappingidea/ class="db mv3 ml0 gray">
+IP Mapping Idea
+</a>
+<a href=../../tucsonmesh-docs/networking/mesh/ class="db mv3 ml0 gray">
+Mesh Design
+</a>
+<a href=../../tucsonmesh-docs/networking/ntp/ class="db mv3 ml0 gray">
+NTP Network Time Protocol
+</a>
+<a href=../../tucsonmesh-docs/networking/ospf/ class="db mv3 ml0 gray">
+OSPF
+</a>
+<a href=../../tucsonmesh-docs/networking/peering/ class="db mv3 ml0 gray">
+Public ASN Peering
+</a>
+<a href=../../tucsonmesh-docs/networking/supernode-architecture/ class="db mv3 ml0 gray">
+Supernode Architecture
+</a>
+<a href=../../tucsonmesh-docs/networking/vpn/ class="db mv3 ml0 gray">
+VPN
+</a>
+<a href=../../tucsonmesh-docs/networking/vpnl2tpipsec/ class="db mv3 ml0 gray blue fw5">
+VPN - L2TP/IPsec
+</a>
+<a href=../../tucsonmesh-docs/networking/vpnl2tpipsecid/ class="db mv3 ml0 gray">
+VPN - L2TP/IPsec Req.
+</a>
+<a href=../../tucsonmesh-docs/networking/vpnwireguard/ class="db mv3 ml0 gray">
+VPN - WireGuard
+</a>
+<a href=../../tucsonmesh-docs/networking/vpnwireguardospf/ class="db mv3 ml0 gray">
+VPN - WireGuard + OSPF
+</a>
+</ul></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/nodes/ class="db black">Nodes</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/organization/ class="db black">Organization</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/security/ class="db black">Security</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/services/ class="db black">Services</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/software/ class="db black">Software</a>
+</div></li></ul></div></div></div><div class="overflow-y-scroll-ns w-80-ns">
+<header class="dn ph4 h3 flex-ns flex-row items-center justify-start-l justify-center sans-serif bg-white">
+<div class="w-100-ns f4 measure-wide flex items-center justify-end">
+<nav class="f5 flex flex-wrap justify-center">
+<a href=https://nycmesh.net/ class="f5 blue">Main Site →</a>
+</nav></div></header><main class="bg-white bt bw05 b--light-gray sans-serif flex flex-row-l flex-column">
+<div class="bg-white w-100 pa4-ns pa3">
+<div class=f4>
+<div class="flex items-center justify-between">
+<h1 class=mv0>
+VPN - L2TP/IPsec
+</h1><a class="nowrap pl2" target=_ href=https://github.com/nycmeshnet/docs/blob/master/content/networking/vpnl2tpipsec.md>
+<div class="ba b--light-gray br2 pa2 f6 fw5 black flex"><svg class="mr1 h1 db-ns dn" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63.0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577.0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93.0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176.0.0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22.0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22.0 1.606-.015 2.896-.015 3.286.0.315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+<span>Edit<span class="dn di-ns pre"> on GitHub</span></span>
+</div></a>
+</div><div class=f5>
+<div class=f6>
+<p>
+Last updated
+April 19, 2022 by karlanke
+</p></div><p>L2TP/IPSec is a common general-purpose VPN protocol that work with most platforms. For example, computers running Windows, macOS, iPhones, and Android devices all support this type of VPN out-of-the-box. This type of VPN is a little bit oldschool, in that it is typically found in enterprise corporate environments, which is part of what makes it so ubiquitous.
+For this reason, we have decided to provide and endpoint of this protocol.</p><p>Technically speaking, it is a combination of L2TP and IPsec protocol standards. The former protocol (L2TP, the <a href=https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol>Layer 2 Tunneling Protocol</a>) carries a &ldquo;call&rdquo; over the Internet, while the latter protocol suite (<a href=https://en.wikipedia.org/wiki/IPsec>IPsec</a>, Internet Protocol Security) encrypts the call and authenticates the participants. Although it&rsquo;s possible to use either protocol without the other, L2TP and IPsec are most often used together. This is because L2TP creates a connection but does not secure the connection, while IPSec protects traffic but does not itself create a network connection to carry traffic.</p><p>L2TP/IPsec VPNs are often slower than more modern protocols because the implementation on smaller routers is usually implemented in software which makes heavy use of the router&rsquo;s CPU. On the other hand, more expensive routers often have a custom chip to speed-up IPSec encryption, actually making L2TP/IPsec the fastest choice in certain cases.</p><p>The best performance you can reasonably expect from on small routers is around ~100Mbps.</p><h2 id=device-support>Device support</h2><p>The L2TP/IPsec protocol enjoys very wide support across platforms and vendors.</p><ul>
+<li>Windows devices: Should work - <a href=#windows-10>Guide Here</a></li><li>Apple devices: iPhones, Mac laptops, natively - <a href=#apple-ios>iOS Guide Here</a>, <a href=#macos>macOS Guide Here</a></li><li>Android devices: Most yes - <a href=#android>Guide Here</a></li><li>Linux: Yes, complicated without GUI, works well with Network Manager - <a href=#gnu-linux-gnome-network-manager>Guide Here</a></li><li>Ubiquiti EdgeOS: Yes, but slow - <a href=#ubiquiti-edgeos>Guide Here</a></li><li>Mikrotik devices: All ( various speeds ) - No Guide Yet</li><li>OpenWRT: Should work - No Guide Yet</li></ul><h2 id=endpoints>Endpoints</h2><p>This section provides connection information for NYC Mesh VPN endpoints that use L2TP/IPsec.</p><h3 id=supernode-1>Supernode 1</h3><ul>
+<li>Server domain name: <code>l2tpvpn.sn1.mesh.nycmesh.net</code></li><li>Supported connection methods:
+<ul>
+<li>Anonymous:
+<ul>
+<li>Username:</li><li>Password:</li><li>Pre-shared key/secret:</li></ul></li><li>OSPF Node-Peering (Same, connect as above, use <a href=../../tucsonmesh-docs/networking/ospf/>OSPF</a> afterwards.)</li></ul></li></ul><h3 id=supernode-3>Supernode 3</h3><ul>
+<li>Server domain name: <code>l2tpvpn.sn3.mesh.nycmesh.net</code></li><li>Supported connection methods:
+<ul>
+<li>Anonymous:
+<ul>
+<li>Username:</li><li>Password:</li><li>Pre-shared key/secret:</li></ul></li><li>OSPF Node-Peering (Same, connect as above, use <a href=../../tucsonmesh-docs/networking/ospf/>OSPF</a> afterwards.)</li></ul></li></ul><h3 id=account>Account</h3><ul>
+<li><a href=../../networking/vpnl2tpipsecid>To request a vpn access</a></li></ul><p><em>N.B. Your account will be specific to SN1 or SN3 - note in the comments if you have a preference</em></p><h2 id=connection-guides>Connection Guides</h2><p>Please follow the below connection guides for each platform.</p><h3 id=windows-10>Windows 10</h3><details>
+<summary>Expand to view instructions...</summary>
+<ol>
+<li>Click on Start (Title menu) and type VPN</li><li>Click on on Change Virtual Private Networks (VPN)</li><li>Click on the plus button (Add a VPN connection)</li><li>Choose VPN provider (Microsoft by default)</li><li>Connection name (Name it whatever you want)</li><li>Server name or address <code>l2tpvpn.sn1.mesh.nycmesh.net</code></li><li>VPN Type: L2TP/IPsec with pre-shared key</li><li>Pre-shared key: <code>nycmeshnet</code></li><li>Type of sign-in info: User name and password</li><li>Username: <code>your personal user name</code></li><li>Password: <code>your personal password</code></li><li>Check box to remember password so you don&rsquo;t have to type this everytime</li><li>Click save</li><li>Click on newly created VPN connection and click connect</li></ol></details>
+<h3 id=macos>macOS</h3><details>
+<summary>Expand to view instructions...</summary>
+<p>See <a href=https://support.apple.com/guide/mac-help/set-up-a-vpn-connection-on-mac-mchlp2963/10.14/mac/10.14>Apple Support: Set up a VPN Connection</a>. Be sure to use the appropriate authentication credentials for your connection. For an anonymous connection, enter <code>your personal user name</code> as the &ldquo;account name&rdquo; and <code>your personal user name</code> in the User Authentication&rsquo;s &ldquo;password&rdquo; field <em>and</em> &rsquo;nycmeshnet&rsquo; the Machine Authentication&rsquo;s &ldquo;Shared Secret&rdquo; field.</p></details>
+<h3 id=apple-ios>Apple iOS</h3><details>
+<summary>Expand to view instructions...</summary>
+<p>These instructions refer to Apple-branded handheld devices such as the iPhone and iPad.</p><ol>
+<li>Go to Settings</li><li>Tap on VPN</li><li>Tap on Add VPN Configuration</li><li>Tap on Type and choose L2TP</li><li>Description (Anything you want)</li><li>Server: <code>l2tpvpn.sn1.mesh.nycmesh.net</code></li><li>Account: <code>your personal user name</code></li><li>Leave RSA SecurID off</li><li>Password <code>your personal password</code></li><li>Secret: <code>nycmeshnet</code></li></ol><p>See also <a href=https://www.howtogeek.com/215730/how-to-connect-to-a-vpn-from-your-iphone-or-ipad/>How-To Geek: How to Connect to a VPN From Your iPhone or iPad § Connect to IKEv2, L2TP/IPSec, and Cisco IPSec VPNs in iOS</a>.</p></details>
+<h3 id=android>Android</h3><details>
+<summary>Expand to view instructions...</summary>
+<p>See <a href=https://www.howtogeek.com/135036/how-to-connect-to-a-vpn-on-android/>How-To Geek: How to Connect to a VPN on Android § Android’s Built-In VPN Support</a>.</p></details>
+<h3 id=gnulinux---gnomenetwork-manager>GNU/Linux - GNOME/Network Manager</h3><details>
+<summary>Expand to view instructions...</summary>
+<p>Using GNOME/Network Manager:</p><ol>
+<li>Make sure you have the L2TP/IPsec NetworkManager plugin installed (<code>NetworkManager-l2tp-gnome</code> on Fedora)</li><li>Add a new VPN of type &lsquo;Layer 2 Tunneling Protocol&rsquo;</li><li>Gateway: <code>l2tpvpn.sn1.mesh.nycmesh.net</code></li><li>Username: <code>your personal user name</code></li><li>Password: <code>your personal passwrod</code> (you may have to click a question mark on the right of the textbox to allow saving the password)</li><li>Click &ldquo;IPsec Settings&rdquo;</li><li>Check &ldquo;Enable IPsec tunnel to L2TP host&rdquo;</li><li>Pre-shared key: <code>nycmeshnet</code></li><li>Save & Connect</li></ol></details>
+<h3 id=ubiquiti-edgeos>Ubiquiti EdgeOS</h3><details>
+<summary>Expand to view instructions...</summary>
+<p>This example EdgeRouter configuration will let clients on your LAN reach the mesh. It requires at least EdgeOS 2.0.9 which adds support for connecting to L2TP/IPsec VPNs. You will need to be familiar with the <a href=https://help.ui.com/hc/en-us/articles/204960094-EdgeRouter-Configuration-and-Operational-Mode>EdgeOS CLI</a>.</p><p><em>Note: there is <a href=https://community.ui.com/questions/l2tp-client-CHAP-is-broken-due-to-bad-etc-ppp-chap-secrets/b40dd55c-9bc4-4222-bf33-b0a35e894183>a bug in EdgeOS&rsquo;s PPP configuration</a> that prevents EdgeRouter from connecting to the NYC Mesh VPN. Make sure to configure <a href=#ppp-configuration-workaround>the workaround scripts</a> on your EdgeRouter.</em></p><p>Here is a minimal configuration for connecting to the Supernode 1 VPN.</p><p>First, enter configuration mode:</p><pre tabindex=0><code>configure
+</code></pre><p>Then, configure the L2TP client interface (you should be able to copy and paste all the lines in this block at once):</p><pre tabindex=0><code>set interfaces l2tp-client l2tpc0 server-ip l2tpvpn.sn1.mesh.nycmesh.net
+set interfaces l2tp-client l2tpc0 description &#34;NYC Mesh VPN (SN1)&#34;
+set interfaces l2tp-client l2tpc0 authentication user-id &#39;your personal user name&#39;
+set interfaces l2tp-client l2tpc0 authentication password your personal password&#39;
+set interfaces l2tp-client l2tpc0 require-ipsec
+</code></pre><p>Next, configure the IPsec tunnel:</p><pre tabindex=0><code>set vpn ipsec esp-group NYC_MESH mode transport
+set vpn ipsec esp-group NYC_MESH pfs disable
+set vpn ipsec esp-group NYC_MESH proposal 1 encryption aes256
+set vpn ipsec esp-group NYC_MESH proposal 1 hash sha1
+set vpn ipsec ike-group NYC_MESH dead-peer-detection action restart
+set vpn ipsec ike-group NYC_MESH proposal 1 encryption aes256
+set vpn ipsec ike-group NYC_MESH proposal 1 hash sha1
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net description &#34;NYC Mesh VPN (SN1)&#34;
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net authentication mode pre-shared-secret
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net authentication pre-shared-secret nycmeshnet
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net local-address default
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net ike-group NYC_MESH
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net tunnel 1 esp-group NYC_MESH
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net tunnel 1 local port l2tp
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net tunnel 1 protocol udp
+set vpn ipsec site-to-site peer l2tpvpn.sn1.mesh.nycmesh.net tunnel 1 remote port l2tp
+</code></pre><p>Here&rsquo;s what your final configuration should look like. You can view it with <code>show interfaces l2tp-client</code> and <code>show vpn</code>. There are more settings here than you typed in above. That&rsquo;s ok. The additional settings are part of the default L2TP/IPsec config.</p><pre tabindex=0><code>interfaces {
+    l2tp-client l2tpc0 {
+        authentication {
+            password &#39;your personal password&#39;
+            user-id your personal user name&#39;
+        }
+        default-route auto
+        description &#34;NYC Mesh VPN (SN1)&#34;
+        mtu 1400
+        name-server auto
+        require-ipsec
+        server-ip l2tpvpn.sn1.mesh.nycmesh.net
+    }
+}
+vpn {
+    ipsec {
+        allow-access-to-local-interface disable
+        auto-firewall-nat-exclude disable
+        esp-group NYC_MESH {
+            compression disable
+            lifetime 3600
+            mode transport
+            pfs disable
+            proposal 1 {
+                encryption aes256
+                hash sha1
+            }
+        }
+        ike-group NYC_MESH {
+            dead-peer-detection {
+                action restart
+                interval 30
+                timeout 120
+            }
+            ikev2-reauth no
+            key-exchange ikev1
+            lifetime 28800
+            proposal 1 {
+                dh-group 2
+                encryption aes256
+                hash sha1
+            }
+        }
+        site-to-site {
+            peer l2tpvpn.sn1.mesh.nycmesh.net {
+                authentication {
+                    mode pre-shared-secret
+                    pre-shared-secret nycmeshnet
+                }
+                connection-type initiate
+                description &#34;NYC Mesh VPN (SN1)&#34;
+                ike-group NYC_MESH
+                ikev2-reauth inherit
+                local-address default
+                tunnel 1 {
+                    allow-nat-networks disable
+                    allow-public-networks disable
+                    esp-group NYC_MESH
+                    local {
+                        port l2tp
+                    }
+                    protocol udp
+                    remote {
+                        port l2tp
+                    }
+                }
+            }
+        }
+    }
+}
+</code></pre><h4 id=ppp-configuration-workaround>PPP configuration workaround</h4><p>There is <a href=https://community.ui.com/questions/l2tp-client-CHAP-is-broken-due-to-bad-etc-ppp-chap-secrets/b40dd55c-9bc4-4222-bf33-b0a35e894183>a bug in EdgeOS&rsquo;s PPP configuration</a> that prevents EdgeRouter from connecting to the NYC Mesh VPN. Before you commit your VPN configuration, add the following scripts to your EdgeOS device:</p><p>The first script is located at <code>/config/scripts/post-config.d/post-commit-hooks.sh</code>. It&rsquo;s a helper that lets you run scripts every time you commit a new configuration.</p><pre tabindex=0><code>#!/bin/sh
+
+set -e
+
+if [ ! -d /config/scripts/post-commit.d ]; then
+  mkdir -p /config/scripts/post-commit.d
+fi
+
+if [ ! -L /etc/commit/post-hooks.d/post-commit-hooks.sh ]; then
+  sudo ln -fs /config/scripts/post-config.d/post-commit-hooks.sh /etc/commit/post-hooks.d
+fi
+
+run-parts --report --regex &#39;^[a-zA-Z0-9._-]+$&#39; /config/scripts/post-commit.d
+</code></pre><p>Make it executable and then run it:</p><pre tabindex=0><code>chmod +x /config/scripts/post-config.d/post-commit-hooks.sh
+/config/scripts/post-config.d/post-commit-hooks.sh
+</code></pre><p>The second script fixes the PPP configuration for your L2TP tunnel so that you can successfully connect. It is located at <code>/config/scripts/post-commit.d/fixup-l2tpc0.sh</code>. <strong>Note: this is a different directory from the previous script.</strong></p><pre tabindex=0><code>#!/bin/bash
+
+set -e
+
+DEVICE=l2tpc0
+
+CONFIG=/etc/ppp/peers/$DEVICE
+
+if [ ! -f $CONFIG ]; then
+  exit
+fi
+
+if grep ^remotename $CONFIG &gt; /dev/null; then
+  exit
+fi
+
+echo &#34;remotename xl2tpd&#34; | sudo tee -a $CONFIG &gt; /dev/null
+</code></pre><p>Make it executable:</p><pre tabindex=0><code>chmod +x /config/scripts/post-commit.d/fixup-l2tpc0.sh
+</code></pre><h4 id=mtu-workaround>MTU workaround</h4><p>Additionally, EdgeOS has <a href=https://community.ui.com/questions/Bug-pppd-does-not-set-mtu-correctly-on-l2tp-client-tunnels-in-EdgeOS-2-0-9/0cb2715e-3424-4f2f-ad63-a5990dc8f6f1>a bug where pppd fails to correctly set the MTU of the L2TP interface</a>. This is a problem if you plan to use OSPF over the VPN because OSPF requires that both peers agree on an MTU.</p><p>This script, located at <code>/config/scripts/ppp/ip-up.d/l2tp-fix-mtu</code> works around this issue by manually setting the MTU after the connection comes up.</p><pre tabindex=0><code>#!/bin/sh
+
+set -e
+
+MTU=$(grep mtu /etc/ppp/peers/$PPP_IFACE | awk &#39;{ print $2 }&#39;)
+
+if echo $PPP_IFACE | grep -Eq ^l2tpc[0-9]+; then
+  ip link set dev $PPP_IFACE mtu $MTU
+fi
+</code></pre><p>Make it executable, and commit your configuration:</p><pre tabindex=0><code>chmod +x /config/scripts/ppp/ip-up.d/l2tp-fix-mtu
+commit
+</code></pre><p>If all goes well, you should be connected to the VPN and be able to reach the other end of the tunnel:</p><pre tabindex=0><code>ubnt@edgerouter# run show interfaces l2tp-client
+Codes: S - State, L - Link, u - Up, D - Down, A - Admin Down
+Interface    IP Address                        S/L  Description
+---------    ----------                        ---  -----------
+l2tpc0       10.70.72.68                       u/u  NYC Mesh VPN (SN1)
+ubnt@edgerouter# ping 10.70.72.1
+PING 10.70.72.1 (10.70.72.1) 56(84) bytes of data.
+64 bytes from 10.70.72.1: icmp_seq=1 ttl=64 time=6.15 ms
+64 bytes from 10.70.72.1: icmp_seq=2 ttl=64 time=6.42 ms
+64 bytes from 10.70.72.1: icmp_seq=3 ttl=64 time=4.98 ms
+^C
+--- 10.70.72.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2007ms
+rtt min/avg/max/mdev = 4.985/5.854/6.424/0.627 ms
+</code></pre><p>Additionally, the MTU of your L2TP interface should be correctly set to 1400:</p><pre tabindex=0><code>ubnt@edgerouter# ip link show l2tpc0
+34: l2tpc0: &lt;POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP&gt; mtu 1400 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 100
+    link/ppp
+</code></pre><p>Save your active configuration to the startup configuration so that your tunnel will still be there when you reboot, and exit configuration mode:</p><pre tabindex=0><code>save
+exit
+</code></pre><h4 id=reaching-the-mesh-through-the-vpn>Reaching the mesh through the VPN</h4><p>So far, your EdgeRouter can reach the VPN server at the other end of the tunnel, but you can&rsquo;t reach any of the other devices on the mesh (try pinging <code>10.10.10.10</code>; you shouldn&rsquo;t be able to reach it). You can fix this by OSPF peering or by adding a static route. A static route is easiest.</p><p>In configuration mode, enter the following, and commit it:</p><pre tabindex=0><code>set protocols static interface-route 10.0.0.0/8 next-hop-interface l2tpc0 description &#34;NYC Mesh&#34;
+</code></pre><p>In this configuration, your EdgeRouter will route traffic destined for the mesh&rsquo;s private IP network through the VPN and all your other traffic over your primary internet connection – this is sometimes called split VPN. If you use addresses from <code>10.0.0.0/8</code> for your LAN that overlap with addresses used by the mesh, the addresses on your LAN will take precedence and you will not be able to access those parts of the mesh.</p><p>Once you&rsquo;ve installed the static route, you should be able to reach the rest of the mesh:</p><pre tabindex=0><code>ubnt@edgerouter# ping 10.10.10.10
+PING 10.10.10.10 (10.10.10.10) 56(84) bytes of data.
+64 bytes from 10.10.10.10: icmp_seq=1 ttl=63 time=4.85 ms
+64 bytes from 10.10.10.10: icmp_seq=2 ttl=63 time=4.28 ms
+64 bytes from 10.10.10.10: icmp_seq=3 ttl=63 time=7.08 ms
+^C
+--- 10.10.10.10 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2006ms
+rtt min/avg/max/mdev = 4.286/5.408/7.082/1.207 ms
+</code></pre><p>Remember to save your configuration to the startup config once it&rsquo;s working.</p><h4 id=using-nat-to-reach-the-mesh-from-a-device-on-your-network>Using NAT to reach the mesh from a device on your network</h4><p>You can now reach the mesh from your EdgeRouter, but you can&rsquo;t reach it from a device on your LAN like your laptop. The easiest way to do this is to use NAT:</p><pre tabindex=0><code>set service nat rule 6000 outbound-interface l2tpc0
+set service nat rule 6000 type masquerade
+set service nat rule 6000 description &#34;masquerade for NYC Mesh (SN1)&#34;
+</code></pre><p>Commit your config, and verify that you can reach the mesh from your laptop:</p><pre tabindex=0><code>me@laptop$ ping 10.10.10.10
+PING 10.10.10.10 (10.10.10.10): 56 data bytes
+64 bytes from 10.10.10.10: icmp_seq=0 ttl=62 time=13.572 ms
+64 bytes from 10.10.10.10: icmp_seq=1 ttl=62 time=10.603 ms
+64 bytes from 10.10.10.10: icmp_seq=2 ttl=62 time=16.394 ms
+^C
+--- 10.10.10.10 ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 10.603/13.523/16.394/2.364 ms
+</code></pre><p>Once your configuration is working, save it to your startup config.</p><p>If you can ping 10.10.10.10 from the router, but not other devices on your LAN, you may need to reboot the router to clear the route cache.</p><h4 id=configuring-mesh-dns-lookup>Configuring .mesh DNS lookup</h4><p>To use the .mesh top level domain to reach <a href=../../tucsonmesh-docs/services/>mesh services</a>, you will need to change the DNS configuration on your EdgeRouter. The simplest way to do this is to configure your router&rsquo;s DHCP server to tell clients to use the mesh&rsquo;s recursive resolver (<code>10.10.10.10</code>) as their DNS server. But this causes a problem with our split VPN config: if your VPN connection goes down, you won&rsquo;t be able to resolve domain names, even if you&rsquo;re still connected to the public internet.</p><p>To fix this, you can configure <a href=https://help.ui.com/hc/en-us/articles/115010913367-EdgeRouter-DNS-Forwarding-Setup-and-Options>EdgeOS&rsquo;s DNS forwarder</a> to use the mesh&rsquo;s authoritative name server (<code>10.10.10.11</code>) for the .mesh TLD:</p><pre tabindex=0><code>set service dns forwarding options server=/mesh/10.10.10.11
+</code></pre><p>Additionally, you can configure the DNS forwarder to use the mesh&rsquo;s name server for reverse DNS lookups on <code>10.0.0.0/8</code>:</p><pre tabindex=0><code>set service dns forwarding options rev-server=10.0.0.0/8,10.10.10.11
+</code></pre><p>Make sure to configure the <a href=https://help.ui.com/hc/en-us/articles/204952254-EdgeRouter-DHCP-Server>DHCP server</a> to provide your router&rsquo;s LAN address as the recursive DNS resolver.</p><p>To be able to reach the .mesh TLD while SSH&rsquo;d into your EdgeRouter, configure your EdgeRouter to use its local DNS forwarder as its primary DNS server:</p><pre tabindex=0><code>set system name-server 127.0.0.1
+</code></pre></details>
+</div></div></div></main></div></div></body></html>

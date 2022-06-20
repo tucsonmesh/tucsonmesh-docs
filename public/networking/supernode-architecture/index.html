@@ -1,0 +1,156 @@
+<!doctype html><html>
+<head>
+<title>
+Supernode Architecture - Tucson Mesh Docs
+</title><meta name=viewport content="width=device-width,initial-scale=1">
+<link href=../../css/main.css rel=stylesheet>
+<meta property="og:title" content="Supernode Architecture - Tucson Mesh Docs">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="0001-01-01">
+<meta property="og:description" content>
+<meta property="og:url" content="https://mackncheesiest.github.io/tucsonmesh-docs/networking/supernode-architecture/">
+<meta property="og:site_name" content="Tucson Mesh Docs">
+<meta property="twitter:description" content>
+<meta property="twitter:title" content="Supernode Architecture - Tucson Mesh Docs">
+</head><body class=sans-serif>
+<div class="h-100 flex-ns">
+<div id=sidebar class="relative ph4-l ph3 flex justify-end-ns br bg-near-white b--light-gray">
+<div class="mw5 w-100 overflow-y-hidden flex flex-column">
+<div class="nowrap flex items-center justify-start h3">
+<a href=../../ title=Home class="f3-ns f4 fw7 black nowrap flex items-center">
+<img src=../../img/logo.svg class="h2 mr2">
+<span class=f4>NYC Mesh
+<span class="ml1 blue f5 ttu">Docs</span></span>
+</a>
+</div><div role=button class="hideDropdown h3 w3 flex items-center justify-center" tabindex=0><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</div><div role=button class="showDropdown bg-near-white h3 w3 flex items-center justify-center" tabindex=0><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</div><div class="dn db-ns dropdown overflow-y-auto pbv4-ns mt4-ns">
+<ul class="list ma0 ph0">
+<li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/intro/ class="db black">Introduction</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/hardware/ class="db black">Hardware</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/firmware/ class="db black">Firmware</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/diy/ class="db black">DIY & Troubleshooting</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/glossary/ class="db black">Glossary</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/installs/ class="db black">Installs</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M5 11 0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"/></svg>
+<a href=../../tucsonmesh-docs/networking/ class="db black">Networking</a>
+</div><ul class="ma0 pa0 ml3 pl2">
+<a href=../../tucsonmesh-docs/networking/10-69-net-network/ class="db mv3 ml0 gray">
+10-69-net Network
+</a>
+<a href=../../tucsonmesh-docs/networking/bgp/ class="db mv3 ml0 gray">
+BGP
+</a>
+<a href=../../tucsonmesh-docs/networking/classes/ class="db mv3 ml0 gray">
+Classes
+</a>
+<a href=../../tucsonmesh-docs/networking/dns/ class="db mv3 ml0 gray">
+DNS
+</a>
+<a href=../../tucsonmesh-docs/networking/hubs/ class="db mv3 ml0 gray">
+Hubs
+</a>
+<a href=../../tucsonmesh-docs/networking/ipmappingidea/ class="db mv3 ml0 gray">
+IP Mapping Idea
+</a>
+<a href=../../tucsonmesh-docs/networking/mesh/ class="db mv3 ml0 gray">
+Mesh Design
+</a>
+<a href=../../tucsonmesh-docs/networking/ntp/ class="db mv3 ml0 gray">
+NTP Network Time Protocol
+</a>
+<a href=../../tucsonmesh-docs/networking/ospf/ class="db mv3 ml0 gray">
+OSPF
+</a>
+<a href=../../tucsonmesh-docs/networking/peering/ class="db mv3 ml0 gray">
+Public ASN Peering
+</a>
+<a href=../../tucsonmesh-docs/networking/supernode-architecture/ class="db mv3 ml0 gray blue fw5">
+Supernode Architecture
+</a>
+<a href=../../tucsonmesh-docs/networking/vpn/ class="db mv3 ml0 gray">
+VPN
+</a>
+<a href=../../tucsonmesh-docs/networking/vpnl2tpipsec/ class="db mv3 ml0 gray">
+VPN - L2TP/IPsec
+</a>
+<a href=../../tucsonmesh-docs/networking/vpnl2tpipsecid/ class="db mv3 ml0 gray">
+VPN - L2TP/IPsec Req.
+</a>
+<a href=../../tucsonmesh-docs/networking/vpnwireguard/ class="db mv3 ml0 gray">
+VPN - WireGuard
+</a>
+<a href=../../tucsonmesh-docs/networking/vpnwireguardospf/ class="db mv3 ml0 gray">
+VPN - WireGuard + OSPF
+</a>
+</ul></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/nodes/ class="db black">Nodes</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/organization/ class="db black">Organization</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/security/ class="db black">Security</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/services/ class="db black">Services</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/software/ class="db black">Software</a>
+</div></li></ul></div></div></div><div class="overflow-y-scroll-ns w-80-ns">
+<header class="dn ph4 h3 flex-ns flex-row items-center justify-start-l justify-center sans-serif bg-white">
+<div class="w-100-ns f4 measure-wide flex items-center justify-end">
+<nav class="f5 flex flex-wrap justify-center">
+<a href=https://nycmesh.net/ class="f5 blue">Main Site →</a>
+</nav></div></header><main class="bg-white bt bw05 b--light-gray sans-serif flex flex-row-l flex-column">
+<div class="bg-white w-100 pa4-ns pa3">
+<div class=f4>
+<div class="flex items-center justify-between">
+<h1 class=mv0>
+Supernode Architecture
+</h1><a class="nowrap pl2" target=_ href=https://github.com/nycmeshnet/docs/blob/master/content/networking/supernode-architecture.md>
+<div class="ba b--light-gray br2 pa2 f6 fw5 black flex"><svg class="mr1 h1 db-ns dn" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63.0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577.0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93.0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176.0.0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22.0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22.0 1.606-.015 2.896-.015 3.286.0.315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+<span>Edit<span class="dn di-ns pre"> on GitHub</span></span>
+</div></a>
+</div><div class=f5>
+<div class=f6>
+<p>
+Last updated
+September 23, 2018 by olivernyc
+</p></div><h2 id=goals-of-this-documents>Goals of this documents</h2><ul>
+<li>Supernode routing / goals</li><li>Supernode sample architectures</li><li>Plan to get us to this architecture</li></ul><h2 id=supernode-routing--goals>Supernode routing / goals</h2><p>&ldquo;If you can get to a supernode, you can get to the rest of the mesh ( and the internet ).&rdquo;</p><ul>
+<li>A supernode should be the regional authority on how to get to its region, other regions, and the internet.</li><li>Translate region-local rooftop-to-rooftop protocol routes to standard routes for other regions and vice versa.</li><li>All supernodes should have a full view of all mesh routes.</li><li>Each supernode will get a private ASN in a sequential range with its supernode designation number.
+<ul>
+<li>All routers at the supernode should use BGP confederation and act as a route-reflector.</li></ul></li><li>A supernode might also run mesh-services that will be announced to the mesh as routes.</li><li>A supernode might provide internet access. If it does, it must:
+<ul>
+<li>Announce a default route prefix internally.</li><li>Translate any private IPv4 to public using NAT. May be CGNAT with a pool of addresses, or single IP</li><li>Translate a specific private IPv6 prefix to public using NPTv6.</li><li>Must tag internet connecting with their source using BGP communities.</li><li>Must not log data nor filter data / routes.</li></ul></li><li>A supernode might participate in the NYCMesh Public Backbone by using BGP Peering if capable. If so, it will do so in accordance with that architecture.</li><li>Links between supernodes will be routed Layer3 using an IPv4 /24 and IPv6 /64. There will be one VLAN for each link ( site-to-site ). VLANs should not be shared across multiple sites. ( Except in extenuating circumstances or testing crazy things. )
+<ul>
+<li>The reason for this is to allow for multiple routers on each end if appropriate.</li></ul></li></ul><h2 id=supernode-layout>Supernode layout</h2><p><img src=../../img/supernodediagram-2017121501.png alt=supernodediagram-2017121501>
+Each supernode has one or more local routers. Each local router has some local subnet, for downstream sector antennas, service nodes, and PtP links. Each router speaks BGP to some of these services and also to neighboring supernodes.
+Routers present internet access by passing a NAT layer and consuming some public IP addresses; For example, in a scenario where a single IP connection is handed off, such as Verizon FiOS, the IP is consumed by the NAT services directly.
+If the supernode is also a Public Backbone routers, one or more backbone routers provide public access connectivity, with some connectivity being presented to the supernode routers for NAT consumption.
+Downstream access can be presented via one or more subnets, one or more antennas, in a mixed fashion for whatever is best for that region.</p><h2 id=plan-to-get-us-to-this-new-architecture>Plan to get us to this new architecture</h2><ul>
+<li>In our current setup, we present a single subnet directly from our Public Router.</li><li>We should create a second router at Supernode 1 as the supernode router.
+<ul>
+<li>From this new router, we should present several subnets:
+<ul>
+<li>One to Supernode 2</li><li>One to the internal out of band routers</li><li>One or more for downstream client access</li></ul></li><li>This router should be able to perform NAT for any subnet using a public IP pool</li><li>We should present the Supernode 2 access subnet via a VLAN over the AirFiber 24</li></ul></li><li>In Brooklyn, we should accept the additional VLAN over the AirFiber and connect it with the router part of the EdgePoint router.
+<ul>
+<li>From there we can setup BGP to accept the routes and also present a default route to Manhattan</li><li>Brooklyn can make several subnets:
+<ul>
+<li>One for internal out of band router access</li><li>One or more for downstream client access</li></ul></li></ul></li><li>We can begin to shorten the lease time on the public IPs, switching clients over to private IPs slowly.</li><li>In manhattan, we can begin to use private IPs and public IPs mixed immediately. This subnet will propagate to Brooklyn as well temporarily in-lieu of the Public IPs. As private IPs are found to have no problem, the local private IP subnet can be introduced.</li></ul><h2 id=supernodes-interconnecting-examples>Supernodes interconnecting examples</h2><p><img src=../../img/nycmesh-intersn-20180103a.png alt=supernodediagram-2017121501>
+<img src=../../img/nycmesh-intersn-20180103b.png alt=supernodediagram-2017121501></p></div></div></div></main></div></div></body></html>
