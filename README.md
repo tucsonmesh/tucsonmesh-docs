@@ -1,6 +1,6 @@
-# NYC Mesh Docs
+# Tucson Mesh Docs
 
-This repository contains the public-facing [NYC Mesh Documentation](https://docs.nycmesh.net/) website. It is intended to provide interested community members a sort of manual or guidebook discussing how to get involved in the community network from a technical perspective. It is not a networking tutorial, and does assume that readers have some familiarity with basic networking concepts, but we strive to provide external links suggested educational resources for newcomers when it makes sense for us to do so.
+This repository contains the public-facing [Tucson Mesh Documentation](https://mackncheesiest.github.io/tucsonmesh-docs/) website. It is intended to provide interested community members a sort of manual or guidebook discussing how to get involved in the community network from a technical perspective. It is not a networking tutorial, and does assume that readers have some familiarity with basic networking concepts, but we strive to provide external links suggested educational resources for newcomers when it makes sense for us to do so.
 
 The remainder of this document describes the process for contributing to the documentation itself or developing the documentation website.
 
@@ -45,15 +45,15 @@ In addition to the [prerequisites](#prerequisites) above, you will need to insta
 After you have installed the necessary [software](#software) on your development computer, you will need to download our website's source code for the first time. Git calls this process "cloning." To *clone* our repository, use the following command in your terminal or shell:
 
 ```bash
-git clone https://github.com/nycmeshnet/docs.git nycmesh-docs
+git clone https://github.com/mackncheesiest/tucsonmesh-docs.git tucsonmesh-docs
 ```
 
-The above will create a folder called `nycmesh-docs` that is an exact copy of the code published on our GitHub Organization's repository.
+The above will create a folder called `tucsonmesh-docs` that is an exact copy of the code published on our GitHub Organization's repository.
 
-At this point, you should be able to go into the project folder (`cd nycmesh-docs` on your command line) and start the Hugo server:
+At this point, you should be able to go into the project folder (`cd tucsonmesh-docs` on your command line) and start the Hugo server:
 
 ```bash
-cd nycmesh-docs # Enter the project directory.
+cd tucsonmesh-docs # Enter the project directory.
 hugo server     # Start the Hugo development server.
 ```
 
@@ -97,14 +97,14 @@ See the [`layouts`](layouts/) and [`static`](static/) folders.
 
 ### Uploading Your Edits
 
-When you are happy with your changes, it is time to send them to the NYC Mesh Docs team for review. Their job is to ensure that the changes you made are accurate, function well in NYC Mesh's production environments, and improve the project as a whole. The NYC Mesh Docs team prefers to receive edits via [Pull Requests on GitHub](https://help.github.com/en/articles/about-pull-requests), as this is the process by which we keep track of, review, and merge changes to the docs. If everything looks good, someone will merge your changes in to the main branch, which will update the public docs website.
+When you are happy with your changes, it is time to send them to the Tucson Mesh Docs team for review. Their job is to ensure that the changes you made are accurate, function well in Tucson Mesh's production environments, and improve the project as a whole. The Tucson Mesh Docs team prefers to receive edits via [Pull Requests on GitHub](https://help.github.com/en/articles/about-pull-requests), as this is the process by which we keep track of, review, and merge changes to the docs. If everything looks good, someone will merge your changes in to the main branch, which will update the public docs website.
 
 For more information, please read ["Creating a pull request" in the official GitHub documentation](https://help.github.com/en/articles/creating-a-pull-request).
 
 ## Contributors
 
-If you make many good changes, you may be invited to join the documentation project as a contributor. You may also ask us to grant you contributor access in [Slack](https://join.slack.com/t/nycmesh/shared_invite/enQtNDk0NDA4OTAyNDY0LTU5NWMyODY5ZTYyMDY2NzgzOTJmZjFmZTg3YWRjYjE0M2EyMzlhNDE3YmIxZmZhYTZmNjIwNTVkMDIwMjI2ZDg).
+If you make many good changes, you may be invited to join the documentation project as a contributor. You may also ask us to grant you contributor access in [Slack](no-link-here-yet).
 
 ## Getting Help
 
-As always, if you need any help, don't hesitate to reach out in our Slack group. [Invites to our Slack are available here](https://join.slack.com/t/nycmesh/shared_invite/enQtNDk0NDA4OTAyNDY0LTU5NWMyODY5ZTYyMDY2NzgzOTJmZjFmZTg3YWRjYjE0M2EyMzlhNDE3YmIxZmZhYTZmNjIwNTVkMDIwMjI2ZDg).
+As always, if you need any help, don't hesitate to reach out in our Slack group. [Invites to our Slack are available here](no-link-here-yet).
