@@ -1,0 +1,185 @@
+<!doctype html><html>
+<head>
+<title>
+Ubiquiti LiteBeam AC - Tucson Mesh Docs
+</title><meta name=viewport content="width=device-width,initial-scale=1">
+<link href=../../css/main.css rel=stylesheet>
+<meta property="og:title" content="Ubiquiti LiteBeam AC - Tucson Mesh Docs">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="0001-01-01">
+<meta property="og:description" content>
+<meta property="og:url" content="https://mackncheesiest.github.io/tucsonmesh-docs/hardware/litebeamac/">
+<meta property="og:site_name" content="Tucson Mesh Docs">
+<meta property="twitter:description" content>
+<meta property="twitter:title" content="Ubiquiti LiteBeam AC - Tucson Mesh Docs">
+</head><body class=sans-serif>
+<div class="h-100 flex-ns">
+<div id=sidebar class="relative ph4-l ph3 flex justify-end-ns br bg-near-white b--light-gray">
+<div class="mw5 w-100 overflow-y-hidden flex flex-column">
+<div class="nowrap flex items-center justify-start h3">
+<a href=../../ title=Home class="f3-ns f4 fw7 black nowrap flex items-center">
+<img src=../../img/logo.svg class="h2 mr2">
+<span class=f4>NYC Mesh
+<span class="ml1 blue f5 ttu">Docs</span></span>
+</a>
+</div><div role=button class="hideDropdown h3 w3 flex items-center justify-center" tabindex=0><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</div><div role=button class="showDropdown bg-near-white h3 w3 flex items-center justify-center" tabindex=0><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</div><div class="dn db-ns dropdown overflow-y-auto pbv4-ns mt4-ns">
+<ul class="list ma0 ph0">
+<li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/intro/ class="db black">Introduction</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M5 11 0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"/></svg>
+<a href=../../tucsonmesh-docs/hardware/ class="db black">Hardware</a>
+</div><ul class="ma0 pa0 ml3 pl2">
+<a href=../../tucsonmesh-docs/hardware/config/ class="db mv3 ml0 gray">
+Configs
+</a>
+<a href=../../tucsonmesh-docs/hardware/60ghz/ class="db mv3 ml0 gray">
+60 GHz
+</a>
+<a href=../../tucsonmesh-docs/hardware/chromebook/ class="db mv3 ml0 gray">
+Chromebook
+</a>
+<a href=../../tucsonmesh-docs/hardware/ethernet/ class="db mv3 ml0 gray">
+Ethernet
+</a>
+<a href=../../tucsonmesh-docs/hardware/mikrotiknetpower15fr/ class="db mv3 ml0 gray">
+MikroTik NetPower 15FR
+</a>
+<a href=../../tucsonmesh-docs/hardware/mikrotikomnitik5ac/ class="db mv3 ml0 gray">
+MikroTik OmniTik 5 POE ac
+</a>
+<a href=../../tucsonmesh-docs/hardware/mikrotikpowerboxpro/ class="db mv3 ml0 gray">
+MikroTik PowerBox Pro
+</a>
+<a href=../../tucsonmesh-docs/hardware/mikrotikspecifics/ class="db mv3 ml0 gray">
+MikroTik Specifics
+</a>
+<a href=../../tucsonmesh-docs/hardware/sxtsqg5acd/ class="db mv3 ml0 gray">
+Mikrotik SXTsq G-5acD
+</a>
+<a href=../../tucsonmesh-docs/hardware/newhardware/ class="db mv3 ml0 gray">
+New Hardware
+</a>
+<a href=../../tucsonmesh-docs/hardware/tplink/ class="db mv3 ml0 gray">
+TP-Link Indoor Router
+</a>
+<a href=../../tucsonmesh-docs/hardware/ltu/ class="db mv3 ml0 gray">
+Try the new LTU sector
+</a>
+<a href=../../tucsonmesh-docs/hardware/epr6/ class="db mv3 ml0 gray">
+Ubiquiti EdgePoint R6
+</a>
+<a href=../../tucsonmesh-docs/hardware/liteap/ class="db mv3 ml0 gray">
+Ubiquiti LiteAP Sector
+</a>
+<a href=../../tucsonmesh-docs/hardware/litebeamac/ class="db mv3 ml0 gray blue fw5">
+Ubiquiti LiteBeam AC
+</a>
+<a href=../../tucsonmesh-docs/hardware/nsm5/ class="db mv3 ml0 gray">
+Ubiquiti Nanostation M5
+</a>
+<a href=../../tucsonmesh-docs/hardware/unifi-ap/ class="db mv3 ml0 gray">
+Unifi Access Points
+</a>
+</ul></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/firmware/ class="db black">Firmware</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/diy/ class="db black">DIY & Troubleshooting</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/glossary/ class="db black">Glossary</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/installs/ class="db black">Installs</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/networking/ class="db black">Networking</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/nodes/ class="db black">Nodes</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/organization/ class="db black">Organization</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/security/ class="db black">Security</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/services/ class="db black">Services</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/software/ class="db black">Software</a>
+</div></li></ul></div></div></div><div class="overflow-y-scroll-ns w-80-ns">
+<header class="dn ph4 h3 flex-ns flex-row items-center justify-start-l justify-center sans-serif bg-white">
+<div class="w-100-ns f4 measure-wide flex items-center justify-end">
+<nav class="f5 flex flex-wrap justify-center">
+<a href=https://nycmesh.net/ class="f5 blue">Main Site →</a>
+</nav></div></header><main class="bg-white bt bw05 b--light-gray sans-serif flex flex-row-l flex-column">
+<div class="bg-white w-100 pa4-ns pa3">
+<div class=f4>
+<div class="flex items-center justify-between">
+<h1 class=mv0>
+Ubiquiti LiteBeam AC
+</h1><a class="nowrap pl2" target=_ href=https://github.com/nycmeshnet/docs/blob/master/content/hardware/litebeamac.md>
+<div class="ba b--light-gray br2 pa2 f6 fw5 black flex"><svg class="mr1 h1 db-ns dn" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63.0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577.0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93.0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176.0.0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22.0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22.0 1.606-.015 2.896-.015 3.286.0.315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+<span>Edit<span class="dn di-ns pre"> on GitHub</span></span>
+</div></a>
+</div><div class=f5>
+<div class=f6>
+<p>
+Last updated
+January 20, 2022 by danielhmetro
+</p></div><p>The LiteBeamAC is a very good, cheap directional router. We use it for most rooftop installs. As with all Ubiquiti gear you need to flash it with the latest firmware first. Often they ship with old beta firmware, and the latest firmware usually gets you faster speeds. <a href=../../hardware/config/#lbe-client>Our config instructions are here.</a></p><p>The AC in the name is not <a href=https://en.wikipedia.org/wiki/IEEE_802.11>802.11ac</a>, it is Ubiquiti&rsquo;s own protocol. These devices can only connect to other Ubiquiti &ldquo;AC&rdquo; devices.</p><p><img src=../../img/hardware/ubiquity_litebeam5acgen2.png alt="Ubiquity LiteBeam 5AC Gen2"></p><p>Device specs are available at <a href=https://store.ubnt.com/collections/all/products/litebeam-5ac-gen2>store.ubnt.com</a>.</p><p>There are two versions- gen1 and gen2. By default they are on two different sets of channels which causes much confusion. The gen1 cannot use the DFS channels unless you unlock it with a code on the System tab. Once you unlock a gen1 it has the same channels as the gen2. We have the unlock code for &ldquo;NYCMesh&rdquo;. Ask us if you need to connect a gen1 to one of our hubs or supernodes.</p><p>Gen2 comes with a more sturdy mount (though less range) and also a management 2.4Ghz radio. The new mount has no movement clockwise so the only way to get the level bubble in the middle is with a straight mount! The management radio is very handy as you don&rsquo;t need to know the IP of the device. The management radio is on a timer so it will go off after about 5 minutes.</p><p>LiteBeams are very directional so use the built-in alignment tool to get the strongest signal. We like to get better than -65db. Very close to the supernodes you can get -45db.</p><p>The default IP over ethernet is https://192.168.1.20/<br>
+If you connect to the management radio the IP is https://192.168.172.1/</p><p>Default login:</p><ul>
+<li>name:ubnt</li><li>pwd:ubnt</li></ul><p><strong><a href=../../hardware/config/#lbe-client>Standard config instructions are here.</a></strong></p><h2 id=how-to-save-a-litebeam-via-ssh>How to save a LiteBeam via SSH</h2><p><em>These instructions were adapted from a <a href=https://community.ui.com/questions/SOLUTION-Changing-SSID-over-SSH/aec9c94d-1810-4cce-9e92-1f8ec30b7ce9>Ubiquiti Community post</a>.</em></p><p>Sometimes due to a bad configuration change or issue with the connected sector, the LiteBeam signal will be too low to log into the web interface. This can be a big issue especially if the users at the node are unable to locally revert the change. Luckily, SSH can be used to reconfigure the LiteBeam to change any settings to restore proper connectivity to the node, even over a poor connection.</p><p><strong>1. Connect and log into the LiteBeam</strong></p><p>Using your favorite SSH software, log into the LiteBeam using the configured credentials, which will be the same as those used for the web interface. You will then be presented with a standard Linux shell.</p><p><strong>2. Prepare for the change</strong></p><p>Since this shell does not have any nice text editors like <code>nano</code>, we will use the <code>sed</code> command to replace text in the config file. In this example, we will be changing the SSID <code>nycmesh-sn1-ev</code> to <code>nycmesh-sn1-northeast</code> and saving the changes. Make sure that the LiteBeam will be able to connect to the new radio! (We will cover this part in the following section.)</p><p>This command confirms that the current SSID is what we expect (current SSID goes after the <code>grep</code>):</p><pre tabindex=0><code># cat /tmp/system.cfg | grep nycmesh-sn1-ev
+wireless.1.ssid=nycmesh-sn1-ev
+</code></pre><p>If the command does not return anything, that means that the current SSID does not match what you provided after <code>grep</code>. Run this line removing everything after the pipe <code>|</code> to review the config file before proceeding.</p><p><strong>3. Edit and save the file</strong></p><p>Now we will edit the file by finding and replacing the old SSID with this command (old and new SSIDs go before and after the middle slash <code>/</code> respectively):</p><pre tabindex=0><code>sed -i &#39;s/nycmesh-sn1-ev/nycmesh-sn1-northeast/&#39; /tmp/system.cfg
+</code></pre><p>Confirm that you made the change by running this command (new SSID goes after the <code>grep</code>):</p><pre tabindex=0><code># cat /tmp/system.cfg | grep nycmesh-sn1-northeast
+wireless.1.ssid=nycmesh-sn1-northeast
+</code></pre><p>Finally, run these two commands to commit the change and reboot the device:</p><pre tabindex=0><code>save
+reboot
+</code></pre><p>Wait 2-3 minutes for the device to reboot and rescan for the new radio and you should be good to go.</p><h3 id=how-to-scan-for-radios>How to scan for radios</h3><p>If you are positive that the LiteBeam can connect to another radio&rsquo;s SSID, you do not need to perform a scan (known in the web interface as a Site Survey). However, it is a good idea to confirm that the signal of the other radio is strong enough to connect to before potentially losing the device.</p><p>To perform the scan, follow Step 1 from the previous section to connect to the LiteBeam. Then, run the following command to start the scan:</p><pre tabindex=0><code># iwlist ath0 scan
+ath0      Scan in progress :
+          Cell 01 - Address: 04:18:D6:4C:BB:07
+                    ESSID:&#34;ubnt-3P7-N&#34;
+                    Mode:Master
+                    Frequency:5.165 GHz (Channel 33)
+                    Quality=26/94  Signal level=-70 dBm  Noise level=-90 dBm
+                    Encryption key:off
+                    Bit Rates:6 Mb/s; 9 Mb/s; 12 Mb/s; 18 Mb/s; 24 Mb/s
+                              36 Mb/s; 48 Mb/s; 54 Mb/s
+                    Extra:bcn_int=100
+                    Extra:wme_ie=dd180050f2020101810003a4000027a4000042435e0062322f00
+                    Extra:ath_ie=dd0900037f01010000ff7f
+                    Extra:ieee_mode=802.11n
+                    Extra:center1=5165 Mhz
+                    Extra:chanbw=20 Mhz
+          Cell 02 - Address: E0:63:DA:D4:41:6B
+                    ESSID:&#34;nycmesh-sn1-northeast&#34;
+                    Mode:Master
+                    Frequency:5.205 GHz (Channel 41)
+                    Quality=41/94  Signal level=-55 dBm  Noise level=-90 dBm
+                    Encryption key:on
+                    Bit Rates:6 Mb/s; 9 Mb/s; 12 Mb/s; 18 Mb/s; 24 Mb/s
+                              36 Mb/s; 48 Mb/s; 54 Mb/s
+                    Extra:bcn_int=100
+                    Extra:hostname=&#34;nycmesh-sn1-northeast&#34;
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Extra:wme_ie=dd180050f2020101000003a4000027a4000042435e0062322f00
+                    Extra:ath_ie=dd0900037f01010000ff7f
+                    Extra:airmax_ie=enabled
+                    Extra:airmax_mode=ptmp
+                    Extra:ieee_mode=802.11ac
+                    Extra:center1=5215 Mhz
+                    Extra:chanbw=40 Mhz
+
+...
+</code></pre><p>This scan takes about a minute to complete. You may notice the terminal freeze during this time; the LiteBeam switches to another wireless mode while scanning which can sometimes disrupt the connection. As you can see in this example, our target radio with SSID <code>nycmesh-sn1-northeast</code> has a signal level of -55dB which should be more than adequate for us to connect.</p></div></div></div></main></div></div></body></html>

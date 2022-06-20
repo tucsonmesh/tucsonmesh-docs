@@ -1,0 +1,152 @@
+<!doctype html><html>
+<head>
+<title>
+Ubiquiti Nanostation M5 - Tucson Mesh Docs
+</title><meta name=viewport content="width=device-width,initial-scale=1">
+<link href=../../css/main.css rel=stylesheet>
+<meta property="og:title" content="Ubiquiti Nanostation M5 - Tucson Mesh Docs">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="0001-01-01">
+<meta property="og:description" content>
+<meta property="og:url" content="https://mackncheesiest.github.io/tucsonmesh-docs/hardware/nsm5/">
+<meta property="og:site_name" content="Tucson Mesh Docs">
+<meta property="twitter:description" content>
+<meta property="twitter:title" content="Ubiquiti Nanostation M5 - Tucson Mesh Docs">
+</head><body class=sans-serif>
+<div class="h-100 flex-ns">
+<div id=sidebar class="relative ph4-l ph3 flex justify-end-ns br bg-near-white b--light-gray">
+<div class="mw5 w-100 overflow-y-hidden flex flex-column">
+<div class="nowrap flex items-center justify-start h3">
+<a href=../../ title=Home class="f3-ns f4 fw7 black nowrap flex items-center">
+<img src=../../img/logo.svg class="h2 mr2">
+<span class=f4>NYC Mesh
+<span class="ml1 blue f5 ttu">Docs</span></span>
+</a>
+</div><div role=button class="hideDropdown h3 w3 flex items-center justify-center" tabindex=0><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</div><div role=button class="showDropdown bg-near-white h3 w3 flex items-center justify-center" tabindex=0><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</div><div class="dn db-ns dropdown overflow-y-auto pbv4-ns mt4-ns">
+<ul class="list ma0 ph0">
+<li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/intro/ class="db black">Introduction</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M5 11 0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"/></svg>
+<a href=../../tucsonmesh-docs/hardware/ class="db black">Hardware</a>
+</div><ul class="ma0 pa0 ml3 pl2">
+<a href=../../tucsonmesh-docs/hardware/config/ class="db mv3 ml0 gray">
+Configs
+</a>
+<a href=../../tucsonmesh-docs/hardware/60ghz/ class="db mv3 ml0 gray">
+60 GHz
+</a>
+<a href=../../tucsonmesh-docs/hardware/chromebook/ class="db mv3 ml0 gray">
+Chromebook
+</a>
+<a href=../../tucsonmesh-docs/hardware/ethernet/ class="db mv3 ml0 gray">
+Ethernet
+</a>
+<a href=../../tucsonmesh-docs/hardware/mikrotiknetpower15fr/ class="db mv3 ml0 gray">
+MikroTik NetPower 15FR
+</a>
+<a href=../../tucsonmesh-docs/hardware/mikrotikomnitik5ac/ class="db mv3 ml0 gray">
+MikroTik OmniTik 5 POE ac
+</a>
+<a href=../../tucsonmesh-docs/hardware/mikrotikpowerboxpro/ class="db mv3 ml0 gray">
+MikroTik PowerBox Pro
+</a>
+<a href=../../tucsonmesh-docs/hardware/mikrotikspecifics/ class="db mv3 ml0 gray">
+MikroTik Specifics
+</a>
+<a href=../../tucsonmesh-docs/hardware/sxtsqg5acd/ class="db mv3 ml0 gray">
+Mikrotik SXTsq G-5acD
+</a>
+<a href=../../tucsonmesh-docs/hardware/newhardware/ class="db mv3 ml0 gray">
+New Hardware
+</a>
+<a href=../../tucsonmesh-docs/hardware/tplink/ class="db mv3 ml0 gray">
+TP-Link Indoor Router
+</a>
+<a href=../../tucsonmesh-docs/hardware/ltu/ class="db mv3 ml0 gray">
+Try the new LTU sector
+</a>
+<a href=../../tucsonmesh-docs/hardware/epr6/ class="db mv3 ml0 gray">
+Ubiquiti EdgePoint R6
+</a>
+<a href=../../tucsonmesh-docs/hardware/liteap/ class="db mv3 ml0 gray">
+Ubiquiti LiteAP Sector
+</a>
+<a href=../../tucsonmesh-docs/hardware/litebeamac/ class="db mv3 ml0 gray">
+Ubiquiti LiteBeam AC
+</a>
+<a href=../../tucsonmesh-docs/hardware/nsm5/ class="db mv3 ml0 gray blue fw5">
+Ubiquiti Nanostation M5
+</a>
+<a href=../../tucsonmesh-docs/hardware/unifi-ap/ class="db mv3 ml0 gray">
+Unifi Access Points
+</a>
+</ul></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/firmware/ class="db black">Firmware</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/diy/ class="db black">DIY & Troubleshooting</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/glossary/ class="db black">Glossary</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/installs/ class="db black">Installs</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/networking/ class="db black">Networking</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/nodes/ class="db black">Nodes</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/organization/ class="db black">Organization</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/security/ class="db black">Security</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/services/ class="db black">Services</a>
+</div></li><li>
+<div class="flex items-center pv2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 8 16" fill="#ccc" class="red mr2"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"/></svg>
+<a href=../../tucsonmesh-docs/software/ class="db black">Software</a>
+</div></li></ul></div></div></div><div class="overflow-y-scroll-ns w-80-ns">
+<header class="dn ph4 h3 flex-ns flex-row items-center justify-start-l justify-center sans-serif bg-white">
+<div class="w-100-ns f4 measure-wide flex items-center justify-end">
+<nav class="f5 flex flex-wrap justify-center">
+<a href=https://nycmesh.net/ class="f5 blue">Main Site →</a>
+</nav></div></header><main class="bg-white bt bw05 b--light-gray sans-serif flex flex-row-l flex-column">
+<div class="bg-white w-100 pa4-ns pa3">
+<div class=f4>
+<div class="flex items-center justify-between">
+<h1 class=mv0>
+Ubiquiti Nanostation M5
+</h1><a class="nowrap pl2" target=_ href=https://github.com/nycmeshnet/docs/blob/master/content/hardware/nsm5.md>
+<div class="ba b--light-gray br2 pa2 f6 fw5 black flex"><svg class="mr1 h1 db-ns dn" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63.0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577.0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93.0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176.0.0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22.0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22.0 1.606-.015 2.896-.015 3.286.0.315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+<span>Edit<span class="dn di-ns pre"> on GitHub</span></span>
+</div></a>
+</div><div class=f5>
+<div class=f6>
+<p>
+Last updated
+June 27, 2020 by Devin Balkind
+</p></div><p>The NanoStation M5 is a workhorse of mesh networks. There are two versions XM (pre 2016) and XW. It is 802.11n and 10/100 ethernet, so not the fastest on the block, but it has good support from OpenWRT. It also has two ethernet ports usually set up as WAN and LAN. Recent versions require downgrading AirOS before you flash.</p><p><strong>For new installs we use the <a href=../mikrotikomnitik5ac/>OmniTik router</a> for meshing. The following page is mainly for our legacy installs.</strong></p><p><img src=../../img/hardware/ubiquity_nanostationm5.png alt="Ubiquity NanoStation M5"></p><p>Device details are available at <a href=https://www.ubnt.com/airmax/nanostationm/>ubnt.com</a>.</p><h2 id=nanostation-nsm5-installs>NanoStation NSM5 installs</h2><p><strong>Hardware</strong></p><p>The simplest install is to use an existing vertical pipe and the two plastic ties that are included with the router. Also a thick PVC pipe can be attached to a railing using clamps.</p><p><img src=../../img/nsm5/roof-87.jpg alt="roof install"></p><p>If you need to aim the router up or down you can use a <a href="https://www.streakwave.com/itemdesc.asp?ic=NBU001">nanobracket</a>.</p><p><img src=../../img/nsm5/nanobracket.jpg alt=nanobracket></p><p>The <a href="http://www.amazon.com/Ubiquiti-Networks-NanoStation-Window-Mount/dp/B004EHUR8U?tag=nycmesh-20">Ubiquiti window/wall mount</a> is a versatile mount that comes with a suction cup for windows or a screw mount for walls. The parts are reversible so the NSM5 can face either way and it also has vertical and horizontal adjustment to point in almost any direction.</p><p><img src=../../img/nsm5/ubiquiti-window-wall-mount.jpg alt="window/wall install"></p><p>The <a href="http://www.amazon.com/gp/product/B006J1WSGI?tag=nycmesh-20">Ubiquiti universal antenna mount</a> can be used on rooftops or walls, where a very strong mount is needed.</p><p><img src=../../img/nsm5/ubiquiti-universal-mount.jpg alt="universal antenna mount"></p><p><strong>Window</strong></p><p>Outside:<br>
+On the outside of the window it is best to use a Ubiquiti wall/window mount. The suction cup is not recommended for long-term installs.</p><p><img src=../../img/nsm5/window-cup-outside.jpg alt="window outside"></p><p>Inside:<br>
+It is often more convenient to install inside the window. You will lose about 2db of signal but that is usually ok.</p><p>Velcro is the easiest way to install a NanoStation if it will be facing the same direction as the window. Use more velcro than in the picture (this install slipped down the window after six months!)</p><p><img src=../../img/nsm5/velcro.jpg alt=velcro><img src=../../img/nsm5/window-velcro-off.jpg alt=velcro></p><p><img src=../../img/nsm5/window-velcro-on.jpg alt="window velcro"></p><p>A Ubiquiti suction cup mount can be used if you need to point the router at an angle. The suction cup will fail eventually (usually on very hot or very cold days), so do not use this for long-term installs.</p><p><img src=../../img/nsm5/window-cup-inside.jpg alt="window/wall install"></p><p><strong>Rooftop</strong></p><p>Often rooftops have an existing unused pipe or abandoned antenna pole that can be used.</p><p><img src=../../img/nsm5/pipe.jpg alt=pipe></p><p>A Ubiquiti bracket is good if you have a drillable surface such as brick or cement.</p><p><img src=../../img/nsm5/bracket-200.jpg alt=bracket></p><p><strong>Wall</strong></p><p>A simple wall mount can be made using a small, thin piece of wood and the two plastic ties that come with the router. This will not give you much choice in direction.</p><p><img src=../../img/nsm5/wall.jpg alt="window/wall install">
+<a href=https://www.telcoantennas.com.au/site/how-extend-wifi-coverage-using-ubiquiti-nanostation>source</a></p><p><img src=../../img/nsm5/wall-201.jpg alt="window/wall install"></p><p>The Ubiquiti window/wall mount comes with both a suction cup for windows and a screw mount for walls. Use this screw mount on a wall so you can point the router in the best direction.</p><p><img src=../../img/nsm5/windowwall2.jpg alt="window/wall install"><img src=../../img/nsm5/windowwall.jpg alt="window/wall install"></p><p><strong>Tree</strong></p><p>Sometimes a tree is the best place for your NanoStation.</p><p><img src=../../img/nsm5/tree.jpg alt=tree></p><p><strong>Ethernet</strong></p><p>Outdoor routers use &ldquo;power over ethernet&rdquo; (POE). A small adapter is used to add power to the ethernet. This means you only need to run one ethernet cable to the device.</p><p>The most important thing about the cable and is that it is &ldquo;outdoor&rdquo; cable. Otherwise the plastic will decay in the weather. We use Cat 5e. A cable run must be less than 100m (300 feet), or the signal and voltage drop will be too much.</p><p>There are two ethernet ports on the NanoStation and these are a source of confusion. Like most outdoor routers they get their power over the ethernet cable. They come with an adapter that adds 24V of power to the cable. Be careful plugging live cables into ports that are not expecting a voltage.</p><p>Here are two ways to wire your NSM5:</p><p><strong>Setup 1 (client)</strong></p><p>You are connecting to a remote gateway that is providing your internet. You plug the ethernet cable into the &ldquo;main&rdquo; (LAN) port of the NSM5. The cable goes to the power adapter POE. &ldquo;LAN&rdquo; on the POE adapter goes to the WAN of an indoor router.</p><p>(Sometimes people are close enough to the NSM5 that they don&rsquo;t bother with the indoor router.)</p><p><strong>Setup 2 (gateway)</strong></p><p>You are sharing your existing internet with your neighbors. You plug the ethernet into the &ldquo;secondary&rdquo; (WAN) port of the NSM5. The cable goes to the power adapter POE. &ldquo;LAN&rdquo; on the POE adapter goes to the LAN of your existing indoor router.</p><p><strong>Powering two from one adapter</strong></p><p>If you need to install two NanoStations you can simply run a cable from the spare ethernet port to the other NSM5. If the POE is plugged into the secondary port (gateway setup) then the &ldquo;main&rdquo; will act as passthrough to the second NSM5.</p><p>To turn on passthrough from main to secondary you need to do this <a href=https://wiki.openwrt.org/toh/ubiquiti/nanostationm5>(source)</a>-</p><pre tabindex=0><code># older nanostation XM (pre-2015)
+echo 8 &gt; /sys/class/gpio/export
+echo out &gt; /sys/class/gpio/gpio8/direction
+echo 1 &gt; /sys/class/gpio/gpio8/value
+# disable with echo 0 &gt; /sys/class/gpio/gpio8/value
+</code></pre><pre tabindex=0><code># nanostation XW (2015-)
+echo 2 &gt; /sys/class/gpio/export
+echo out &gt; /sys/class/gpio/gpio2/direction
+echo 1 &gt; /sys/class/gpio/gpio2/value
+# disable with echo 0 &gt; /sys/class/gpio/gpio2/value
+</code></pre><p>I&rsquo;ve found this setting doesn&rsquo;t stick after reboot, so you need to add it to /etc/rc.local (local startup)-<br>
+<a href=http://admin.qmp/cgi-bin/luci/admin/system/startup>http://admin.qmp/cgi-bin/luci/admin/system/startup</a></p><p><strong>LAN vs WAN confusion</strong></p><p>On the NSM5 the <strong>&ldquo;main&rdquo; port is LAN</strong> and the <strong>secondary is &ldquo;WAN&rdquo;</strong>. This is the most confusing thing about the router and mixing this up is the cause of most problems. <strong>Always connect WAN on one router to LAN on another!</strong></p><p>If you connect LAN to LAN it will be unstable as each LAN port usually has a DHCP server and both ports will be trying to assign an IP address to the other. Also don&rsquo;t connect WAN to WAN as this makes no sense. This is by far the biggest problem with people setting up routers and it is so simple to avoid.</p><p><strong>Configuration Videos</strong></p><ul>
+<li>If you&rsquo;re trying to use this device to broadcast wifi from your existing home internet connection, follow the instructions in this video: <a href="https://www.youtube.com/watch?v=r1ruM6skrus">https://www.youtube.com/watch?v=r1ruM6skrus</a></li></ul></div></div></div></main></div></div></body></html>
