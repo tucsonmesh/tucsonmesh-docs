@@ -5,6 +5,7 @@ title = "Tucson Mesh Docs"
 pluralizeListTitles = false
 hrefTargetBlank = true
 enableGitInfo = true
+publishDir = "docs/"
 
 # Markdown config
 [blackfriday]
