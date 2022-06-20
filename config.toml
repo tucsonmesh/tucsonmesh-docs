@@ -1,7 +1,7 @@
-baseurl = ""
+baseurl = "https://mackncheesiest.github.io/tucsonmesh-docs"
 relativeurls = true
 languageCode = "en-us"
-title = "NYC Mesh Docs"
+title = "Tucson Mesh Docs"
 pluralizeListTitles = false
 hrefTargetBlank = true
 enableGitInfo = true
