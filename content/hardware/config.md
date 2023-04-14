@@ -113,13 +113,13 @@ The default username is admin and there is no password.
 1. If you are using a Mac or Linux operating system, go into Terminal, navigate to the folder where you’ve saved the config and enter the following command:
 
   ```
-scp -o StrictHostKeyChecking=no rooftop-ospf.rsc admin@192.168.88.1:flash/
+scp -o StrictHostKeyChecking=no omni-poe-ether5.rsc admin@192.168.88.1:flash/
   ```
 
 2. If you are using a Windows operating system, go into Command Prompt, navigate to the folder where you’ve saved the config and enter the following command. You must download pscp.exe from [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (64-bit or  32-bit) to the same folder then run:
 
   ```
-pscp -scp rooftop-ospf.rsc admin@192.168.88.1:flash/
+pscp -scp omni-poe-ether5.rsc admin@192.168.88.1:flash/
   ```
 
 3. If asked “Dangerous Reset anyway?” type in Y and return/enter.
@@ -127,7 +127,7 @@ pscp -scp rooftop-ospf.rsc admin@192.168.88.1:flash/
 5. Click “System” in the left side menu.
 6. Click “Reset Configuration” in the left side menu dropdown. Select:
   * No Default Configuration
-  * Run After Reset: flash/rooftop-ospf.rsc (click the popup on the right to select this)
+  * Run After Reset: flash/omni-poe-ether5.rsc (click the popup on the right to select this)
 7. Click "Reset Configuration"
 8. The Omnitik will now reboot (and install new firmware if you uploaded it). If it plays some beeps, ending with a short tune [Kernkraft 400](https://www.youtube.com/watch?v=gbcG2TI4GBk), the configuration was a success!
 
