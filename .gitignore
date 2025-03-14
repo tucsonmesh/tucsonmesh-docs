@@ -1,2 +1,5 @@
+# Ignore operating system environment
 .DS_Store
-public
+
+# Ignore built site
+site
