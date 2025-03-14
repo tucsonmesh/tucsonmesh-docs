@@ -1,0 +1,21 @@
+site_name: Tucson Mesh Documentation 
+theme:
+  name: material
+  features:
+    - content.action.edit
+  palette:
+    primary: black
+  logo: assets/logo.jpg
+repo_url: https://github.com/tucsonmesh/tucsonmesh-docs
+repo_name: tucsonmesh/tucsonmesh-docs 
+edit_uri: edit/main/docs
+nav:
+  - Home: index.md
+  - Hardware:
+    - hardware/omnitik.md
+    - hardware/liteap.md
+    - hardware/litebeam.md
+  - Networking:
+    - Supernodes:
+      - networking/supernodes/index.md
+      - networking/supernodes/bicas.md
