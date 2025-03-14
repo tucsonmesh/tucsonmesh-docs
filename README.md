@@ -26,7 +26,19 @@ and the Material for MKDocs theme:
 pipx inject mkdocs mkdocs-material
 ```
 
+## Previewing the site locally
+
+If you're adding or editing Markdown files locally, you can run a local webserver to see your changes:
+
+```
+mkdocs serve
+```
+
 ## Publishing the site to GitHub pages
+
+There is a GitHub action configured in `.github/workflows/ci.yml` that publishes this site to GitHub Pages every time someone pushes to the `main` branch of this repo. It's based on this [recipe](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions) from the Material for MKDocs documentation.
+
+However, if you want to manually publish this site from your computer, you can run:
 
 ```
 mkdocs gh-deploy --force
