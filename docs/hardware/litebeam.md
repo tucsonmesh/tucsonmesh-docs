@@ -1,4 +1,4 @@
-# Ubiquity LightBeam AC Gen 2
+# Ubiquiti LightBeam AC Gen 2
 
 Product page: [airMAX LiteBeam 5AC - Ubiquiti Store United States](https://store.ui.com/us/en/category/all-wireless/products/litebeam-5ac)
 
