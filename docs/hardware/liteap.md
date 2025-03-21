@@ -1,4 +1,4 @@
-# Ubiquity LiteAP
+# Ubiquiti LiteAP
 
 Product page: [UISP airMAX LiteAP 5AC Access Point - Ubiquiti Store United States](https://store.ui.com/us/en/products/lap-120)
 
