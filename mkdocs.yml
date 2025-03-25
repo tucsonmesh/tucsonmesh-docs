@@ -19,3 +19,4 @@ nav:
     - Supernodes:
       - networking/supernodes/index.md
       - networking/supernodes/bicas.md
+    - networking/networking101.md
