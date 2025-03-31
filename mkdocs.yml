@@ -11,6 +11,10 @@ repo_name: tucsonmesh/tucsonmesh-docs
 edit_uri: edit/main/docs
 nav:
   - Home: index.md
+  - Guides:
+    - Updating this documentation:
+      - guides/updating-docs/index.md
+      - guides/updating-docs/editing-docs.md
   - Hardware:
     - hardware/omnitik.md
     - hardware/liteap.md
