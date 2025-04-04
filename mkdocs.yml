@@ -23,4 +23,5 @@ nav:
     - Supernodes:
       - networking/supernodes/index.md
       - networking/supernodes/bicas.md
+      - networking/supernodes/tucson-house.md
     - networking/networking101.md
