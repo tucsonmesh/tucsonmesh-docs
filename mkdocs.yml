@@ -12,6 +12,10 @@ edit_uri: edit/main/docs
 nav:
   - Home: index.md
   - Guides:
+    - guides/installation/index.md
+    - guides/site-survey/index.md
+    - guides/configuring-routers/index.md
+    - guides/ladder-safety.md
     - Updating this documentation:
       - guides/updating-docs/index.md
       - guides/updating-docs/editing-docs.md
@@ -19,6 +23,7 @@ nav:
     - hardware/omnitik.md
     - hardware/liteap.md
     - hardware/litebeam.md
+    - hardware/sxtsq.md
   - Networking:
     - Supernodes:
       - networking/supernodes/index.md

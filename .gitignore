@@ -3,3 +3,6 @@
 
 # Ignore built site
 site
+
+# Ignore editor environment
+*.swp
