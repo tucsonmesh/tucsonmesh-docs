@@ -6,3 +6,5 @@ Monitoring: Slack messages to \#monitoring-screams
 
 Along with the [Ubiquity LightBeam AC Gen 2](litebeam.md), this is what most users have on their roofs.
 
+This device runs MikroTik RouterOS, so it may be useful to consult the [RouterOS documentation](https://help.mikrotik.com/docs/).
+
