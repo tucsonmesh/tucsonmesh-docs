@@ -9,7 +9,7 @@ It was created in March 2025 when we moved the equipment that was at the former 
 - 3 [Ubiquity LiteAP](../../hardware/liteap.md) sector antennas.
 - Omni 50: A [MikroTik OmniTIK 5 PoE ac](../../hardware/omnitik.md) that handles NAT and handoff with login.
 - Omni 51: A [MikroTik OmniTIK 5 PoE ac](../../hardware/omnitik.md) that is attached to the same mast as the secto antennas. This device powers all three sector antennas. It is connected to Omni 50 by a single ethernet cable.
-- TP Link ???: Wireless router formerly at BCC, now used to provide WiFi to BICAS. The WAN Port of this device is plugged into "ether2 cust" on the Mikrotik switch that belongs to Login.
+- TP Link ???: Wireless router formerly at BCC, now used to provide WiFi to BICAS. The WAN Port of this device is plugged into "eth2 cust" on the Mikrotik switch that belongs to Login.
 - Point-to-point antenna that provides the uplink to Login Business, an internet exchange point.
 - [fw-mesh-host](../servers/fw-mesh-host.md) server.
 
@@ -57,7 +57,7 @@ The black "Tucson Mesh" cable leads to our MikroTik PoE injector.
 
 ![Mikrotik PoE injector](img/bicas_supernode_microtik_poe_injector.jpg)
 
-The other end of Mesh's MikroTik PoE injector goes into the port labeled "eth2 cust" on Login's switch, labeled “EDGE VENTURA”. Meanwhile, a patch cable goes from the port labeled "ETH1 CUST" to BICAS's router.
+The other end of Mesh's MikroTik PoE injector goes into the port labeled "ETH1 CUST" on Login's switch, labeled “EDGE VENTURA”. Meanwhile, a patch cable goes from the port labeled "eth2 cust" to BICAS's router.
 
 ![Login switch](img/bicas_supernode_login_switch.jpg)
 
