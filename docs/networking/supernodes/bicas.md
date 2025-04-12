@@ -11,6 +11,7 @@ It was created in March 2025 when we moved the equipment that was at the former 
 - Omni 51: A [MikroTik OmniTIK 5 PoE ac](../../hardware/omnitik.md) that is attached to the same mast as the secto antennas. This device powers all three sector antennas. It is connected to Omni 50 by a single ethernet cable.
 - TP Link ???: Wireless router formerly at BCC, now used to provide WiFi to BICAS. The WAN Port of this device is plugged into "ether2 cust" on the Mikrotik switch that belongs to Login.
 - Point-to-point antenna that provides the uplink to Login Business, an internet exchange point.
+- [fw-mesh-host](../servers/fw-mesh-host.md) server.
 
  Each sector antenna covers a 120 degree “sector” of the neighborhood so that together, they broadcast Tucson Mesh’s network in all directions outwards from BICAS. This allows other people to join the network by pointing their [LiteBeams](../../hardware/litebeam.md) towards the supernode.
 

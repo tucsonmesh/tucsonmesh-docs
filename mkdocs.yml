@@ -30,4 +30,10 @@ nav:
       - networking/supernodes/index.md
       - networking/supernodes/bicas.md
       - networking/supernodes/tucson-house.md
+    - Servers:
+      - networking/servers/fw-mesh-host.md
+      - networking/servers/fw-mesh-vm-nixos.md
     - networking/networking101.md
+  - Services:
+    - Mesh Services:
+      - services/librenms.md
