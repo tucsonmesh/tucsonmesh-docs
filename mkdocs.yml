@@ -11,6 +11,8 @@ repo_name: tucsonmesh/tucsonmesh-docs
 edit_uri: edit/main/docs
 markdown_extensions:
   - admonition
+  - toc:
+      permalink: true
 nav:
   - Home: index.md
   - Guides:
