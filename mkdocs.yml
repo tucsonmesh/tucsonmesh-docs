@@ -9,6 +9,8 @@ theme:
 repo_url: https://github.com/tucsonmesh/tucsonmesh-docs
 repo_name: tucsonmesh/tucsonmesh-docs 
 edit_uri: edit/main/docs
+markdown_extensions:
+  - admonition
 nav:
   - Home: index.md
   - Guides:

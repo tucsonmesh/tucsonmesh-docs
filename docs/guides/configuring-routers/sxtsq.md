@@ -1,11 +1,11 @@
 # MikroTik SXTsq 5 ac Router Configuration Guide
 
+!!! info "How can this documentation be improved?" 
+
+    - Clarify how to tell the SXT which router to bridge with, and to tell which router to be the top and which to be the bottom (receiving and sending). 
+    - Check if we still need to replace instances of `nycmesh` with `tucsonmesh` in the generated config, or has this been fixed? 
+
 These instructions are based on NYC Mesh's [configuration docs for this device](https://wiki.nycmesh.net/books/3-hardware-firmware/page/mikrotik-sxtsq-5-ac).
-
-## Questions remaining 
-
-* ***MISSING: how to tell the SXT which router to bridge with. And how to tell which router to be the top and which to be the bottom (receiving and sending?).***   
-* ***Do we need to change the name of Omnis 50 and 51 to Tucson Mesh (currently named NYC mesh)?***
 
 ## Materials needed
 

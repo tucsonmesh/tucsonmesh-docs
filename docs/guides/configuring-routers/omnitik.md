@@ -1,10 +1,10 @@
 # MikroTik OmniTIK 5 PoE ac Router Configuration Guide
 
-How can this documentation be improved?
+!!! info "How can this documentation be improved?" 
 
-- Confirm whether there are still issues with WinBox or if WinBox, especially the 4.0 beta version, is an acceptable option. 
-- Explain how to connect to the device with an ethernet cable if the automatic management wifi network disappears.
-- Update "gut checks" to be more explicit.
+    - Confirm whether there are still issues with WinBox or if WinBox, especially the 4.0 beta version, is an acceptable option. 
+    - Explain how to connect to the device with an ethernet cable if the automatic management wifi network disappears.
+    - Update "gut checks" to be more explicit.
 
 ## Materials needed 
 
@@ -31,7 +31,9 @@ How can this documentation be improved?
 
 You will need software that can talk to the router and upload the firmware and config file from your computer to the router.
 
-⚠️R Recently we have been noticing that after resetting the router using WinBox we can’t find the Omnitik’s automatic WiFi network to reconnect and finish configuring. So, as of Nov 22, 2024, it's preferred to use an SCP client rather than WinBox.
+!!! warning "Use an SCP client, not WinBox"
+
+    Recently we have been noticing that after resetting the router using WinBox we can’t find the OmniTIK’s automatic WiFi network to reconnect and finish configuring. So, as of Nov 22, 2024, it's preferred to use an SCP client rather than WinBox.
 
 ### For Windows
 
@@ -77,7 +79,9 @@ Download one of these applications.
 
 ## Connect to the OmniTIK's wireless network
 
-⚠️ Connecting to the Omnitik's network will disconnect you from the internet, so make sure you have **WinBox** or an **SCP client**, **firmware** and the **router configuration** file downloaded before proceeding.
+!!! warning "Be ready to be disconnected"
+
+    Connecting to the Omnitik's network will disconnect you from the internet, so make sure you have **WinBox** or an **SCP client**, **firmware** and the **router configuration** file downloaded before proceeding.
 
 1. Next, plug in your Omnitik and give it about a minute to boot up.  
 2. Connect to the wireless network that it generates automatically. This network will look something like `Mikrotik-F32xxxx`. 
@@ -97,16 +101,19 @@ Download one of these applications.
 
 ### Using WinBox
 
-⚠️Don't use this method until the issue with the default wireless network not appearing is resolved.
+!!! warning "Don't use this method"
+
+    Don't use this method until the issue with the default wireless network not appearing is resolved.
+
+    Recently we have been noticing that after we complete this step, we can’t find the OmniTik’s automatic WiFi network to reconnect and finish configuring. So we have been connecting to the OmniTik using an Ethernet cable.
 
 1. Open Winbox and click on the “Neighbors” tab. Double-click on the MAC Address of the OmniTik which will appear as a Neighbor with an IP address of `192.168.88.1`.   
 2. Enter `admin` in the Login field and then click `Connect`. You are now looking at the router’s GUI (Graphical User Interface \- menus, buttons and fields that control the router’s settings).  
 3. Now, upload the firmware you downloaded into the Omni. Click on the “Files” icon on the left and drag the .npk file from your computer into this window.  
 4. Now you will open the Terminal and use the Terminal to reset the Omni. This will trigger the Omni to load in the firmware you just dropped into it when it reboots. Click the button that says “New Terminal”.  
 5. In the terminal type `system reset-configuration skip-backup=yes no-defaults=yes`. Note that you can “Tab complete” these commands by beginning to type and hitting the “Tab” key that will show you available commands.  
-6. The Terminal will tell you this is dangerous and ask you if you want to `Reset anyway? [y/n]`. Type `y`. The Omni should reset and beep twice when it is done. 
+6. The Terminal will tell you this is dangerous and ask you if you want to `Reset anyway? [y/n]`. Type `y`. The Omni should reset and beep twice when it is done.
 
-⚠️Recently we have been noticing that after we complete this step, we can’t find the OmniTik’s automatic WiFi network to reconnect and finish configuring. So we have been connecting to the OmniTik using an Ethernet cable.
 
 ## Upload configuration file 
 
@@ -132,7 +139,9 @@ Download one of these applications.
 
 #### Using WinBox
 
-⚠️Don't use this method until the issue with the default wireless network not appearing is resolved.
+!!! warning "Don't use this method"
+
+    Don't use this method until the issue with the default wireless network not appearing is resolved.
 
 1. First, click the “Files” tab again and drag and drop the config file from your computer into the File List.   
 2. Open the Terminal in WinBox and type “import” and hit Tab. You should see your .rsc file pop up. Type out this name after “import”. The command should look something like `import omni-poe-ether5.rsc`.   
