@@ -44,3 +44,4 @@ nav:
   - Services:
     - Mesh Services:
       - services/librenms.md
+    - services/external.md
