@@ -14,7 +14,12 @@ nav:
   - Guides:
     - guides/installation/index.md
     - guides/site-survey/index.md
-    - guides/configuring-routers/index.md
+    - Router Configuration:
+      - guides/configuring-routers/index.md
+      - guides/configuring-routers/litebeam.md
+      - guides/configuring-routers/omnitik.md
+      - guides/configuring-routers/sxtsq.md
+      - guides/configuring-routers/archer-a6.md
     - guides/ladder-safety.md
     - guides/routeros-tips.md
     - Updating this documentation:
