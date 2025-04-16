@@ -5,17 +5,19 @@
     - Clarify how to tell the SXT which router to bridge with, and to tell which router to be the top and which to be the bottom (receiving and sending). 
     - Check if we still need to replace instances of `nycmesh` with `tucsonmesh` in the generated config, or has this been fixed? 
 
+This is a guide to configuring the [MikroTik SXTsq 5 ac](../../hardware/sxtsq.md), which is often used for point-to-point connections between nodes.
+
 These instructions are based on NYC Mesh's [configuration docs for this device](https://wiki.nycmesh.net/books/3-hardware-firmware/page/mikrotik-sxtsq-5-ac).
 
 ## Materials needed
 
-* Router  
-* POE injector  
-* AC adapter for POE injector  
-* Computer  
-* Ethernet adapter for computer  
-* Ethernet cable  
-* WinBox installed on your computer or an SCP and SSH client  
+* Router
+* POE injector
+* AC adapter for POE injector
+* Computer
+* Ethernet adapter for computer
+* Ethernet cable
+* WinBox installed on your computer or an SCP and SSH client
 * Network number
 
 ## Connect to the device

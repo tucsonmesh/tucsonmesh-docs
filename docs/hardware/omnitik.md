@@ -2,6 +2,8 @@
 
 Product page: [MikroTik Routers and Wireless - Products: OmniTIK 5 PoE ac](https://mikrotik.com/product/rbomnitikpg_5hacd)
 
+Configuration guide: [MikroTik OmniTIK 5 PoE ac Router Configuration Guide](../guides/configuring-routers/omnitik.md)
+
 Monitoring: Slack messages to \#monitoring-screams
 
 Along with the [Ubiquity LightBeam AC Gen 2](litebeam.md), this is what most users have on their roofs.

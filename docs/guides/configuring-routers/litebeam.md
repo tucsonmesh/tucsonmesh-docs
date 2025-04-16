@@ -1,5 +1,7 @@
 # Ubiquiti LightBeam AC Gen 2 Router Configuration Guide
 
+This is a guide for configuring the [Ubiquiti LightBeam AC Gen 2](../../hardware/litebeam.md), the device that connects a user's node to the [supernode](../../networking/supernodes/index.md).
+
 ## Materials needed 
 
 - LiteBeam device  

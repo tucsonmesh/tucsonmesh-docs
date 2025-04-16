@@ -6,6 +6,8 @@
     - Explain how to connect to the device with an ethernet cable if the automatic management wifi network disappears.
     - Update "gut checks" to be more explicit.
 
+This is a guide for configuring the [MikroTik OmniTIK 5 PoE ac](../../hardware/omnitik.md).
+
 ## Materials needed 
 
 - OmniTIK ([OmniTIK series \- User manuals \- MikroTik Documentation](https://help.mikrotik.com/docs/spaces/UM/pages/14221325/OmniTIK+series))
