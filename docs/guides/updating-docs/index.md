@@ -1,5 +1,7 @@
 # Updating this documentation
 
+The Tucson Mesh documentation site is just specially-formatted text files, processed by open source software and turned into a static website.
+
 This documentation is written as [Markdown](https://en.wikipedia.org/wiki/Markdown) files that are turned into a website using [MKDocs](https://www.mkdocs.org/) with the [Material for MKDocs](https://squidfunk.github.io/mkdocs-material/) theme.
 
 If you just want to make some changes, check out [Editing Tucson Mesh's technical documentation](editing-docs.md).
