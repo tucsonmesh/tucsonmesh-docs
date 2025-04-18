@@ -18,7 +18,7 @@
 2. Introduce yourself.
 3. Find a safe place to position the ladder.
 4. Climb up on the roof carefully using the [ladder safety protocol](../ladder-safety.md).  
-5. Look for an ideal location on the roof that would have the best line-of-site (LOS) to Tucson Mesh’s [supernode](../hardware/supernodes/index.md). You may need to use binoculars to find the mast.   
+5. Look for an ideal location on the roof that would have the best line-of-site (LOS) to Tucson Mesh’s [supernode](../../networking/supernodes/index.md). You may need to use binoculars to find the mast.   
 6. Once you have selected a location, check with the Installee to make sure the location works for them.
 
 ### LiteBeam
