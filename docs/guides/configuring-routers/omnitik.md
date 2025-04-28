@@ -2,7 +2,6 @@
 
 !!! info "How can this documentation be improved?"
 
-    - Confirm whether there are still issues with WinBox or if WinBox, especially the 4.0 beta version, is an acceptable option.
     - Explain how to connect to the device with an ethernet cable if the automatic management wifi network disappears.
     - Update "gut checks" to be more explicit.
 
@@ -32,10 +31,6 @@ This is a guide for configuring the [MikroTik OmniTIK 5 PoE ac](../../hardware/o
 ## Download software for uploading files to the router
 
 You will need software that can talk to the router and upload the firmware and config file from your computer to the router.
-
-!!! warning "Use an SCP client, not WinBox"
-
-    Recently we have been noticing that after resetting the router using WinBox we can’t find the OmniTIK’s automatic WiFi network to reconnect and finish configuring. So, as of Nov 22, 2024, it's preferred to use an SCP client rather than WinBox.
 
 ### For Windows
 
@@ -104,20 +99,14 @@ Download one of these applications.
 
 ### Using WinBox
 
-!!! warning "Don't use this method"
-
-    Don't use this method until the issue with the default wireless network not appearing is resolved.
-
-    Recently we have been noticing that after we complete this step, we can’t find the OmniTik’s automatic WiFi network to reconnect and finish configuring. So we have been connecting to the OmniTik using an Ethernet cable.
-
-    This is because of the `reset-configuration` command. Instead, just reboot the router. These instructions need to be updated to reflect that, after testing.
-
 1. Open WinBox. Make sure `Neighbors` is selected in the `Select from` dropdown. Double-click on the MAC Address of the OmniTIK which will appear as a Neighbor with an IP address of `192.168.88.1`.
 2. Make sure `admin` is entered in the `Login` field and then click `Connect`. You are now looking at the router’s Graphical User Interface (GUI). It has menus, buttons and inputs that control the router’s settings.
 3. Upload the firmware you downloaded into the Omni. Click on the `Files` item in the left-hand menu and drag the .npk file from your computer into the right-hand pane.
-4. Now you will open the Terminal and use the Terminal to reset the Omni. This will trigger the Omni to load in the firmware you just uploaded when it reboots. Click the menu item that says `New Terminal`.
-5. In the terminal type `system reset-configuration skip-backup=yes no-defaults=yes`. Note that you can “Tab complete” these commands by beginning to type and hitting the `tab` key that will show you available commands.
-6. The Terminal will tell you this is dangerous and ask you if you want to `Reset anyway? [y/n]`. Type `y`. The Omni should reset and beep twice when it is done.
+4. Click on `System` in the left-hand-side menu and then click `Reboot`. Click `OK` in the confirmation dialog.
+5. WinBox will show a message that you have been disconnected from the device while it reboots. The LEDs on the front of the device should flash and you should hear a beep telling you that the device has rebooted.
+6. Reconnect to the management wireless network.
+7. Log into the device in WinBox. If you've left WinBox open, you may be able to just click a button to reconnect.
+8. Confirm in the `Files` window that the .npk file you uploaded is no longer there. This means the update has been installed.
 
 ## Upload configuration file
 
@@ -143,17 +132,11 @@ Download one of these applications.
 
 #### Using WinBox
 
-!!! warning "Don't use this method"
-
-    Don't use this method until the issue with the default wireless network not appearing is resolved.
-
-1. First, click the “Files” tab again and drag and drop the config file from your computer into the File List.
-2. Open the Terminal in WinBox and type “import” and hit Tab. You should see your .rsc file pop up. Type out this name after “import”. The command should look something like `import omni-poe-ether5.rsc`.
-3. Hit enter and the Omni should load up the config.
-4. …might need to manually reset/reboot at this step?
-5. ….at some point you will need to change the password.
+1. Open the `Files` window again and drag and drop the config file (the one that ends in `.rsc`) from your computer into the `Files` window.
 
 ## Reboot the device with the new configuration
+
+### Using the administrative web interface
 
 1. Reopen the MikroTik GUI in your web browser and navigate back to `Files` as described in section 3 above. You should see the config file you just uploaded.
 2. Click `System` in the left side menu.
@@ -163,13 +146,20 @@ Download one of these applications.
 6. Click `Reset Configuration`,
 7. The Omnitik will now reboot (and install new firmware if you uploaded it). If it plays some beeps, ending with an 8-bit version of [Zombie Nation’s KernKraft 400](https://youtu.be/gbcG2TI4GBk?t=116) 🤘🤘🤘. If you hear this, the configuration was a success.
 
+### Using WinBox
+
+1. Open the Terminal in WinBox and type `import omni-poe-ether5.rsc`. Replace `omni-poe-ether5.rsc` with the name of the file you just uploaded if it is different.
+2. Press the `enter` or return key on your computer and the Omni should load up the config.
+3. The Omni will beek and you will be disconnected from the device in WinBox as well as the management wireless network.
+
 ## Set the administrative password
 
 1. Connect to the new WiFi network created for the Omni router. The name of this network will be `tucsonmesh-NN-omni` where `NN` is replaced by the network number for this node, for example, `tucsonmesh-79-omni`.
 2. Log in to the OmniTIK on your browser. The OmniTIK IP address has changed to a **10.69.x.x address.** This is generated from the network number, e.g. for network number 79 the IP address will be `10.69.0.79`, and you'll type `http://10.69.0.79` in your browser's location bar to access the administration interface.
-3. Click `System` in the left side menu.
-4. Click `Password` in the left side menu dropdown.
-5. Type in the standard Tucson Mesh omnitik password (iykyk)
+3. Upon connecting, you may be prompted to enter a new password. Leave the `Old Password` field blank and enter the standard Tucson Mesh OmniTik password (iykyk) in the `New Password` and `Confirm Password` fields. 
+4. If you are not prompted automatically to enter a new password, click `WebFig` in the upper-right-hand corner menu. Then click `System` in the left side menu, and then click `Password` in the sub-menu.
+5. Leave the `Old Password` field blank and enter the standard Tucson Mesh OmniTik password (iykyk) in the `New Password` and `Confirm Password` fields.
+6. Click the `Password` button. 
 
 ## Verify the configuration
 
