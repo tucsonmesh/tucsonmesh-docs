@@ -123,10 +123,15 @@ Open the alignment tool and keep it open. You'll monitor this tool as you adjust
 
 ## Adjust the LiteBeam position
 
-- Loosen the wingnut on the *azimuth mount* this will allow adjusting the horizontal angle of the device. Slowly adjust the angle of the device and watch for how the signal changes. The admin interface signal strength readings will lag movements of the antenna, so make small movements and wait for the admin interface signal reading to update before adjusting the position further. Keep in mind the landmarks you identified in Google Earth and consult any saved images from the app.
+![LiteBeam Mounts](img/litebeam-mounts-labeled-450x600.jpg)
+
+- Loosen the wingnut on the clamp around the *azimuth mount* shaft. This will allow adjusting the horizontal angle of the device.
+- The shaft has small ridges and the clamp has small grooves. This makes it difficult to rotate the device around the shaft, even when the clamp is loosened. The best way to rotate the device is to gently raise the device off the shaft until it is just above the shaft. Then rotate it so the next ridge and groove are aligned.
+- Adjust the angle of the device one groove at a time and watch for how the signal strength changes. The alignment tool signal strength readings will lag movements of the antenna, so make small movements and wait for the admin interface signal reading to update before adjusting the position further. 
+- Keep in mind the landmarks you identified in Google Earth and consult any saved images from the app.
 - Look for the position that makes the signal as strong as possible as shown in the web admin interface or UISP app. A signal closer to zero is stronger. I.e. \-68 dBm is stronger than \-70 dBm and \-75 dBm is weaker 
-- Now loosen the wingnut for the *elevation mount*.
+- Now loosen the wingnut on the side of the *elevation mount*.
 - Repeat the process of adjusting the vertical angle of the device and watch how the signal strength changes. Stop at the angle with the strongest signal strength.
 - Ideally you want a signal \-65 dBm or stronger, but one that is at least \-70 dBm will be workable.
-- Tighten the wingnut for the *elevation mount*, then tighten the wingnut for the *azimuth mount*.
+- Tighten the wingnut for the *elevation mount*, then tighten the wingnut for the clamp around the *azimuth mount* shaft.
 
