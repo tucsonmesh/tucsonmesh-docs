@@ -14,44 +14,51 @@ This is a draft guide to help users and installers realign the [LiteBeam](../../
 - Use free GIS software to orient yourself between the home node and the supernode and check line of site.
 - Climb on the roof and use the devices administrative interface to see how changing the vertical and horizontal angle of the device changes the signal strength when connecting to the supernode.
 
-## Materials needed
-
+## 1. Gather required materials 
+Before you start the realignment, make sure that you have the following equipment and information:
 - Password to log into the administration interface of the LiteBeam
+    - To get a unique password for your node, message Tucson Mesh Admin on the #user-support channel of the [slack](https://join.slack.com/t/tucsonmesh/shared_invite/zt-1brd69xog-H39i1ncLjRTROtGC78WYbw), or by emailing support@tucsonmesh.net
 - WPA password for connecting to the sector router WiFi network
-- Ladder
+```
+!!! warning "not needed"
+
+    -For users doing realignments to Bicas, the WPA password that is already in the LBE will not change.
+    -For future realignments to Tucson House, we will need to give users the new WPA password as the Tucson House. 
+```  
+- Ladder to access rooftop
 - Laptop computer or mobile phone with WiFi capabilities and a web browser
 - Google Earth
 - UISP mobile app (optional)
 - Binoculars (optional)
 
-## Review related documentation
+## 2. Review related documentation
 
 It's helpful to review these other pieces of documentation that are referenced throughout this guide. 
 
 - [LBE-5AC-Gen2 Quick Start Guide](https://dl.ubnt.com/qsg/LBE-5AC-Gen2/LBE-5AC-Gen2_EN.html): This has images of the different parts of the LiteBeam device and has the names Ubiquiti uses for the different parts.
 - [Guide to Google Earth](https://startyourownisp.com/posts/guide-to-google-earth/): Describes how to do common pre-alignment tasks with Google Earth, such as checking line of site. 
 
-## Use Google Earth to help plan the realignment 
+## 3. Use Google Earth to help plan the realignment 
 
-- Confirm where the LightBeam is on the rooftop
-- Check line of sight using Google Earth. See this [Guide to Google Earth](https://startyourownisp.com/posts/guide-to-google-earth/).
-- Note landmarks for helping to align the supernode
-- Determine which sector router to connect to
+- Confirm the exact location of the LightBeam is on the rooftop.
+- Check line of sight between the LightBeam and the supernode using Google Earth. See this [Guide to Google Earth](https://startyourownisp.com/posts/guide-to-google-earth/).
+- Note landmarks for helping to align the supernode. Idenfity specific buildings, trees, etc, to avoid so that you can get the clearest line of sight to the supernode.
+- Determine which sector router to connect to. Bicas has 3 sector routers that generall point North, East, and South. Best connection can be determined later. 
 - Let anyone in the household know that their internet connection will be disrupted during the alignment process.
 
-## Climb on the roof
+## 4. Climb on the roof to realign LightBeam
 
 Be sure to observe the [ladder safety](../ladder-safety.md) protocols.
 
 From this step onward, it's helpful to have two people, both for ladder safety and later, so one person can adjust the angle of the device and the other can monitor the signal strength.
 
-## Connect to the LiteBeam's management network 
+## 4.1 Connect to the LiteBeam's management network 
 
 - Unplug the ethernet cable from the LightBeam. Wait a few seconds and plug the ethernet cable back in. This will restart the device.
-- Once it powers up, a blue light will appear on the router and it will make a management wireless network available. This network has an SSID that begins with `LBE-5AC-Gen2`, for example `LBE-5AC-Gen2:245A4CD44286`.
-- Connect to this wireless network on your computer or mobile phone.
+- Once the LightBeam powers up, a blue light will appear on the bottom of the router's Antenna Feed and a wireless management network will become available. This network has an SSID that begins with `LBE-5AC-Gen2`, for example `LBE-5AC-Gen2:245A4CD44286`.
+- Connect to this wireless network on your computer or mobile phone as you would any other WiFi network.
 
-## Log into the device's administrative interface
+## 4.2 Log into the device's administrative interface
 
 ### Computer or mobile browser
  
@@ -60,7 +67,7 @@ From this step onward, it's helpful to have two people, both for ladder safety a
 ![Certificate Warning](img/litebeam-web-browser-warning-1200x679.png)
 
 - This will bring you to the administration interface.
-- Type in the admin username and password and log into the administration interface.
+- Use the admin username and password you recieved from Tucson Mesh Admin to log into the administration interface.
 
 ![Administrative Interface Login](img/litebeam-web-login-1200x679.png)
 
@@ -73,7 +80,7 @@ From this step onward, it's helpful to have two people, both for ladder safety a
 
 - Log in.
 
-## Connect the device to the correct network for alignment
+## 4.3 Connect the device to the correct network for alignment
 
 ### Comuter or mobile browser
 
@@ -97,7 +104,7 @@ From this step onward, it's helpful to have two people, both for ladder safety a
 
 ![UISP App Site Survey](img/uisp-app-site-survey-277x600.png)
 
-## Open the alignment tool
+## 4.4 Open the alignment tool
 
 Open the alignment tool and keep it open. You'll monitor this tool as you adjust the position of the LiteBeam.
 
@@ -121,7 +128,7 @@ Open the alignment tool and keep it open. You'll monitor this tool as you adjust
 
 ![UISP App Antenna Alignment](img/uisp-app-antenna-alignment-277x600.png)
 
-## Adjust the LiteBeam position
+## 4.5 Adjust the LiteBeam position
 
 ![LiteBeam Mounts](img/litebeam-mounts-labeled-450x600.jpg)
 
