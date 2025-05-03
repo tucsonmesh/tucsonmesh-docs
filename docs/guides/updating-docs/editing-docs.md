@@ -1,6 +1,8 @@
-# Editing Tucson Mesh's technical documentation
+# Editing existing documentation pages
 
-This is a guide for editing pages on this documentation site.
+This is a guide for editing existing pages on this documentation site.
+
+This guide shows how to use GitHub's web-based editor because it's easy to reach it from the documentation site and does not require installing any software.
 
 ## For close collaborators
 

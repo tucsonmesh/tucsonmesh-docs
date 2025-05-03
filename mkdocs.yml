@@ -29,6 +29,7 @@ nav:
     - Updating this documentation:
       - guides/updating-docs/index.md
       - guides/updating-docs/editing-docs.md
+      - guides/updating-docs/faq.md
   - Hardware:
     - hardware/omnitik.md
     - hardware/liteap.md
