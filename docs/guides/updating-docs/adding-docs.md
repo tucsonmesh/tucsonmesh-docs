@@ -2,7 +2,7 @@
 
 This is a guide for adding a page to the documentation site.
 
-This guide shows how to use GitHub's web-based editor because it's easy to reach it from the documentation site and does not require installing any software.
+This guide shows how to use GitHub's web-based editor because its interface should be familiar to anyone who's used a web form and using it does not require installing any software.
 
 ## For close collaborators
 
@@ -18,7 +18,7 @@ You can use GitHub's web editor to add a new page of documentation to this site.
 
 For the smoothest editing experience, make sure you're logged in to your GitHub account before you start editing pages.
 
-Visit [https://github.com/login](https://github.com/login) in your preferred browser and complete the login flow. 
+Visit [https://github.com/login](https://github.com/login) in your preferred browser and complete the login flow.
 
 ### Navigate to the documentation repository on GitHub
 
@@ -54,11 +54,11 @@ Finally, click the `Commit changes` button.
 
 ### You're done!
 
-Your changes have been saved, and in a few minutes, the public site will be rebuilt and your changes will be visible. 
+Your changes have been saved, and in a few minutes, the public site will be rebuilt and your changes will be visible.
 
 ### Next: add the new documentation to the menu
 
-You've added a page to the documentation site, but you need to also add it to the menus.
+You've added a page to the documentation site, but you need to also add it to the navigation menus. See [Updating the documentation menu](editing-menu.md) for instructions on how to do this.
 
 ## For others
 
