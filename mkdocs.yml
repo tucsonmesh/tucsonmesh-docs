@@ -37,6 +37,7 @@ nav:
     - hardware/liteap.md
     - hardware/litebeam.md
     - hardware/sxtsq.md
+    - hardware/tp-link-ac1750.md
   - Networking:
     - Supernodes:
       - networking/supernodes/index.md
