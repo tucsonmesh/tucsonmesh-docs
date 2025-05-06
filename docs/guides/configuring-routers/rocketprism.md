@@ -9,8 +9,7 @@ This is a guide for configuring the [Ubiquiti Rocket Prism 5AC](../../hardware/r
 - Eventually, an antenna (as the RocketPrism itself doesn't come with one)
 - Hose clamp  
 - Power cable  
-- POE Injector  
-- Network Number (NN). Check the “Installed” column on the [Install Trello](https://trello.com/b/q0fcwjCM/mesh-installs) list and use the next number in line.  
+- POE Injector
 - The default administrator username and password for RocketPrism devices. This is in the password manager as `Tucson House RocketPrism 5AC Admin`.
 
 ## Overview 
@@ -73,3 +72,7 @@ Note: you can only do this step if your Rocket Prism _has internet access_ (i.e.
 ## Configure the sector for your install's needs
 
 You're configuring a sector router. You probably have specific things to your install that you should do here, but I don't know what they are. Maybe change the network SSID (go to the Wireless tab). Or the hostname/timezone (go to the System tab). Best of luck with whatever it is, though! 
+
+## Hardware and Mounting
+
+TBD, but it's likely specific to your install too.
