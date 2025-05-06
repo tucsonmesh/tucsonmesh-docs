@@ -2,7 +2,7 @@
 
 This supernode will be located on the roof of [Tucson House](https://en.wikipedia.org/wiki/Tucson_House), a residential high-rise tower built in the 1960s. It is located at [1501 N Oracle Rd, Tucson, AZ 85705](https://maps.app.goo.gl/LGk427NhUyN2ciaw8).
 
-It is slated to be installed in early April 2025.
+It is slated to be installed in May 2025.
 
 ## ⚠️  This documentation requires updates
 
