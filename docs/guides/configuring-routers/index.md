@@ -7,6 +7,7 @@ Typical installs use two routers, the [Ubiquiti LightBeam AC Gen 2](../../hardwa
 You can find the guides for configuring these routers and others here:
 
 - [LiteBeam Configuration Guide](litebeam.md)
+- [Rocket Prism 5AC Configuration Guide](rocketprism.md)
 - [OmniTIK Configuration Guide](omnitik.md)
 - [SXTsq Configuration Guide](sxtsq.md)
 - [TP-Link Archer A6 Configuration Guide](archer-a6.md)

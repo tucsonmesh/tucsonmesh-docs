@@ -21,6 +21,7 @@ nav:
     - Router Configuration:
       - guides/configuring-routers/index.md
       - guides/configuring-routers/litebeam.md
+      - guides/configuring-routers/rocketprism.md
       - guides/configuring-routers/omnitik.md
       - guides/configuring-routers/sxtsq.md
       - guides/configuring-routers/archer-a6.md
