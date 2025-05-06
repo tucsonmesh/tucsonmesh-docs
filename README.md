@@ -6,6 +6,14 @@ This documentation is written as [Markdown](https://en.wikipedia.org/wiki/Markdo
 
 It originally started as a fork of [nycmeshnet/docs](https://github.com/nycmeshnet/docs), and draws inspiration from the organization of its successor, [wiki.nycmesh.net](https://wiki.nycmesh.net/).
 
+## How do I make edits?
+
+If the page you want to change already exists, the easiest way is actually do navigate to it on the [deployed website](https://tucsonmesh.github.io/tucsonmesh-docs) and click the edit button (piece of paper with a pencil) in the top right corner.
+
+That will bring you to the corresponding source file in this repository where you can quickly edit and save ("commit") your changes. After this, the website will "rebuild" automatically publish your changes.
+
+Below, we have more detailed instructions for people who want to be able to run the "build the website" steps on their local laptop and iterate more quickly on large numbers of edits.
+
 ## Preqrequisites
 
 - Python 3.8+
