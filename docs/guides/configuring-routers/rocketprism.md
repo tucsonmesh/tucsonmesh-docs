@@ -1,6 +1,7 @@
 # Ubiquiti Rocket Prism 5AC Router Configuration Guide
 
-This is a guide for configuring the [Ubiquiti Rocket Prism 5AC](../../hardware/rocketprism.md), the device that connects a user's node to the [supernode](../../networking/supernodes/index.md).
+This is a guide for configuring the [Ubiquiti Rocket Prism 5AC](../../hardware/rocketprism.md).
+This device is used as a sector router on our [Tucson House](../../networking/supernodes/tucson-house.md) supernode.
 
 ## Materials needed 
 
@@ -68,6 +69,12 @@ Note: you can only do this step if your Rocket Prism _has internet access_ (i.e.
 2. Paste the URL from the password manager item `Tucson House RocketPrism - UISP Key`.
 3. Login to UISP and navigate to the devices screen.
 4. At the bottom, there should be a yellow device that represents your Rocket Prism and says "Pending Adoption". Adopt it into the network.
+
+## Miscellaneous cleanup
+
+- Set the timezone under `System` to `Phoenix` or UTC-7.
+- Ensure that the SSH service is disabled.
+- Consider changing the center frequency that your sector broadcasts on ahead of installation.
 
 ## Configure the sector for your install's needs
 
