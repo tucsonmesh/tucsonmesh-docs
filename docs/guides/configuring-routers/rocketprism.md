@@ -62,7 +62,7 @@ Next, download a sample configuration file [here](./static/RocketPrism-template.
 
 ## Pair with UISP
 
-Note: you can only do this step if your Rocket Prism _has internet access_ (i.e., the ethernet cable on the other side of your PoE injector is connected to something that provides internet access). If you don't have internet access, you can still configure the UISP key. You just won't be able to adopt the device in UISP until it gets internet access.
+Note: you can only fully complete this step if your Rocket Prism _has internet access_ (i.e., the ethernet cable on the other side of your PoE injector is connected to something that provides internet access). If your device doesn't, you can still configure the UISP key; you just won't be able to finish adding the device in UISP until it can reach out and request adoption.
 
 1. Click the `UISP` button in the top right.
 2. Click `Change Key`.
@@ -71,7 +71,7 @@ Note: you can only do this step if your Rocket Prism _has internet access_ (i.e.
 _If your RocketPrism has internet access:_
 
 4. Login to UISP and navigate to the devices screen.
-5. At the bottom, there should be a yellow device that represents your Rocket Prism and says "Pending Adoption". Adopt it into the network.
+5. At the bottom, there should be a yellow device that represents your Rocket Prism and says "Pending Adoption". Adopt it into the network. Assign it to a site (likely: Tucson House).
 
 ## Miscellaneous cleanup
 - Set the timezone under `System -> Date/Time Settings` to `GMT-07:00` if it's not already.
