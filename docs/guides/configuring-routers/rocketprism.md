@@ -8,8 +8,7 @@ This device is used as a sector router on our [Tucson House](../../networking/su
 - Rocket Prism device
 - Mount of choice
 - Eventually, an antenna (as the RocketPrism itself doesn't come with one)
-- Hose clamp  
-- Power cable  
+- Power cable
 - POE Injector
 - The default administrator username and password for RocketPrism devices. This is in the password manager as `Tucson House RocketPrism 5AC Admin`.
 
@@ -63,17 +62,22 @@ Next, download a sample configuration file [here](./static/RocketPrism-template.
 
 ## Pair with UISP
 
-Note: you can only do this step if your Rocket Prism _has internet access_ (i.e., the ethernet cable on the other side of your PoE injector is connected to something that provides internet access).
+Note: you can only do this step if your Rocket Prism _has internet access_ (i.e., the ethernet cable on the other side of your PoE injector is connected to something that provides internet access). If you don't have internet access, you can still configure the UISP key. You just won't be able to adopt the device in UISP until it gets internet access.
 
 1. Click the `UISP` button in the top right.
-2. Paste the URL from the password manager item `Tucson House RocketPrism - UISP Key`.
-3. Login to UISP and navigate to the devices screen.
-4. At the bottom, there should be a yellow device that represents your Rocket Prism and says "Pending Adoption". Adopt it into the network.
+2. Click `Change Key`.
+3. Paste the URL from the password manager item `Tucson House RocketPrism - UISP Key`.
+
+_If your RocketPrism has internet access:_
+
+4. Login to UISP and navigate to the devices screen.
+5. At the bottom, there should be a yellow device that represents your Rocket Prism and says "Pending Adoption". Adopt it into the network.
 
 ## Miscellaneous cleanup
-
-- Set the timezone under `System` to `Phoenix` or UTC-7.
-- Ensure that the SSH service is disabled.
+- Set the timezone under `System -> Date/Time Settings` to `GMT-07:00` if it's not already.
+- Change the device name under `System -> Device` to whatever this sector will be called.
+- Similarly, change the WiFi SSID that the device broadcasts under `Wireless -> SSID`. This is likely the same as the device name.
+- Under `Services -> SSH`, uncheck the SSH Server box and click `Apply Changes` on the bottom of the screen.
 - Consider changing the center frequency that your sector broadcasts on ahead of installation.
 
 ## Configure the sector for your install's needs
