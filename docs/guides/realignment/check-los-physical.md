@@ -8,9 +8,7 @@ Carefully climb up on your roof. Be sure to observe the [ladder safety guideline
 
 Walk to where your LiteBeam is currently installed. Be sure to watch out for uneven surfaces, conduit, cables or anything else that could cause you to trip.
 
-!!! warning "📷 Photo needed!" 
-
-    Insert photo of an installed LiteBeam on someone’s roof.
+![LiteBeam on roof](img/litebeam-roof-1200x1600.jpg)
 
 ## Check the line of sight
 
