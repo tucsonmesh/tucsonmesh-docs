@@ -35,6 +35,8 @@ nav:
         - guides/realignment/realign-litebeam.md
         - guides/realignment/realign-litebeam-uisp-app.md
     - guides/routeros-tips.md
+    - UISP:
+      - guides/uisp/setting-litebeam-passwords/index.md
     - Updating this documentation:
       - guides/updating-docs/index.md
       - guides/updating-docs/editing-docs.md
