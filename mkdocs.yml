@@ -16,7 +16,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Guides:
-    - guides/installation/index.md
     - guides/site-survey/index.md
     - Router Configuration:
       - guides/configuring-routers/index.md
@@ -25,7 +24,14 @@ nav:
       - guides/configuring-routers/omnitik.md
       - guides/configuring-routers/sxtsq.md
       - guides/configuring-routers/archer-a6.md
+    - guides/installation/index.md
     - guides/ladder-safety.md
+    - Realignment:
+      - guides/realignment/index.md
+      - guides/realignment/gather-materials.md
+      - guides/realignment/check-los-software.md
+      - guides/realignment/check-los-physical.md
+      - guides/realignment/realign-litebeam.md
     - guides/routeros-tips.md
     - Updating this documentation:
       - guides/updating-docs/index.md
