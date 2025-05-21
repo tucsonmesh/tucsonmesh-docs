@@ -31,7 +31,9 @@ nav:
       - guides/realignment/gather-materials.md
       - guides/realignment/check-los-software.md
       - guides/realignment/check-los-physical.md
-      - guides/realignment/realign-litebeam.md
+      - Realign your LiteBeam:
+        - guides/realignment/realign-litebeam.md
+        - guides/realignment/realign-litebeam-uisp-app.md
     - guides/routeros-tips.md
     - Updating this documentation:
       - guides/updating-docs/index.md

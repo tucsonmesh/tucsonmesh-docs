@@ -1,12 +1,16 @@
-# Realign your LiteBeam 
+# Realign your LiteBeam using the UISP mobile app 
+
+!!! info "How can this documentation be improved?" 
+
+    - Make sure these instructions match the [ones using the browser interface](realign-litebeam.md)
 
 For these steps, you'll need to be on your roof. Be sure to observe the [ladder safety](../ladder-safety.md) protocols, when climbing up to your roof.
 
 It's also helpful to have two people, both for ladder safety and later, so one person can adjust the angle of the device and the other can monitor the signal strength.
 
-!!! info "Using the UISP mobile app" 
+!!! info "Using your device's browser" 
 
-    These instructions use your device's web browser to access the admin interface for your LiteBeam. If you find it easier to use the UISP mobile app, you can find instructions [here](realign-litebeam-uisp-app.md).
+    These instructions use the UISP mobile app to administer your LiteBeam. If you find it easier to use your device's web browser to access the admin interface for your LiteBeam, you can find instructions [here](realign-litebeam.md).
 
 ## 1. Review related documentation
 
@@ -22,19 +26,6 @@ It's helpful to review these other pieces of documentation that are referenced t
 
 ## 3. Log into the device's administrative interface
 
-### Computer or mobile browser
- 
-- Visit [https://192.168.172.1](https://192.168.172.1) in your browser. You may be met with a warning due to the self-signed SSL certificate used for the connection. Bypass this warning. 
-
-![Certificate Warning](img/litebeam-web-browser-warning-1200x679.png)
-
-- This will bring you to the administration interface.
-- Use the admin username and password you recieved from Tucson Mesh Admin to log into the administration interface.
-
-![Administrative Interface Login](img/litebeam-web-login-1200x679.png)
-
-### UISP mobile app
-
 - In the UISP mobile app, after connecting to the management network, in your phone's WiFi settings, open the UISP app and click the `+` button in the bottom menu. 
 - Tap the device corresponding to your *network number* in the `Devices` menu.
 
@@ -43,22 +34,6 @@ It's helpful to review these other pieces of documentation that are referenced t
 - Log in.
 
 ## 4. Connect the device to the correct network for alignment
-
-### Comuter or mobile browser
-
-- Once you've loaded the web administration interface, click on the `WIRELESS` icon in the left hand menu. The icon looks like a WiFi symbol. This should take you to the `Basic Wireless Settings` page.
-
-![Basic Wireless Settings](img/litebeam-web-basic-wireless-settings-1200x679.png)
-
-- Make sure the `SSID` setting is set to the network name for the sector router that makes the most sense with your location.
-- Make sure that the `WPA PRESHARED KEY` setting is correct. If you need to change it, be sure to click the `SAVE CHANGES` button. 
-- If you need to change the network, click the `SELECT` button below the `SSID` input and click the radio button next to the correct network. Then click the `SELECT` button.
-
-![Site Survey](img/litebeam-web-site-survey-1200x679.png)
-
-- After you change either the wireless network or the WPA preshared key, you might have to wait a few minutes for the LiteBeam to find the sector router and connect.
-
-### UISP mobile app
 
 - Tap `Configuration` in the bottom menu.
 - Check that the `SSID` setting is correct.
@@ -69,18 +44,6 @@ It's helpful to review these other pieces of documentation that are referenced t
 ## 5. Open the alignment tool
 
 Open the alignment tool and keep it open. You'll monitor this tool as you adjust the position of the LiteBeam.
-
-### Computer or mobile browser
-
-- Click on the `TOOLS` icon in the left-hand menu. And choose `ALIGNMENT` in the menu that pops up.
-
-![Tools Menu](img/litebeam-web-tools-menu-1200x679.png)
-
-- This will open the `Antenna Alignment Tool`.
-
-![Realignment Tool](img/litebeam-web-antenna-alignment-tool-1200x679.png)
-
-### UISP mobile app
 
 - Tap `Tools` in the bottom menu.
 
