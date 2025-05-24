@@ -3,6 +3,7 @@ theme:
   name: material
   features:
     - content.action.edit
+    - navigation.footer
   palette:
     primary: black
   logo: assets/logo.jpg
