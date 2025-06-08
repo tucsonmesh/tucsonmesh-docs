@@ -19,7 +19,7 @@ To reset the Omni's operating system (OS) to the default settings, follow these 
 - Unplug the ethernet cable from the POE port on the Omni. This will turn off the router. 
 - Hold down the reset button.
 - While continuing to hold down the reset button, plug the ethernet cable back into the POE port. This powers on the router.
-- Continue holding down the reset button until the LED light starts flashing, about 5 seconds.
+- Continue holding down the reset button until the power LED light starts flashing, about 5 seconds.
 - Release the reset button and let the router continue to boot.
 - You should see the default management wireless network appear, it will look smething like `Mikrotik-F32xxxx`.
 
