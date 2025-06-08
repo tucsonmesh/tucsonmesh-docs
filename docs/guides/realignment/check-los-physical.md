@@ -14,17 +14,13 @@ Walk to where your LiteBeam is currently installed. Be sure to watch out for une
 
 Standing next to the LiteBeam, orient yourself to face [Tucson House](https://maps.app.goo.gl/u6aaPianA1ueBTkR9).
 
-!!! warning "📷 Photo needed!" 
-    
-    Insert photo of the entire Tucson House building from someone’s roof.
+![Tucson House](img/tucson-house-from-street-with-arrow-1200x900.jpg)
 
 From this position, check to see if you have a clear line of sight to the top of the building where the white masts are installed. If you have binoculars, they can help locate the masts.
 
 Check for any large obstructions blocking your view of the masts such as buildings, trees, power lines or poles.
 
-!!! warning "📷 Photo needed!" 
-
-    Insert photo of the top of Tucson House from someone’s rooftop with the masts circled.
+![Tucson House rooftop antenna masts](img/tucson-house-rooftop-zoomed-with-arrow-1200x900.png)
 
 If you have a clear line of sight, proceed to the [next section](realign-litebeam.md) of this guide.
 
@@ -32,9 +28,7 @@ If you have a clear line of sight, proceed to the [next section](realign-litebea
 
 If you do not have a clear line of sight from where the LiteBeam is currently installed, is there another area on your roof with a better line of sight where the equipment could potentially be moved?  
 
-!!! warning "📷 Photo needed!" 
-
-    Insert photo take from a rooftop showing obstructions.
+![Tucson House rooftop with obstructed line of sight](img/tucson-house-los-obstructed.jpg)
 
 Take photos of the following:  
 
