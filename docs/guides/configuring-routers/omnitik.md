@@ -47,7 +47,8 @@ Download one of these applications.
 
 ### Linux
 
-* Most Linux distributions come with a command-line SCP client already installed. The 4.0beta version supports Linux.
+* Most Linux distributions come with a command-line SCP client already installed.
+- [WinBox](https://mikrotik.com/download): The 4.0beta version supports Linux.
 
 ## Overview
 
@@ -148,9 +149,9 @@ Download one of these applications.
 
 ### Using WinBox
 
-1. Open the Terminal in WinBox and type `import omni-poe-ether5.rsc`. Replace `omni-poe-ether5.rsc` with the name of the file you just uploaded if it is different.
+1. Open the Terminal in WinBox and type `import flash/omni-poe-ether5.rsc`. Replace `flash/omni-poe-ether5.rsc` with the name of the file you just uploaded if it is different.
 2. Press the `enter` or return key on your computer and the Omni should load up the config.
-3. The Omni will beek and you will be disconnected from the device in WinBox as well as the management wireless network.
+3. The Omni will beep and you will be disconnected from the device in WinBox as well as the management wireless network.
 
 ## Set the administrative password
 
