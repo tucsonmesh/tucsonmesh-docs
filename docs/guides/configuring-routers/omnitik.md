@@ -48,7 +48,7 @@ Download one of these applications.
 ### Linux
 
 * Most Linux distributions come with a command-line SCP client already installed.
-- [WinBox](https://mikrotik.com/download): The 4.0beta version supports Linux.
+- [WinBox](https://mikrotik.com/download): A desktop application for managing MikroTik routers. The 4.0beta version supports Linux.
 
 ## Overview
 
@@ -133,25 +133,28 @@ Download one of these applications.
 
 #### Using WinBox
 
-1. Open the `Files` window again and drag and drop the config file (the one that ends in `.rsc`) from your computer into the `Files` window.
+1. Open the `Files` window again and drag and drop the config file (the one that ends in `.rsc`) from your computer into the `Files` window. Make sure to drop the file in the `flash` subdirectory.
 
 ## Reboot the device with the new configuration
 
 ### Using the administrative web interface
 
-1. Reopen the MikroTik GUI in your web browser and navigate back to `Files` as described in section 3 above. You should see the config file you just uploaded.
+1. Return to the MikroTik GUI in your web browser and navigate back to `Files` as described in the section above. You should see the config file you just uploaded.
 2. Click `System` in the left side menu.
 3. Click `Reset Configuration` in the left side menu dropdown.
 4. Select `No Default Configuration`
-5. Run After Reset: `flash/omni-poe-ether5.rsc` (click the popup on the right to select this).
+5. For the `Run After Reset` option, select `flash/omni-poe-ether5.rsc`.
 6. Click `Reset Configuration`,
-7. The Omnitik will now reboot (and install new firmware if you uploaded it). If it plays some beeps, ending with an 8-bit version of [Zombie Nation’s KernKraft 400](https://youtu.be/gbcG2TI4GBk?t=116) 🤘🤘🤘. If you hear this, the configuration was a success.
+7. The Omni will now reboot, reset the configuration and load the configuration you uploaded. You will  be disconnected from the management wireless network. The Omni should beep multiple times, ending with an 8-bit version of [Zombie Nation’s KernKraft 400](https://youtu.be/gbcG2TI4GBk?t=116) 🤘🤘🤘. If you hear this, the configuration was a success.
 
 ### Using WinBox
 
-1. Open the Terminal in WinBox and type `import flash/omni-poe-ether5.rsc`. Replace `flash/omni-poe-ether5.rsc` with the name of the file you just uploaded if it is different.
-2. Press the `enter` or return key on your computer and the Omni should load up the config.
-3. The Omni will beep and you will be disconnected from the device in WinBox as well as the management wireless network.
+1. Click `System` in the left side menu.
+2. Click `Reset Configuration` in the left side menu dropdown.
+3. Select `No Default Configuration`
+4. For the `Run After Reset` option, select `flash/omni-poe-ether5.rsc`.
+5. Click `Reset Configuration`,
+6. The Omni will now reboot, reset the configuration and load the configuration you uploaded. You will  be disconnected from WinBox as well as the management wireless network. The Omni should beep multiple times, ending with an 8-bit version of [Zombie Nation’s KernKraft 400](https://youtu.be/gbcG2TI4GBk?t=116) 🤘🤘🤘. If you hear this, the configuration was a success.
 
 ## Set the administrative password
 
