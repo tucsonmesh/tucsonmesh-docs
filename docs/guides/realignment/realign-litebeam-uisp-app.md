@@ -36,10 +36,29 @@ It's helpful to review these other pieces of documentation that are referenced t
 ## 4. Connect the device to the correct network for alignment
 
 - Tap `Configuration` in the bottom menu.
-- Check that the `SSID` setting is correct.
 - If you need to change it, tap `SELECT`, then tap on the new network name in the list that appears. 
+- Click the `SELECT` button below the `SSID` input and tab on the name of the Tucson Mesh network with the strongest signal. A signal closer to zero is stronger. I.e. \-68 dBm is stronger than \-70 dBm and \-75 dBm is weaker. 
 
 ![UISP App Site Survey](img/uisp-app-site-survey-277x600.png)
+
+- The network names for the Tucson House supernode are:
+   - `TMTH-SW-Top-W`
+   - `TMTH-SW-Middle-SW`
+   - `TMTH-SW-Bottom-W`
+   - `TMTH-SE-Top-S`
+   - `TMTH-SE-Middle-SE`
+   - `TMTH-SE-Bottom-E`
+   - `TMTH-NW-Top-N`
+   - `TMTH-NW-Middle-NW`
+   - `TMTH-NW-Bottom-W`
+   - `TMTH-NE-Top-E`
+   - `TMTH-NE-Middle-NE`
+   - `TMTH-NE-Bottom-N`
+
+- The network names for the BICAS supernode are:
+  - `tucsonmesh-sectortest`
+  - `tucsonmesh-sectorsouth`
+  - `tucsonmesh-sectoreast`
 
 ## 5. Open the alignment tool
 

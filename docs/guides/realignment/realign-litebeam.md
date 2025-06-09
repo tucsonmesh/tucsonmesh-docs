@@ -22,8 +22,6 @@ It's helpful to review these other pieces of documentation that are referenced t
 
 ## 3. Log into the device's administrative interface
 
-### Computer or mobile browser
- 
 - Visit [https://192.168.172.1](https://192.168.172.1) in your browser. You may be met with a warning due to the self-signed SSL certificate used for the connection. Bypass this warning. 
 
 ![Certificate Warning](img/litebeam-web-browser-warning-1200x679.png)
@@ -33,44 +31,46 @@ It's helpful to review these other pieces of documentation that are referenced t
 
 ![Administrative Interface Login](img/litebeam-web-login-1200x679.png)
 
-### UISP mobile app
-
-- In the UISP mobile app, after connecting to the management network, in your phone's WiFi settings, open the UISP app and click the `+` button in the bottom menu. 
-- Tap the device corresponding to your *network number* in the `Devices` menu.
-
-![UISP App Devices](img/uisp-app-devices-227x600.png)
-
 - Log in.
 
 ## 4. Connect the device to the correct network for alignment
-
-### Comuter or mobile browser
 
 - Once you've loaded the web administration interface, click on the `WIRELESS` icon in the left hand menu. The icon looks like a WiFi symbol. This should take you to the `Basic Wireless Settings` page.
 
 ![Basic Wireless Settings](img/litebeam-web-basic-wireless-settings-1200x679.png)
 
-- Make sure the `SSID` setting is set to the network name for the sector router that makes the most sense with your location.
 - Make sure that the `WPA PRESHARED KEY` setting is correct. If you need to change it, be sure to click the `SAVE CHANGES` button. 
-- If you need to change the network, click the `SELECT` button below the `SSID` input and click the radio button next to the correct network. Then click the `SELECT` button.
+- Click the `SELECT` button below the `SSID` input and click the radio button next to the Tucson Mesh network with the strongest signal. A signal closer to zero is stronger. I.e. \-68 dBm is stronger than \-70 dBm and \-75 dBm is weaker. 
 
 ![Site Survey](img/litebeam-web-site-survey-1200x679.png)
 
+
+- The network names for the Tucson House supernode are:
+   - `TMTH-SW-Top-W`
+   - `TMTH-SW-Middle-SW`
+   - `TMTH-SW-Bottom-W`
+   - `TMTH-SE-Top-S`
+   - `TMTH-SE-Middle-SE`
+   - `TMTH-SE-Bottom-E`
+   - `TMTH-NW-Top-N`
+   - `TMTH-NW-Middle-NW`
+   - `TMTH-NW-Bottom-W`
+   - `TMTH-NE-Top-E`
+   - `TMTH-NE-Middle-NE`
+   - `TMTH-NE-Bottom-N`
+
+- The network names for the BICAS supernode are:
+  - `tucsonmesh-sectortest`
+  - `tucsonmesh-sectorsouth`
+  - `tucsonmesh-sectoreast`
+
+- Then click the `SELECT` button.
+
 - After you change either the wireless network or the WPA preshared key, you might have to wait a few minutes for the LiteBeam to find the sector router and connect.
-
-### UISP mobile app
-
-- Tap `Configuration` in the bottom menu.
-- Check that the `SSID` setting is correct.
-- If you need to change it, tap `SELECT`, then tap on the new network name in the list that appears. 
-
-![UISP App Site Survey](img/uisp-app-site-survey-277x600.png)
 
 ## 5. Open the alignment tool
 
 Open the alignment tool and keep it open. You'll monitor this tool as you adjust the position of the LiteBeam.
-
-### Computer or mobile browser
 
 - Click on the `TOOLS` icon in the left-hand menu. And choose `ALIGNMENT` in the menu that pops up.
 
@@ -78,17 +78,7 @@ Open the alignment tool and keep it open. You'll monitor this tool as you adjust
 
 - This will open the `Antenna Alignment Tool`.
 
-![Realignment Tool](img/litebeam-web-antenna-alignment-tool-1200x679.png)
-
-### UISP mobile app
-
-- Tap `Tools` in the bottom menu.
-
-![UISP App Tools Menu](img/uisp-app-tools-277x600.png)
-
-- Tap `Antenna Alignment` in the `Tools` menu.
-
-![UISP App Antenna Alignment](img/uisp-app-antenna-alignment-277x600.png)
+![Alignment Tool](img/litebeam-web-antenna-alignment-tool-1200x679.png)
 
 ## 6. Adjust the LiteBeam position
 
