@@ -66,7 +66,7 @@ Download one of these applications.
 
 ## Download the correct firmware
 
-1. Start by [downloading](https://mikrotik.com/download) the latest Long-Term v6 version of the firmware that we use. As of April 2025, this is version ([6.49.18](https://download.mikrotik.com/routeros/6.49.18/routeros-mipsbe-6.49.18.npk)).
+1. Start by [downloading](https://mikrotik.com/download) the latest Long-Term v6 version of the firmware for the MIPSBE architecture. As of April 2025, this is version ([6.49.18](https://download.mikrotik.com/routeros/6.49.18/routeros-mipsbe-6.49.18.npk)).
 2. This will download a .npk file named something like `routeros-mipsbe-6.49.18.npk`.
 
 ## Generate and download a configuration file
