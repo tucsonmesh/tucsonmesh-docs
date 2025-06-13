@@ -62,12 +62,14 @@ admin@mesh-box:~$ cat my-wireguard-psk
 PDUMexbCPGwHCdyhdu09yyCeO5n0b/ww+BeWN7XGSWw=
 ```
 
-At this stage, you have now produced
+At this stage, you have now produced:
+
 - A _private_ key that will never leave your machine. Instead, it will use this key to authenticate itself with the remote Wireguard server.
 - A _public_ key that we will share with the remote Wireguard server and use to register your machine as a client.
 - A _preshared_ key that adds extra resilience to the security of the Wireguard connection, and it's easy to incorporate.
 
 Our two remaining goals are to:
+
 - Add a configuration to your remote Wireguard server that allows your new client to connect.
 - Add a configuration to your local Wireguard instance that allows you to connect to your server.
 
@@ -93,6 +95,7 @@ A minimal example is shown below:
 ![Wireguard Client Configuration](./img/Wireguard-Client-Config.png)
 
 The following things should be considered as you're completing your client configuration:
+
 - The `Endpoint` should be configured (via a DNS hostname, a static IP address, etc) to tell your computer "where is the server located?" when it tries to connect. For many mesh endpoints, we have public IPv4 addresses that we are assigned from our upstream network provider and use those.
 - If you want to route DNS requests to a host on this network, set the `Client DNS` to a host that can handle them on this network.
 - Pay attention to the CIDR suffix we're giving to the address in the Client configuration. We are specifying the same IP address as above, but we would like to allow a larger pool of network traffic through our interface (`/24` subnet vs `/32` subnet).
