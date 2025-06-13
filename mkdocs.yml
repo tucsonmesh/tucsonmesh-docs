@@ -44,6 +44,8 @@ nav:
       - guides/updating-docs/adding-docs.md
       - guides/updating-docs/editing-menu.md
       - guides/updating-docs/faq.md
+    - Infrastructure Admin:
+      - guides/infrastructure-admin/add-wireguard-users.md
   - Hardware:
     - hardware/omnitik.md
     - hardware/liteap.md
