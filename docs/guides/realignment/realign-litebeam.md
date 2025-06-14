@@ -46,23 +46,23 @@ It's helpful to review these other pieces of documentation that are referenced t
 
 
 - The network names for the Tucson House supernode are:
-   - `TMTH-SW-Top-W`
-   - `TMTH-SW-Middle-SW`
-   - `TMTH-SW-Bottom-W`
-   - `TMTH-SE-Top-S`
-   - `TMTH-SE-Middle-SE`
-   - `TMTH-SE-Bottom-E`
-   - `TMTH-NW-Top-N`
-   - `TMTH-NW-Middle-NW`
-   - `TMTH-NW-Bottom-W`
-   - `TMTH-NE-Top-E`
-   - `TMTH-NE-Middle-NE`
-   - `TMTH-NE-Bottom-N`
+    - `TMTH-SW-Top-W`
+    - `TMTH-SW-Middle-SW`
+    - `TMTH-SW-Bottom-W`
+    - `TMTH-SE-Top-S`
+    - `TMTH-SE-Middle-SE`
+    - `TMTH-SE-Bottom-E`
+    - `TMTH-NW-Top-N`
+    - `TMTH-NW-Middle-NW`
+    - `TMTH-NW-Bottom-W`
+    - `TMTH-NE-Top-E`
+    - `TMTH-NE-Middle-NE`
+    - `TMTH-NE-Bottom-N`
 
 - The network names for the BICAS supernode are:
-  - `tucsonmesh-sectortest`
-  - `tucsonmesh-sectorsouth`
-  - `tucsonmesh-sectoreast`
+    - `tucsonmesh-sectortest`
+    - `tucsonmesh-sectorsouth`
+    - `tucsonmesh-sectoreast`
 
 - Then click the `SELECT` button.
 
