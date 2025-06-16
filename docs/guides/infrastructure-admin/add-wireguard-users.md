@@ -105,3 +105,47 @@ The following things should be considered as you're completing your client confi
 - Finally, you may wish to make changes to the `AllowedIPs` to not route _all_ your network traffic over this interface but rather only specific subnets.
 
 You can now either copy and paste the generated configuration text into a text file, dump it directly into an `Empty Tunnel` in your Wireguard desktop application, or scan the QR code from your mobile device.
+
+## Other Example Wireguard Client Configurations
+
+If you don't have access to the MikroTik router to generate a configuration file, here is a template that can be used that is otherwise largely equivalent to what MikroTik generates:
+
+```
+[Interface]
+ListenPort = 51820
+PrivateKey = PLACEHOLDER FOR PRIVATE KEY
+# Client address - change me
+Address = 10.100.0.X/32
+# Route DNS lookups to the mesh to resolve "website.mesh" URLs
+DNS = 10.69.0.49
+
+[Peer]
+PublicKey = Bq/1UiT1+3+kCGze5BsZrVfmRVnrH0uFHJeOYShmNzs=
+AllowedIPs = 0.0.0.0/0, ::/0
+Endpoint = 204.17.32.58:13212
+PresharedKey = PLACEHOLDER FOR PRESHARED KEY
+```
+
+If your client device is a systemd-based Linux laptop or something similar (or at least uses systemd-resolved for DNS), and you want a fancier config that doesn't store keys directly in the file, you can use a setup like this. See `man 8 wg` and `man 8 wg-quick` for more information:
+It has the benefit that your private key and psk don't need to be hardcoded into your configuration file and are instead loaded from disk.
+
+```
+[Interface]
+# Client address - change me
+Address = 10.100.0.X/32
+# Set private key by reading from a file in /etc/wireguard/tucsonhouse/private
+PostUp = wg set %i private-key /etc/wireguard/tucsonhouse/private
+# Set PSK - this command needs to have the pubkey of your peer specified as well
+# PSK is read from /etc/wireguard/tucsonhouse/psk
+PostUp = wg set %i peer Bq/1UiT1+3+kCGze5BsZrVfmRVnrH0uFHJeOYShmNzs= preshared-key /etc/wireguard/tucsonhouse/psk
+# Route DNS lookups for ONLY .mesh domains through to 10.69.0.49
+PostUp = resolvectl dns %i 10.69.0.49; resolvectl domain %i ~mesh
+
+[Peer]
+Endpoint = 204.17.32.58:13212
+# By default, 0.0.0.0/0 routes ALL of your traffic over this interface (you use the mesh as a full "VPN")
+# AllowedIPs = 0.0.0.0/0
+# If you want a more nuanced configuration that only routes mesh-specific IP addresses over the tunnel and leaves the rest of your traffic alone, you can do something like this:
+AllowedIPs = 10.100.0.0/24, 10.69.0.0/16, 10.96.0.0/16, 10.10.10.0/24
+PublicKey = Bq/1UiT1+3+kCGze5BsZrVfmRVnrH0uFHJeOYShmNzs=
+```
