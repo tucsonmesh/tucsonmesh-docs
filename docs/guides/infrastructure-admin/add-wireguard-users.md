@@ -87,7 +87,9 @@ In this case, `10.100.0.3/32` was available.
 
 Hit `Apply`, and the new peer will be added to the Wireguard Server's list of peers.
 
-## Wireguard Client Configuration
+## Generating a Wireguard Client Configuration
+
+!!! warning If you are just trying to connect to Mesh infrastructure using Wireguard, you can ask someone with permissions to generate a configuration file for you. These instructions cover how to generate the configuration from within the RouterOS administration interface on the remote device.
 
 Next, we need to generate the configuration file. Luckily, we can use the RouterOS peer menu to do this as well. On the lower end of our same peer configuration, there is a section to fill out `Client` information.
 A minimal example is shown below:
