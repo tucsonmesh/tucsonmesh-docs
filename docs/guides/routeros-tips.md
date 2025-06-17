@@ -17,3 +17,19 @@ Then, run the following is command. You might want to replace `config-export.rsc
 / export file=config-export.rsc
 ```
 
+## We use a mixture of RouterOS 6 and RouterOS 7, but mostly RouterOS 6
+
+We use RouterOS 6 on [OmniTIK](../hardware/omnitik.md) devices because of difficulties with WDS. NYC Mesh may have figured this out.
+
+We use RouterOS 7 on the [CCR2004-16G-2S+](../hardware/ccr2004.md) at the [Tucson House supernode](../networking/supernodes/tucson-house.md) because RouterOS 7 has support for Wireguard.
+
+Here is the official documentation for [migrating from RouterOS 6 to 7](https://help.mikrotik.com/docs/spaces/ROS/pages/30474256/Moving+from+ROSv6+to+v7+with+examples).
+
+### OSPF network type behavior
+
+One consequential difference between ROS 6 and 7 is that the `ptmp` OSPF network type in ROS 6 behaves like the `ptmp-broadcast` network type in ROS 7.
+
+From the [documentation](https://help.mikrotik.com/docs/spaces/ROS/pages/9863229/OSPF#OSPF-DiscoveryonPTMPSubnets):
+
+> For PTMP networks that do support broadcast, a hybrid type named "ptmp-broadcast" can be used. This network type uses multicast Hellos to discover neighbors automatically and detect bidirectional communication between neighbors. After neighbor detection "ptmp-broacast" sends unicast packets directly to the discovered neighbors. This mode is compatible with the RouterOS v6 "ptmp" type.
+
