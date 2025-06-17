@@ -149,3 +149,6 @@ Endpoint = 204.17.32.58:13212
 AllowedIPs = 10.100.0.0/24, 10.69.0.0/16, 10.96.0.0/16, 10.10.10.0/24
 PublicKey = Bq/1UiT1+3+kCGze5BsZrVfmRVnrH0uFHJeOYShmNzs=
 ```
+
+If you put this configuration file in `/etc/wireguard/wg-tucsonhouse.conf`, you can activate the configured Wireguard interface with the command `sudo wg-quick up wg-tucsonhouse`.
+
