@@ -2,20 +2,17 @@
 
 This supernode will be located on the roof of [Tucson House](https://en.wikipedia.org/wiki/Tucson_House), a residential high-rise tower built in the 1960s. It is located at [1501 N Oracle Rd, Tucson, AZ 85705](https://maps.app.goo.gl/LGk427NhUyN2ciaw8).
 
-It is slated to be installed in May 2025.
+It went live in June 2025.
 
-## ⚠️  This documentation requires updates
-
-- Create pages in the hardware section and link 
-- Document connections between hardware
-- Update language once supernode is fully installed and live
+!!! warning "This documentation requires updates"
+    - Document connections between hardware
 
 ## Hardware
 
-- Mikrotik Cloud Core Series Router	CCR2004-16G-2S+ 
-- Mikrotik Cloud Switch Series Switch 	CCS610-8P-2S+IN
-- Ubiquiti rocket PRISM AC gen2 5 GHz airMAX® ac Radio BaseStation with airPrism® Active RF Filtering Technology	RP-5AC-Gen2-US
-- Ubiquiti AirPRISM 5 GHz, 30x30° HD Sector Antenna 	AP-5AC-90-HD
+- [MikroTik Cloud Core Series Router CCR2004-16G-2S+](../../hardware/ccr2004.md): This is the _router_ for the Tucson House supernode. It is configured as **NN-49**. Accordingly, it has a static mesh IP of `https://10.69.0.49`
+- [Mikrotik Cloud Switch Series Switch CCS610-8P-2S+IN](../../hardware/ccs610.md): There are two of these.
+- [Ubiquiti rocket PRISM AC gen2 5 GHz airMAX® ac Radio BaseStation with airPrism® Active RF Filtering Technology RP-5AC-Gen2-US](../../hardware/rocketprism.md)
+- Ubiquiti AirPRISM 5 GHz, 30x30° HD Sector Antenna	AP-5AC-90-HD
 - Ubiquiti Ethernet Surge Protector	ETH-SP-G2 
 - APC Smart-UPS C 1500VA LCD RM 2U 120V with SmartConnect	SMC1500-2UC
 
@@ -28,36 +25,27 @@ It is slated to be installed in May 2025.
 > 
 > We will hand you a 1Gbps copper handoff set to auto-negotiate.  Please advise if you need/want a different demarc configuration.
 
-### Hardware: Mikrotik CCR2004-16G-2S+
 
-This is the _router_ for the Tucson House supernode. It is configured as **NN-49**. Accordingly, it has a static mesh IP of `https://10.69.0.49`
+## SSID naming convention
 
-If you are configuring one of these routers and it has been freshly reset or is fresh out of the box, you need to
-- Connect to it over Ethernet into the `15/BOOT` port
-- Manually assign your network interface to use an IP of `192.168.88.2/24` (`192.168.88.2` with a netmask of `255.255.255.0` and default gateway/route of `192.168.88.1`)
-- Go to `http://192.168.88.1` or open Winbox and attempt to connect via IP or through the Neighbors tab
+The naming convention for the SSID of the APs on Tucson House follow this convention: `TMTH-{corner}-{vertical_position}-{effective_direction}`, e.g. `TMTH-SW-Bottom-S`.
 
----
+- `corner` is the corner of the building on which the radio is mounted: `NE`, `NW`, `SE`, `SW`
+- `vertical_position` is the vertical slot where the radio is mounted: `Bottom`, `Middle`, `Top`
+- `effective_direction` is the direction corresponding to the radio's slot: `N`, `S`, `E`, `W`, `NE`, `NW`, `SE`, `SW` 
 
-### Hardware: Mikrotik CSS610-8P-2S+IN
+These are all the networks available from this supernode:
 
-This is the model of _PoE Switch_ that we are using. There are two of them. They don't require any particular setup with the exception of naming them something other than Mikrotik.
+- `TMTH-SW-Top-W`
+- `TMTH-SW-Middle-SW`
+- `TMTH-SW-Bottom-W`
+- `TMTH-SE-Top-S`
+- `TMTH-SE-Middle-SE`
+- `TMTH-SE-Bottom-E`
+- `TMTH-NW-Top-N`
+- `TMTH-NW-Middle-NW`
+- `TMTH-NW-Bottom-W`
+- `TMTH-NE-Top-E`
+- `TMTH-NE-Middle-NE`
+- `TMTH-NE-Bottom-N`
 
-If you connect directly over Ethernet with them, you can access the admin UI at `192.168.88.1` in the same fashion as above or, if it's been assigned an IP over DHCP, that IP.
-
-- Switch 1:
-    - Hostname/Identity: `tmth-css610-1`
-    - Serial number: `HEB08PEFCYS`
-- Switch 2:
-    - Hostname/Identity: `tmth-css610-2`
-    - Serial number: `HEB08R65HZ9`
-
----
-
-### Hardware: RocketPrism 5AC Gen 2
-
-Model: `RP-5AC-Gen2`
-
-When setting up, connect to the `RP-5AC-Gen2:<MAC-ADDRESS>` WiFi AP. Navigate to `192.168.172.1`
-
-**Further documentation here TBD**

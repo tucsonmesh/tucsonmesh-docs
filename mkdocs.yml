@@ -50,9 +50,11 @@ nav:
     - hardware/omnitik.md
     - hardware/liteap.md
     - hardware/litebeam.md
-    - hardware/rocketprism.md
     - hardware/sxtsq.md
     - hardware/tp-link-ac1750.md
+    - hardware/rocketprism.md
+    - hardware/ccr2004.md
+    - hardware/ccs610.md
   - Networking:
     - Supernodes:
       - networking/supernodes/index.md
