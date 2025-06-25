@@ -17,6 +17,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Guides:
+    - guides/about-your-node/index.md
     - guides/site-survey/index.md
     - Router Configuration:
       - guides/configuring-routers/index.md
