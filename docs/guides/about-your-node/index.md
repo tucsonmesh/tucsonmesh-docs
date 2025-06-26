@@ -1,11 +1,5 @@
 # About your node
 
-
-!!! warning "This guide is incomplete"
-
-    We need to add photos of the different kinds of routers and
- 
-
 ## How does it work?
 
 Tucson Mesh gets bandwidth directly from an internet exchange point (IXP) and distributes it wirelessly through rooftop antennas. When you join Tucson Mesh, you and other members of Tucson Mesh will install a wireless router on your rooftop.
@@ -20,11 +14,19 @@ Each of our installs needs to connect the user’s home back to one of the main 
 
 For connecting directly to the supernode, we currently use the [Ubiquiti LiteBeam 5 AC Gen 2](../../hardware/litebeam.md), a router with an integrated directional antenna (meaning it sends and receives wireless data through the air in a straight line).
 
+![Ubiquiti LiteBeam connecting to supernode](img/litebeam-supernode.png)
+
 ### Connecting to a neighbor's node
 
 At a typical install, we include another router that plugs into the LiteBeam via an ethernet cable. This is a router with an integrated omnidirectional antenna, meaning that it broadcasts a signal in a 360 degree radius. We use the [MikroTik OmniTIK 5 PoE AC](../../hardware/omnitik.md) for this.
 
+![OmniTIK router transmitting data in all directions](img/omni-beams.png)
+
+![OmniTIK and LiteBeam routers installed together on a rooftop](img/litebeam-omni-mount-labeled.png)
+
 The inclusion of the OmniTIK allows for connections between neighboring nodes. If a particular node doesn't have a line of sight to a supernode, its OmniTIK can still connect to a neighboring node. Your connection can than route through that node's LiteBeam and on to the supernode and internet. Or, it could hop through another neighboring node.
+
+![OmniTIK to OmniTIK connection](img/omni-omni.png)
 
 The OmniTIK on your roof also creates an open 5Ghz WiFi network that is broadcast in all directions and named `Tucson Mesh Free Wifi`. This network allows people passing your house on the street to use the Mesh for free, and also let's people know about the project.
 
