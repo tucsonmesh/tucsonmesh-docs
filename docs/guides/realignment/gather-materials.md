@@ -8,6 +8,7 @@ Before you start the realignment, make sure that you have the following equipmen
 - Password to log into the administration interface of the LiteBeam.
     - To get a unique password for your node, send a message to [#user-support](https://tucsonmesh.slack.com/archives/C03P19L1WBF) channel of the [Slack](https://tucsonmesh.slack.com/), or email [support@tucsonmesh.net](mailto:support@tucsonmesh.net). Be sure to include your network number in the message.
 - Pre-shared key (PSK) for connecting to supernode networks.
+    - The "pre-shared key" will act as a password between the router on your rooftop and the supernode. If you are realigning to a new supernode (from BICAS to Tucson House, for example) you will need the new pre-shared key. 
     - To get this key, send a message to [#user-support](https://tucsonmesh.slack.com/archives/C03P19L1WBF) channel of the [Slack](https://tucsonmesh.slack.com/), or email [support@tucsonmesh.net](mailto:support@tucsonmesh.net). Be sure to include your network number in the message.
 - Ladder to access rooftop.
 - Laptop computer or mobile phone with WiFi capabilities and a web browser.
