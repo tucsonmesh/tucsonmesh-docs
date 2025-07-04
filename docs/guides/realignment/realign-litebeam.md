@@ -45,6 +45,7 @@ It's helpful to review these other pieces of documentation that are referenced t
 
 ![Site Survey](img/litebeam-web-site-survey-1200x679.png)
 
+!!! info "At some point perhaps this should be a map" 
 
 - The network names for the Tucson House supernode are:
     - `TMTH-SW-Top-W`
@@ -94,4 +95,12 @@ Open the alignment tool and keep it open. You'll monitor this tool as you adjust
 - Repeat the process of adjusting the vertical angle of the device and watch how the signal strength changes. Stop at the angle with the strongest signal strength.
 - Ideally you want a signal \-65 dBm or stronger, but one that is at least \-70 dBm will be workable.
 - Tighten the wingnut for the *elevation mount*, then tighten the wingnut for the clamp around the *azimuth mount* shaft.
+- Once all the wingnuts are fully tightened (gently check that you cannot easily move the router with your hands; it should be firmly in place so as not to be knocked out of alignment by monsoon winds), you are done with realignment! Carefully descend from your roof.
+  
+## 7. Concluding speed test
+
+- Reconnect to the network from your indoor home router.
+- Go to speedtest.net and click the `GO` button in the center of the page.
+- After approximately 30 seconds, the webpage will display speed test results.
+- Any download speeds of 25 Mbps or higher are allow for streaming of HD video and video calls. See [FCC broadband speed](https://www.fcc.gov/consumers/guides/broadband-speed-guide) guide for details
 
