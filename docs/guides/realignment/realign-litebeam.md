@@ -39,7 +39,8 @@ It's helpful to review these other pieces of documentation that are referenced t
 
 ![Basic Wireless Settings](img/litebeam-web-basic-wireless-settings-1200x679.png)
 
-- Make sure that the `WPA PRESHARED KEY` setting is correct. If you need to change it, be sure to click the `SAVE CHANGES` button. 
+- Under `Wireless Security` click the 'show' button next to `WPA PRESHARED KEY`. Make sure that the value that it shows matches the one you were given. If you need to change it, be sure to click the `SAVE CHANGES` button.
+- Remember, the BICAS supernode and the Tucson House supernode use different keys. If you are switching from one to the other, you will need to update accordingly. 
 - Click the `SELECT` button below the `SSID` input and click the radio button next to the Tucson Mesh network with the strongest signal. A signal closer to zero is stronger. I.e. \-68 dBm is stronger than \-70 dBm and \-75 dBm is weaker. 
 
 ![Site Survey](img/litebeam-web-site-survey-1200x679.png)
