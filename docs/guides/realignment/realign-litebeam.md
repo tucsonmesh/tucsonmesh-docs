@@ -19,6 +19,7 @@ It's helpful to review these other pieces of documentation that are referenced t
 - Unplug the ethernet cable from the LightBeam. Wait a few seconds and plug the ethernet cable back in. This will restart the device.
 - Once the LightBeam powers up, a blue light will appear on the bottom of the router's Antenna Feed and a wireless management network will become available. This network has an SSID that begins with `LBE-5AC-Gen2`, for example `LBE-5AC-Gen2:245A4CD44286`.
 - Connect to this wireless network on your computer or mobile phone as you would any other WiFi network.
+- Once you are connected to this network the device you are using will no longer be able to access the internet! Make sure you have any pages you will need to reference loaded in advance, have another device available that is connected to the internet, or be prepared to switch back and forth between the LiteBeam's management network and another network with internet access. 
 
 ## 3. Log into the device's administrative interface
 
