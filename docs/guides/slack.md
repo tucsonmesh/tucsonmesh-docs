@@ -2,7 +2,7 @@
 
 Connecting to [Tucson Mesh's Slack workspace](https://tucsonmesh.slack.com) is the best way to stay up to date about Mesh events, volunteer opportunities and network changes or outages. It's also the best and fastest way to get help.
 
-You can [sign up here](https://join.slack.com/t/tucsonmesh/shared_invite/zt-1d6ft5n69-0vj15P6UF90PNuXEzZDWLg).
+You can request an invitation link that will allow you to join the Slack by emailing [support@tucsonmesh.net](mailto:support@tucsonmesh.net).
 
 ## What is Slack?
 
