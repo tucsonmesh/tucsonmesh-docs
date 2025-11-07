@@ -9,7 +9,7 @@ It went live in June 2025.
 
 ## Hardware
 
-- [MikroTik Cloud Core Series Router CCR2004-16G-2S+](../../hardware/ccr2004.md): This is the _router_ for the Tucson House supernode. It is configured as **NN-49**. Accordingly, it has a static mesh IP of `https://10.69.0.49`
+- [MikroTik Cloud Core Series Router CCR2004-16G-2S+](../../hardware/ccr2004.md): This is the _router_ for the Tucson House supernode. It is configured as **NN-49**. Accordingly, it has a static mesh IP of `10.69.0.49`
 - [Mikrotik Cloud Switch Series Switch CCS610-8P-2S+IN](../../hardware/ccs610.md): There are two of these.
 - [Ubiquiti rocket PRISM AC gen2 5 GHz airMAX® ac Radio BaseStation with airPrism® Active RF Filtering Technology RP-5AC-Gen2-US](../../hardware/rocketprism.md)
 - Ubiquiti AirPRISM 5 GHz, 30x30° HD Sector Antenna	AP-5AC-90-HD
@@ -48,4 +48,9 @@ These are all the networks available from this supernode:
 - `TMTH-NE-Top-E`
 - `TMTH-NE-Middle-NE`
 - `TMTH-NE-Bottom-N`
+
+
+## Wireguard bridge
+
+We have configured a Wireguard bridge between NN48, which is a non-PoE OmniTIK router which will be mounted on the roof of [BICAS](bicas.md), and NN49, the [MikroTik Cloud Core Series Router CCR2004-16G-2S+](../../hardware/ccr2004.md) router at the Tucson House supernode. As of early November 2025, the NN48 Omni has not yet been installed.
 

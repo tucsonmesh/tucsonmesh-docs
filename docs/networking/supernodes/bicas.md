@@ -78,3 +78,7 @@ Tucson Mesh's equipment is connected to the battery backup side of this UPS. ⚠
 - Primary DNS: 1.1.1.1
 - Secondary DNS: 8.8.8.8
 
+## Wireguard bridge
+
+We have configured a Wireguard bridge between NN48, which is a non-PoE OmniTIK router which will be mounted on the roof of BICAS, and NN49, the [MikroTik Cloud Core Series Router CCR2004-16G-2S+](../../hardware/ccr2004.md) router at the [Tucson House supernode](tucson-house.md). As of early November 2025, this has not yet been installed.
+
