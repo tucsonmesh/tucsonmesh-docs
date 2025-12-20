@@ -20,6 +20,8 @@ Below, we have more detailed instructions for people who want to be able to run 
 
 ## Installing MKDocs
 
+### Python-based Installation Instructions
+
 I recommend first installing [pipx](https://pipx.pypa.io/) which allows installing Python command-line utilities in isolated virtual environments.
 
 Then, install MKDocs:
@@ -32,6 +34,14 @@ and the Material for MKDocs theme:
 
 ```
 pipx inject mkdocs mkdocs-material
+```
+
+### DNF-based Installation Instructions
+
+If you are on a dnf-based distribution (i.e. Fedora) and would like to leverage the version of mkdocs included with your package manager, the required dependencies can be installed with:
+
+```bash
+dnf install mkdocs mkdocs-material
 ```
 
 ## Previewing the site locally
