@@ -10,7 +10,10 @@ Monitoring: Slack messages to \#monitoring-screams
 
 Along with the [Ubiquity LightBeam AC Gen 2](litebeam.md), this is what most users have on their roofs.
 
+We typically refer to this device as an "Omni."
+
 This device runs MikroTik RouterOS, so it may be useful to consult the [RouterOS documentation](https://help.mikrotik.com/docs/). We've also started compiling documentation about common tasks in RouterOS in [RouterOS Tips](../guides/routeros-tips.md).
+
 
 ## Resetting
 
@@ -48,4 +51,9 @@ set [ find default-name=ether3 ] poe-out=off
 set [ find default-name=ether4 ] poe-out=off
 set [ find default-name=ether5 ] poe-out=forced-on comment="device to hub"
 ```
+## Power over ethernet (PoE) injector
+
+The PoE injector needed by the Omni provides a differ amount of power than the one used by the [LiteBeam](./litebeam.md), so they are not interchangeable. The LiteBeam PoE injector provides 24 V at 0.3 A for 7.2 W.
+
+Ubiquiti also makes an injector that is 24 V at 1 A for 25 W, which might work. This injector is physically larger than the one used by LiteBeam.
 
