@@ -24,6 +24,7 @@ nav:
       - guides/configuring-routers/litebeam.md
       - guides/configuring-routers/rocketprism.md
       - guides/configuring-routers/omnitik.md
+      - guides/configuring-routers/omnitik-l7-filtering.md
       - guides/configuring-routers/pairing-lbes-with-uisp.md
       - guides/configuring-routers/sxtsq.md
       - guides/configuring-routers/archer-a6.md
