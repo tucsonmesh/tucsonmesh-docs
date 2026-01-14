@@ -51,9 +51,9 @@ set [ find default-name=ether3 ] poe-out=off
 set [ find default-name=ether4 ] poe-out=off
 set [ find default-name=ether5 ] poe-out=forced-on comment="device to hub"
 ```
-## Power over ethernet (PoE) injector
+## AC adapter for power over ethernet (PoE)
 
-The PoE injector needed by the Omni provides a differ amount of power than the one used by the [LiteBeam](./litebeam.md), so they are not interchangeable. The LiteBeam PoE injector provides 24 V at 0.3 A for 7.2 W.
+The AC adapter that connects to the PoE injector that comes with the Omni provides a different amount of power than the one used by the [LiteBeam](./litebeam.md), so they are not interchangeable. The LiteBeam PoE injector provides 24 V at 0.3 A for 7.2 W.
 
-Ubiquiti also makes an injector that is 24 V at 1 A for 25 W, which might work. This injector is physically larger than the one used by LiteBeam.
+Ubiquiti also makes an injector that is 24 V at 1 A for 25 W, which might work. This device is physically larger than the one used by LiteBeam.
 
