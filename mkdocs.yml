@@ -72,4 +72,5 @@ nav:
   - Services:
     - Mesh Services:
       - services/librenms.md
+      - services/librespeed.md
     - services/external.md
