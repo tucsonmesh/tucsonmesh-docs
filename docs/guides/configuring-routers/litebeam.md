@@ -1,6 +1,6 @@
-# Ubiquiti LightBeam AC Gen 2 Router Configuration Guide
+# Ubiquiti LightBeam 5AC Gen 2 Router Configuration Guide
 
-This is a guide for configuring the [Ubiquiti LightBeam AC Gen 2](../../hardware/litebeam.md), the device that connects a user's node to the [supernode](../../networking/supernodes/index.md).
+This is a guide for configuring the [Ubiquiti LightBeam 5AC Gen 2](../../hardware/litebeam.md), the device that connects a user's node to the [supernode](../../networking/supernodes/index.md).
 
 ## Materials needed 
 
@@ -119,6 +119,6 @@ Start off by downloading the firmware that you need. You can find the latest ver
 
 1. Check the street address of the node where the LiteBeam will live relative to the supernode. This will give you a sense of which network (which corresponds to one of the sector antennas) will give you the best signal.  
 2. To pair with the supernode, go to `Settings` \> `Wireless` and click the SSID `SELECT…` button. This will do a scan.
-3. Click the button next to the best AirMax AC signal. This should be the same SSID you identified based on looking at the map. (-80 is bad, \-50 is good, \-62 is typical)
+3. Click the button next to the best AirMax 5AC signal. This should be the same SSID you identified based on looking at the map. (-80 is bad, \-50 is good, \-62 is typical)
 4. Click `SELECT` and then `SAVE CHANGES` (twice if necessary)
 
