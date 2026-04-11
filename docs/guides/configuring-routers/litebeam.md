@@ -71,7 +71,7 @@ First you will need to assemble the device. This takes about 5 minutes and requi
 
 ## Download firmware 
 
-Start off by downloading the firmware that you need. You can find the 8.7.1 version of the firmware [here](https://dl.ui.com/firmwares/XC-fw/v8.7.1/WA.v8.7.1.42832.200623.1641.bin). You may not need to use this file if the firmware on the device is already up to date. We'll check this later.
+Start off by downloading the firmware that you need. You can find the latest version of the firmware [here](https://ui.com/download/software/lbe-5ac-23). You may not need to use this file if the firmware on the device is already up to date. We'll check this later.
 
 ## Generate a new configuration 
 
@@ -100,7 +100,7 @@ Start off by downloading the firmware that you need. You can find the 8.7.1 vers
 ## Update the firmware if needed 
 
 1. Click on the `System` menu item (a gear icon) in the left-hand sidebar.  
-2. Look at the item labeled `Firmware Version`. The value will be something like `WA.V8.7.11`. If the value begins with `WA.V8.7.`, for example `WA.V8.7.11` then you don't need to update the firmware and you can skip to the next step.  
+2. Look at the item labeled `Firmware Version`. The value will be something like `WA.V8.7.11`. If the firmware matches the version you downloaded earlier, you don't need to do anything and can skip to the next step.
 3. Click the `Upload` link next to the `Upload Firmware` label and in the file selection dialog select the firmware file you downloaded earlier. It will end in `.bin`.  
 4. You will see a modal labeled `Uploading` with a progress bar.  
 5. When the firmware has completed uploading, the progress modal will close and a new one will open in the upper-right-hand corner of the screen. It will be labeled `Firmware Update`. Click the `Update` button.  
