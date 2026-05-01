@@ -28,7 +28,7 @@ Connect the POE injector to your computer (on the injector that comes with the d
 
 Connect the AC adapter to the POE injector.
 
-The SXTsq device will initially have an IP address of `192.168.88.1`. In order to connect to it, you will need to give your computer the IP address `192.168.88.5` with a subnet mask of `255.255.255.0`. 
+The SXTsq device will initially have an IP address of `192.168.88.1`. In order to connect to it, you will need to give your computer the IP address `192.168.88.5` with a subnet mask of `255.255.255.0`. If needed, set the Default Gateway to `192.168.88.1` and preferred DNS to the same: `192.168.88.1`  
 
 Instead of manually setting the IP address of your computer, you could plug the SXTsq, and your computer to one of ethernet ports 2-5 on an OmniTIK or similar router, find the DHCP lease for the SXTsq, and connect to it that way.
 
