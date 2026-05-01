@@ -71,7 +71,7 @@ Download one of these applications.
 
 ## Generate and download a configuration file
 
-1. Navigate to the [TucsonMesh configuration generator](https://tucsonmesh.github.io/tucsonmesh-configgen/) in your browser.
+1. Navigate to the [TucsonMesh configuration generator](https://configgen.tucsonmesh.net/) in your browser.
 2. Make sure that the `Device` drop down is set to `Omnitik5AC`.
 3. Enter the `Network Number` for the install.
 4. Click `Download Config`. This will download a .rsc file called something like `omni-poe-ether5.rsc`.

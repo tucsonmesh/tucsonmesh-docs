@@ -22,7 +22,7 @@ Visit [https://github.com/login](https://github.com/login) in your preferred bro
 
 ### Visit the page you want to edit on the documentation site
 
-Visit [the documentation site](https://tucsonmesh.github.io/tucsonmesh-docs/) in the same browser that you used to log in to GitHub. 
+Visit [the documentation site](https://docs.tucsonmesh.net/) in the same browser that you used to log in to GitHub. 
 
 Click the <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 1rem"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg> icon to the right of the page's title. 
 

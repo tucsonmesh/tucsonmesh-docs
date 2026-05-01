@@ -34,7 +34,7 @@ Instead of manually setting the IP address of your computer, you could plug the 
 
 ## Generate a configuration file
 
-If using the SXT instead of a LBE to connect to another Omni, go to the [Tucson Mesh Configuration Generator](https://tucsonmesh.github.io/tucsonmesh-configgen/?version=v4.8.4&device=SXTsq5AC&template=sxtsq5ac-mesh-bridge.rsc.tmpl) and create a configuration file by selecting these options in the form:
+If using the SXT instead of a LBE to connect to another Omni, go to the [Tucson Mesh Configuration Generator](https://configgen.tucsonmesh.net/?version=v4.8.4&device=SXTsq5AC&template=sxtsq5ac-mesh-bridge.rsc.tmpl) and create a configuration file by selecting these options in the form:
 
 * **Version:** `v4.8.4`   
 * **Device:** `SXTsq5AC`  

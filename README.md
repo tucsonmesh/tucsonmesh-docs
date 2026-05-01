@@ -8,7 +8,7 @@ It originally started as a fork of [nycmeshnet/docs](https://github.com/nycmeshn
 
 ## How do I make edits?
 
-If the page you want to change already exists, the easiest way is actually do navigate to it on the [deployed website](https://tucsonmesh.github.io/tucsonmesh-docs) and click the edit button (piece of paper with a pencil) in the top right corner.
+If the page you want to change already exists, the easiest way is actually do navigate to it on the [deployed website](https://docs.tucsonmesh.net) and click the edit button (piece of paper with a pencil) in the top right corner.
 
 That will bring you to the corresponding source file in this repository where you can quickly edit and save ("commit") your changes. After this, the website will "rebuild" automatically publish your changes.
 

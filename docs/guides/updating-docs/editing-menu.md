@@ -27,7 +27,7 @@ This is different than its path in the URL of the documentation site, but knowin
 
 For example, if you wanted to add a navigation menu item for the file that lives at `docs/guides/updating-docs/adding-docs.md`, then the path you'll need to remember for later is `guides/updating-docs/adding-docs.md`. That is, omit the leading `docs/`.
 
-The Markdown file is published at [https://tucsonmesh.github.io/tucsonmesh-docs/guides/updating-docs/adding-docs/](https://tucsonmesh.github.io/tucsonmesh-docs/guides/updating-docs/adding-docs/) and you can also see how the path you need to remember, `guides/updating-docs/adding-docs.md` is reflected in the URL path.
+The Markdown file is published at [https://docs.tucsonmesh.net/guides/updating-docs/adding-docs/](https://docs.tucsonmesh.net/guides/updating-docs/adding-docs/) and you can also see how the path you need to remember, `guides/updating-docs/adding-docs.md` is reflected in the URL path.
 
 
 ### Make sure you're logged into your GitHub account

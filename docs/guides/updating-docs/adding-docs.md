@@ -32,7 +32,7 @@ The software we use to turn the text files into the documentation site requires 
 
 Use your browser to explore the folder structure under `docs` to find where you want to create your new documentation page.
 
-Where you choose to create the file will determine its URL on the public site. For example, the current piece of documentation you're reading is at [https://tucsonmesh.github.io/tucsonmesh-docs/guides/updating-docs/adding-docs/](https://tucsonmesh.github.io/tucsonmesh-docs/guides/updating-docs/adding-docs/) that means this file lives in the [`docs/guides/updating-docs`](https://github.com/tucsonmesh/tucsonmesh-docs/tree/main/docs/guides/updating-docs) directory.
+Where you choose to create the file will determine its URL on the public site. For example, the current piece of documentation you're reading is at [https://docs.tucsonmesh.net/guides/updating-docs/adding-docs/](https://docs.tucsonmesh.net/guides/updating-docs/adding-docs/) that means this file lives in the [`docs/guides/updating-docs`](https://github.com/tucsonmesh/tucsonmesh-docs/tree/main/docs/guides/updating-docs) directory.
 
 You can move this file later, but try to place the file in a directory alongside related documentation.
 

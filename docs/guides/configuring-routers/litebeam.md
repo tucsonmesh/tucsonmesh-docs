@@ -75,7 +75,7 @@ Start off by downloading the firmware that you need. You can find the latest ver
 
 ## Generate a new configuration 
 
-1. Navigate to the [configuration generator](https://tucsonmesh.github.io/tucsonmesh-configgen) in your browser.   
+1. Navigate to the [configuration generator](https://configgen.tucsonmesh.net) in your browser.   
 2. Select the latest version for the `Version` select input.  
 3. Select the appropriate device (`Litebeam5AC`) for the `Device` select input.  
 4. Choose `lbe-new-8_7_1.cfg.tmpl` for the `Template` select input.  
