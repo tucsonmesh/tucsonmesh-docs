@@ -12,7 +12,9 @@ If the page you want to change already exists, the easiest way is actually do na
 
 That will bring you to the corresponding source file in this repository where you can quickly edit and save ("commit") your changes. After this, the website will "rebuild" automatically publish your changes.
 
-Below, we have more detailed instructions for people who want to be able to run the "build the website" steps on their local laptop and iterate more quickly on large numbers of edits.
+For slightly more involved edits (or just based on preference), you can also load this repository in a browser-based instance of VS Code by either changing `github.com` to `github.dev` (i.e. navigating to [https://github.dev/tucsonmesh/tucsonmesh-docs](https://github.dev/tucsonmesh/tucsonmesh-docs)) or by pressing the period button `.` on your keyboard while looking at this page.
+
+If you would like to work on a local copy of the website that lives on your laptop and allows for faster local iteration on large or complex edits, see the remaining instructions detailed below. 
 
 ## Preqrequisites
 
