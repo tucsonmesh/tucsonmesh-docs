@@ -1,5 +1,9 @@
 # Deinstall
 
+!!! info "How can this documentation be improved?" 
+
+    - Write section about removing rooftop routers.
+
 ## Overview
 
 Often, we will notice a node go down in UISP and learn that this is because the current resident has moved without letting us know. The goal of going on site is to introduce our project to any new residents and get them connected if they want. If they don't want to get connected, remove the existing hardware.
@@ -31,7 +35,7 @@ If they need more time to think, be sure to get contact information for them.
 
 If no one answers, leave a note (or a fun postcard!) with contact information. A sample note could be something like:
 
-> Do you know you have pay-what-you-can, community-powered internet on your roof? A previous resident connected this home to Tucson Mesh and we'd love to get you reconnected. You can email us at support@tucsonmesh.net or text/call {phone_number} to schedule an appointment! Hope to talk to you soon, {name}
+> Did you know you have pay-what-you-can, community-powered internet on your roof? A previous resident connected this home to Tucson Mesh and we'd love to get you reconnected. You can email us at support@tucsonmesh.net or text/call {phone_number} to schedule an appointment! Hope to talk to you soon, {name}
 
 ## Reconfigure or install inside router
 
