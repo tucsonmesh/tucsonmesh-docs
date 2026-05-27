@@ -59,3 +59,10 @@ If you made contact, but the current residents wanted time to decide if they wan
 
 If the hardware was removed, move the card to the `Uninstalled` list.
 
+## Remove node from UISP
+
+- Click on the icon for `Devices` in the left-hand sidebar.
+- Click on the deinstalled device in the device list.
+- Click on the `Manage` icon in the right-hand sidebar that appears showing details about the device.
+- Click `Remove`.
+
