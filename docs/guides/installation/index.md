@@ -301,6 +301,12 @@ This method can be used to extend the height of an existing pipe or to provide b
 
 ![New Pipe](img/new-pipe-3.jpg)
 
+#### Mounting to a standalone heavy object
+
+![Cinder Block with J-pipe](img/cinder_block_j_mount.jpg)
+
+![Five Gallon Bucket with Pipe](img/5_gal_bucket_mount.jpg)
+
 #### New mast
 
 Masts can be free-standing if secured by cinder blocks or sandbags, or can be attached to a wall. Guy wires can be used to increase stability.
