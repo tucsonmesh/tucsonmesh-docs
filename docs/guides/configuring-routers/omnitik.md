@@ -22,7 +22,7 @@ This is a guide for configuring the [MikroTik OmniTIK 5 PoE ac](../../hardware/o
     ![OmniTIK PoE injector](img/omnitik-poe-injector-1200x1800.jpg)
 
 - Indoor ethernet patch cable
-- Computer that can WinBox or an SCP client
+- Computer that can run WinBox or an SCP client
 - Network number. Check the mesh installs Trello board to see what the next unused network number would be.
 - Access to a power outlet
 - The password to connect to the node's wireless network (i.e. the one that will be named `tucsonmesh-NN-omni` where `NN` is replaced with the network number). This is labeled `tucsonmesh-*-omni WiFi Password / PSK` in the password manager.
