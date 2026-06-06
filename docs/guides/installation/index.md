@@ -68,6 +68,22 @@ On the day of the install, the team will mount and align the rooftop routers, ru
 
 After the install, the Install Coordinator will update the Trello card for this node.
 
+## Typical setup
+
+![Typical Setup](img/typical-setup-1.png)
+
+1. Omnidirectional router
+2. Point-to-point router
+3. Router mount
+4. Ethernet cable connecting routers
+5. Ethernet cable to main apartment
+6. Ethernet cable to additional apartment
+7. Hole in wall or window frame
+8. Power over Ethernet injector
+9. Indoor router
+10. Device
+
+![Typical Setup](img/typical-setup-2.png)
 
 ## Before the install date
 
@@ -100,6 +116,17 @@ Save offline copies of the config instructions on your laptop for easy reference
 
 See the [crimping cable](#crimp-the-cable) section of this guide.
 
+### Charge batteries, check expendables
+
+Check and charge if needed:
+
+- [ ] Batteries for drill
+- [ ] Portable battery pack
+- [ ] Laptop
+- [ ] Phones
+
+Check other materials that can run out and purchase or order replacements if needed.
+
 ### Confirm the installation
 
 Confirm a date with the installer and invite any potential volunteers/installers in training to join you at the install. 
@@ -112,23 +139,6 @@ Also send a reminder Signal message in the installers thread to confirm the inst
 
 ## Install day
 
-### Typical setup
-
-![Typical Setup](img/typical-setup-1.png)
-
-1. Omnidirectional router
-2. Point-to-point router
-3. Router mount
-4. Ethernet cable connecting routers
-5. Ethernet cable to main apartment
-6. Ethernet cable to additional apartment
-7. Hole in wall or window frame
-8. Power over Ethernet injector
-9. Indoor router
-10. Device
-
-![Typical Setup](img/typical-setup-2.png)
-
 ### Collect supplies 
 
 Meet at the BCC to collect supplies.
@@ -136,6 +146,63 @@ Meet at the BCC to collect supplies.
 Transport equipment in your car. You will need a car that is able to transport a ladder to the site.
 
 Put equipment in bags to more easily transport equipment up and down ladders on site.
+
+
+**Tools**:
+
+- [ ] Mallet
+- [ ] Drill
+- [ ] Screwdriver and ratchet set
+- [ ] Drill bits
+- [ ] Ethernet crimp kits. Make sure everything is in these kits including cable testers.
+- [ ] Stiff wire to use for threading ethernet cable through walls
+- [ ] Sharpies
+- [ ] Pencils (sharpened)
+- [ ] Level
+- [ ] Ladder or confirm other means of roof access
+
+
+**Mounting Materials**:
+
+- [ ] Hardware boxes 
+    - [ ] Screws
+    - [ ] Washers
+    - [ ] Anchors
+    - [ ] Cable staples
+- [ ] Zip ties
+- [ ] Hose clamps
+- [ ] Garage door insulation or upcycled bike tube. This is used to mount routers to the mast.
+- [ ] Sealant
+- [ ] Adhesiver
+- [ ] J mount
+- [ ] Electrical tape 
+- [ ] Duct tape
+- [ ] Masking tape
+- [ ] Shims
+- [ ] Tiny Broom
+
+**Networking**:
+
+- [ ] Ethernet cable (large spool of outdoor-rated cable)
+- [ ] Ethernet cable (indoor patch cable)
+- [ ] OmniTIK with PoE injector and AC adapter
+- [ ] LiteBeam
+- [ ] Indoor router
+- [ ] Laptop
+- [ ] USB ethernet adapter
+- [ ] Portable battery pack (charged)
+
+**Sun Protection**:
+
+- [ ] Sunscreen
+- [ ] Water
+- [ ] Hat
+
+**Paperwork**:
+
+- [ ] Onboarding card
+- [ ] [Network Commons License](https://www.tucsonmesh.net/principles/network-commons-license)
+- [ ] Donation information
 
 ### Arrive at the site and go over the plan
 
@@ -181,11 +248,15 @@ We use this mounting method on around half of all installs.
 ![J-pipe](img/j-pipe-2.jpg)
 ![J-pipe](img/j-pipe-3.jpg)
 
-1. Mark and drill at least four mount pilot holes in the surface.
-2. Insert cement anchors and sealant. 
-3. Attach the mount with the screws and washers with rubber.
-4. Attach the J arm to the mount with the provided bolts.
-5. Attach the router with a pipe clamp.
+- Hold mount up to surface in position.
+- Mark spots for drill holes with a pencil or sharpie and remove mount.
+- For harder materials such as block, brick or adobe, use a punch to get drill holes started.
+- Drill pilot holes and blow out holes.
+- For harder materials such as block, brick or adobe, put adhesive into each pilot hole and push in anchor. Use mallet and/or trim off access to make anchor flush.
+- Apply adhesive to back of mount.
+- Put mount in place and begin threading in screws by hand.
+- Fully screw in screws using drill.
+- Attach pipe to mount base loosely with included bolts.
 
 #### New pipe connected to existing pipe
 
@@ -236,13 +307,31 @@ Do not drill holes into the horizontal roof surface or water might leak in. Roof
 
 If you drill into a horizontal concrete or brick surface, make sure to fill the hole with sealant!
 
+#### Router position on pipe or mast
+
+Determine which router would be best positioned at the top of the pole, versus part of the way up. Perhaps the LiteBeam gets better LOS to supernode with a little extra height, or perhaps the Omni can better see another Omni from the top of the J-pipe. In general, prioritize the LiteBeam's line-of-site to the supernode. connection.
+
+Install the lower router first on the pole.
+
+Assemble the rother mounting attachment. Attach a hose clamp and tighten as much as you can while still being ble to slide it onto the J-pipe or mast. Slide the hose clamp onto the J-pipe or mast with a small strip of garage door insulation between the hose clamp and pipe. This helps fold the clamp firmly in place when tightened. If not aligning a LiteBeam, finish tightening the hose clamp.
+
+Repeat these steps for the top router.
+
 ### Align the routers
 
 #### LiteBeams and other Ubiquiti routers
 
 ![Align Ubiquiti](img/align-ubiquiti.jpg)
 
+See [Realign your LiteBeam](../realignment/realign-litebeam.md) for detailed instructions.
+
+Use the battery pack and an extra POE injector to power the LiteBeam.
+
+Connect to the management WiFi network and access the admin interface.
+
 The Ubiquiti dashboard and app include an alignment tool. Adjust the max signal level and turn on the Audio Indicator. The higher the tone, the stronger the signal. Rotate the router in small increments to hone in on the best alignment.
+
+Confirm that the signal is similar to what was documented in the Trello card during the site survey.
 
 #### OmniTIK routers
 
@@ -252,11 +341,35 @@ An OmniTIK is omnidirectional and does not need to be aligned.
 
 There is no alignment tool. Adjust manually as best you can.
 
-### Connect rooftop routers with an ethernet cable
+### Configure the preferred mesh hop on the Omni
+
+Set up a preffered mesh hop on the `wlan4` interface to avoid WDS thrashing.
+
+This is optional when there is both a LiteBeam and an Omni, but if the Omni can see multiple other Omnis, it can also help avoid WDS thrashing if the LiteBeam ever goes offline.
+
+Connect to the Omni's wireless network, named `tucsonmesh-<nn>-omni`, where `<nn>` is this node's network number that you selected when configuring the Omni.
+
+Use WinBox, or connect to the IP address corresponding to the network number in your device's web browser.
+
+Click on `Wireless` in the RouterOS web admin and click on `wlan4`.
+
+Type the name of the Omni you want to be preferred into the `SSID` box, replacing `tucsonmesh-xxxx-omni` with the network corresponding to the preferred neighboring Omni's network number. Update the comment field to reference the preferred Omni name.
+
+Click `Ok` and click the `E` icon to the left of the `wlan4` interface entry to enable the interface.
+
+The connection might be momentarily interrupted for Omni-only installs while the router switches from WDS to using the `wlan4` interface.
+
+### Adopt the LiteBeam to UISP
+
+Assign the device to a site/subscriber.
+
+See [Ubiquiti LiteBeam 5AC - Pairing with UISP](../configuring-routers/pairing-lbes-with-uisp.md) for detailed instructions.
+
+### Connect rooftop routers with a patch cable
 
 ![Connect an Omni to a LiteBeam](img/connect-omni-litebeam.png)
 
-When installing both a LiteBeam and an omnidirectional Omnitik router, connect the two with a short *outdoor* Ethernet patch cable. 
+When installing both a LiteBeam and an OmniTIK router, connect the two with a short *outdoor* Ethernet patch cable. 
 
 Do not use an *indoor* Ethernet cable!
 
@@ -342,7 +455,7 @@ The best way to learn how to crimp is with an experienced installer, but you can
 
 ![Cable Tester](img/cable-tester.jpg)
 
-You can use a cable tester to see if you’ve crimped correctly. 
+Use a cable tester to ensure you’ve crimped the cable correctly.
 
 Unfortunately, these testers frequently break. Before testing your crimped cable, test an indoor patch cable to ensure the tester is in good working order.
 
@@ -350,19 +463,21 @@ Unfortunately, these testers frequently break. Before testing your crimped cable
 2. Switch the tester on (larger part) and check both sides. The numbers should light up in order.
 3. Recrimp the cable if it fails.
 
-### Configure the indoor router
+### Connect ethernet cable
 
-We provide an inexpensive TP-Link indoor router on all volunteer-led installs. The bandwidth and range of this router is limited.
+On the roof, connect the ethernet cable to the outdoor router.
 
-If the Installee Member has a large home, they may need to purchase a more powerful router or home wifi system.
+If using an OmniTIK, it should go into port 1.
 
-Connect the TP-Link, POE injector and cabling as shown. 
+### Connect POE injector
+
+If using only a LiteBeam rooftop router, use the Ubiquiti POE injector. If using an OmniTIK (with or without a LiteBeam router), use the OmniTIK POE injector.
+
+Connect the indoor router, POE injector and cabling as shown.
 
 ![Indoor Router Connection Diagram](img/indoor-router-connection-diagram.png)
 
-If using only a Ubiquiti rooftop router, use the Ubiquiti POE injector. If using an OmniTIK (with or without a Ubiquiti router), use the OmniTIK POE injector.
-
-If possible, plug the TP-Link AC adapter and the rooftop router's POE injector into a power strip with a surge protector. 
+If possible, plug the indoor AC adapter and the rooftop router's POE injector into a power strip with a surge protector. 
 
 **You can also connect the Data (LAN) cord to the WAN port.**
 
@@ -372,7 +487,11 @@ Here’s a photo of all of the indoor equipment, including an OmniTIK POE inject
 
 ![Indoor Router Connection Photo](img/indoor-router-connection-photo.png)
 
-A power strip with a surge protector is not shown but is recommended.
+### Configure the indoor router
+
+We provide an inexpensive TP-Link, or similar, indoor router on all volunteer-led installs. The bandwidth and range of this router is limited.
+
+If the Installee Member has a large home, they may need to purchase a more powerful router or home mesh wifi system.
 
 Locate the TP-Link’s SSID and default password on the bottom of the router and connect wirelessly using your laptop. 
 
@@ -382,7 +501,7 @@ Ask the Installee Member to provide you with:
 - A username and password to log into the router.
 - A password for the router's administrative interface.
 
-Note these, along with the network number of this node, down on the Installee Member Form and give it to them for safe keeping.
+Note these, along with the network number of this node, down on the Onboarding Card and give it to them for safe keeping.
 
 Configure the TP-Link following the instructions that came with the router, or the [NYC Mesh docs](https://wiki.nycmesh.net/books/3-hardware-firmware/page/tp-link-indoor-router). 
 
@@ -397,6 +516,14 @@ Run an [Ookla speed test](https://www.speedtest.net) and take a screenshot.
 If you are not able to connect to the Internet, troubleshoot starting at the end of the signal path and working your way “upstream.”
 
 ![Troubleshooting Diagram](img/troubleshooting.png)
+
+### Connect to Slack
+
+Help the user install the Slack app on their device, or help them access the web version.
+
+Send them an invite to the Tucson Mesh Slack and make sure they can log in.
+
+Add them to the `#user-support` channel.
 
 ### Talk about payment
 

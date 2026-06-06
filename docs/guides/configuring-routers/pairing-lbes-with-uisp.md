@@ -17,7 +17,7 @@ This is a guide for pairing the [Ubiquiti LiteBeam 5AC](../../hardware/litebeam.
 
 ## Find the LiteBeam's IP address
 
-In this portion of the guide, we are walking through how you would find and connect to a LiteBeam remotely, assuming that you have a working OmniTik 5AC & LiteBeam setup. If you already have a way of accessing your LiteBeam's management interface (because you're physically nearby and can reboot it to spin up the management WiFi network or similar), skip down to [the next section](#connecting-to-the-litebeam)
+In this portion of the guide, we are walking through how you would find and connect to a LiteBeam remotely, assuming that you have a working OmniTik 5AC & LiteBeam setup. If you already have a way of accessing your LiteBeam's management interface (because you're physically nearby and can reboot it to spin up the management WiFi network or similar), skip down to [the next section](#connect-to-the-litebeams-admin-interface).
 
 To get started we first need to find the IP address of the LiteBeam on the mesh. Only Omnitiks have statically allocated IPs (based on their node number/NN), so our first goal is to identify what IP has been assigned to this Litebeam by [DHCP](https://simple.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol).
 
