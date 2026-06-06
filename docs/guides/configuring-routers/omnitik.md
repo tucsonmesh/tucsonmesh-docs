@@ -52,10 +52,13 @@ Download one of these applications.
 
 ## Overview
 
+*Configuring an Omni is very similar to configuring LiteBeams. You will need to first update the firmware, and then upload a TucsonMesh version of the configuration. In a given install, the Omni will have the same network number as the LBE.*
+
 1. **Download correct firmware**
 2. **Generate and download config file**
-
-*Configuring an Omni is very similar to configuring LiteBeams. You will need to first update the firmware, and then upload a TucsonMesh version of the configuration. In a given install, the Omni will have the same network number as the LBE.*
+3. **Downgrade the firmware to RouterOS 6 if the Omni came with RouterOS 7 installed**
+4. **Update the firmware to the latest version of RouterOS 6**
+5. **Upload the configuration to the Omni**
 
 ## Power on the Omni
 
@@ -66,7 +69,7 @@ Download one of these applications.
 
 ## Download the correct firmware
 
-1. Start by [downloading](https://mikrotik.com/download) the latest Long-Term v6 version of the firmware for the MIPSBE architecture. As of April 2025, this is version ([6.49.18](https://download.mikrotik.com/routeros/6.49.18/routeros-mipsbe-6.49.18.npk)).
+1. Start by [downloading](https://mikrotik.com/download) the latest Long-Term v6 version of the firmware for the MIPSBE architecture. As of June 2026, this is version ([6.49.19](https://download.mikrotik.com/routeros/6.49.19/routeros-mipsbe-6.49.19.npk)).
 2. This will download a .npk file named something like `routeros-mipsbe-6.49.18.npk`.
 
 ## Generate and download a configuration file
@@ -85,6 +88,28 @@ Download one of these applications.
 1. Next, plug in your Omnitik and give it about a minute to boot up.
 2. Connect to the wireless network that it generates automatically. This network will look something like `Mikrotik-F32xxxx`.
 
+## Check RouterOS version and downgrade to RouterOS 6 if needed
+
+If the Omni came with a version of RouterOS 7 installed, we can't downgrade to RouterOS 6 through the typical method, and have to instead use a method called Netinstall. 
+
+Connect to the web interface by visiting `192.168.88.1` in your browser, or connect using WinBox by Make sure `Neighbors` is selected in the `Select from` dropdown. Double-click on the MAC address of the OmniTIK which will appear as a Neighbor with an IP address of `192.168.88.1`.
+
+If a terminal window is not already open, click `New Terminal` in the left-hand menu.
+
+In the terminal, enter this command:
+
+```
+/system resource print
+```
+
+Look at the line of the output that begins with `version`. If the version begins with `6`, for example `6.49.9`, then you can proceed with updating the firmware to the latest version of RouterOS 6.
+
+If it begins with `7`, then you will need to downgrade to a version of RouterOS 6.
+
+First, look for the line of output that begins with `factory-software`. The version should begin with `6`. If it doesn't, stop. You won't be able to complete this process.
+
+Follow the instructions at [Downgrading RouterOS 7 to RouterOS 6](downgrade-ros7-ros6.md) before proceeding with the rest of the steps in this guide.
+
 ## Upload firmware
 
 ### Using the MikroTik web interface
@@ -100,7 +125,7 @@ Download one of these applications.
 
 ### Using WinBox
 
-1. Open WinBox. Make sure `Neighbors` is selected in the `Select from` dropdown. Double-click on the MAC Address of the OmniTIK which will appear as a Neighbor with an IP address of `192.168.88.1`.
+1. Open WinBox. Make sure `Neighbors` is selected in the `Select from` dropdown. Double-click on the MAC address of the OmniTIK which will appear as a Neighbor with an IP address of `192.168.88.1`.
 2. Make sure `admin` is entered in the `Login` field and then click `Connect`. You are now looking at the router’s Graphical User Interface (GUI). It has menus, buttons and inputs that control the router’s settings.
 3. Upload the firmware you downloaded into the Omni. Click on the `Files` item in the left-hand menu and drag the .npk file from your computer into the right-hand pane.
 4. Click on `System` in the left-hand-side menu and then click `Reboot`. Click `OK` in the confirmation dialog.
