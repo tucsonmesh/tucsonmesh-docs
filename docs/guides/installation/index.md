@@ -116,7 +116,7 @@ Save offline copies of the config instructions on your laptop for easy reference
 
 See the [crimping cable](#crimp-the-cable) section of this guide.
 
-### Charge batteries, check expendables
+### Charge batteries, easy-to-lose tools and expendables
 
 Check and charge if needed:
 
@@ -124,6 +124,12 @@ Check and charge if needed:
 - [ ] Portable battery pack
 - [ ] Laptop
 - [ ] Phones
+
+Check that frequently used sockets are in the socket set:
+
+- [ ] 1/4" (lag bolts)
+- [ ] 8mm (hose clamps)
+- [ ] 7mm (hose clamps)
 
 Check other materials that can run out and purchase or order replacements if needed.
 
@@ -146,7 +152,6 @@ Meet at the BCC to collect supplies.
 Transport equipment in your car. You will need a car that is able to transport a ladder to the site.
 
 Put equipment in bags to more easily transport equipment up and down ladders on site.
-
 
 **Tools**:
 
@@ -185,6 +190,7 @@ Put equipment in bags to more easily transport equipment up and down ladders on 
 
 - [ ] Ethernet cable (large spool of outdoor-rated cable)
 - [ ] Ethernet cable (indoor patch cable)
+- [ ] Ethernet cable (outdoor patch cable)
 - [ ] OmniTIK with PoE injector and AC adapter
 - [ ] LiteBeam
 - [ ] Indoor router
