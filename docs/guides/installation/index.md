@@ -178,7 +178,7 @@ Put equipment in bags to more easily transport equipment up and down ladders on 
 - [ ] Hose clamps
 - [ ] Garage door insulation or upcycled bike tube. This is used to mount routers to the mast.
 - [ ] Sealant
-- [ ] Adhesiver
+- [ ] Adhesive
 - [ ] J mount
 - [ ] Electrical tape 
 - [ ] Duct tape
@@ -189,7 +189,7 @@ Put equipment in bags to more easily transport equipment up and down ladders on 
 **Networking**:
 
 - [ ] Ethernet cable (large spool of outdoor-rated cable)
-- [ ] Ethernet cable (indoor patch cable)
+- [ ] Ethernet cable (indoor patch cable, for testing alignment)
 - [ ] Ethernet cable (outdoor patch cable)
 - [ ] OmniTIK with PoE injector and AC adapter
 - [ ] LiteBeam
