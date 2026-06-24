@@ -8,6 +8,14 @@ User guide: [Archer A6 V2 User Guide | TP-Link](https://www.tp-link.com/us/user-
 
 Other support materials: [Download for Archer A6 | TP-Link](https://www.tp-link.com/us/support/download/archer-a6/v2/)
 
+## Power
+
+This devices uses and AC adapter that provides 12V, 1A of power.
+
+## Management
+
+A device set to factory settings will have a management page accessible at http://192.168.0.1.
+
 ## Resetting the router
 
 ### Using the Reset button
