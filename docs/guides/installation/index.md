@@ -157,8 +157,11 @@ Put equipment in bags to more easily transport equipment up and down ladders on 
 
 - [ ] Mallet
 - [ ] Drill
+- [ ] Impact driver
 - [ ] Screwdriver and ratchet set
 - [ ] Drill bits
+  - [ ] 5/32" masonry "tapper" bit. Used to drill pilot holes for 3/16" concrete screw anchors.
+- [ ] 1/4" impact driver socket. Used for concrete screw anchors and lag screws used to mount j mount brackets. 
 - [ ] Ethernet crimp kits. Make sure everything is in these kits including cable testers.
 - [ ] Stiff wire to use for threading ethernet cable through walls
 - [ ] Sharpies
