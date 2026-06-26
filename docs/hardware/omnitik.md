@@ -53,6 +53,14 @@ set [ find default-name=ether5 ] poe-out=forced-on comment="device to hub"
 ```
 ## AC adapter for power over ethernet (PoE)
 
+The AC adapter that comes with the Omni has these specs:
+
+- Part number: DQS751-280257-15B20
+- Model: DQS751-280257-3
+- Input: AC100-240V~50/60Hz 2.0A Max
+- Output: DC28.0V 2.57A
+- Tip positive
+
 The AC adapter that connects to the PoE injector that comes with the Omni provides a different amount of power than the one used by the [LiteBeam](./litebeam.md), so they are not interchangeable. The LiteBeam PoE injector provides 24 V at 0.3 A for 7.2 W.
 
 Ubiquiti also makes an injector that is 24 V at 1 A for 25 W, which might work. This device is physically larger than the one used by LiteBeam.
