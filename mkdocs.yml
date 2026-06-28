@@ -47,6 +47,9 @@ nav:
     - Deinstall: guides/deinstall/index.md
     - guides/routeros-tips.md
     - guides/slack.md
+    - Troubleshooting: 
+      - guides/troubleshooting/index.md
+      - guides/troubleshooting/power-cycle-check-networks.md
     - UISP:
       - guides/uisp/setting-litebeam-passwords/index.md
     - Updating this documentation:
