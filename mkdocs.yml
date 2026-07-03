@@ -70,6 +70,7 @@ nav:
     - hardware/rocketprism.md
     - hardware/ccr2004.md
     - hardware/ccs610.md
+    - hardware/bag-of-mesh.md
   - Networking:
     - Supernodes:
       - networking/supernodes/index.md

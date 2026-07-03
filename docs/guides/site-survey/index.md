@@ -8,12 +8,11 @@
 
 ## Equipment needed
 
-- Pre-configured routers or the "Staff of Mesh"
+- Pre-configured routers or the ["Bag of Mesh"](../../hardware/bag-of-mesh.md)
   - [OmniTIK](../../hardware/omnitik.md)
   - [SXTsq](../../hardware/sxtsq.md)
   - [LiteBeam](../../hardware/litebeam.md)
 
-![Staff of Mesh](img/staff-of-mesh.jpg)
 
 - Portable battery pack
 - A computer
