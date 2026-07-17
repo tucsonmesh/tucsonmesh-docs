@@ -78,9 +78,10 @@ Start off by downloading the firmware that you need. You can find the latest ver
 1. Navigate to the [configuration generator](https://configgen.tucsonmesh.net) in your browser.   
 2. Select the latest version for the `Version` select input.  
 3. Select the appropriate device (`Litebeam5AC`) for the `Device` select input.  
-4. Choose `lbe-new-8_7_1.cfg.tmpl` for the `Template` select input.  
-5. Enter the Network Number (NN) you selected at the beginning of this configuration based on Tucson Mesh’s install Trello board.
-6. Click the `Download config` button.
+4. Choose `lbe-new-8_7_1.cfg.tmpl` for the `Template` select input.
+5. For `Sector PSK`, fill in the preshared key from `Tucson House RocketPrism - Sector WiFi PSK` in Bitwarden.
+6. Enter the Network Number (NN) you selected at the beginning of this configuration based on Tucson Mesh’s install Trello board.
+7. Click the `Download config` button.
 
 ## Power on the device 
 
