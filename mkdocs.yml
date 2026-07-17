@@ -29,6 +29,7 @@ nav:
       - guides/configuring-routers/omnitik.md
       - guides/configuring-routers/downgrade-ros7-ros6.md
       - guides/configuring-routers/omnitik-l7-filtering.md
+      - guides/configuring-routers/omnitik-reconfigure.md
       - guides/configuring-routers/pairing-lbes-with-uisp.md
       - guides/configuring-routers/sxtsq.md
       - guides/configuring-routers/archer-a6.md
@@ -60,6 +61,7 @@ nav:
       - guides/updating-docs/faq.md
     - Infrastructure Admin:
       - guides/infrastructure-admin/add-wireguard-users.md
+      - guides/infrastructure-admin/tuning-sector-frequencies.md
   - Hardware:
     - hardware/omnitik.md
     - hardware/liteap.md
