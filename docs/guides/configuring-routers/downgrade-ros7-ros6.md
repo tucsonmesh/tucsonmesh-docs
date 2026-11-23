@@ -2,13 +2,13 @@
 
 !!! info "How can this documentation be improved?"
 
-    - Better understand why we can't just install 6.49.19 directly, or how to make sure the wireless package is installed.
+    - Better understand why we can't just install 6.49.19 or later version directly, or how to make sure the wireless package is installed.
     - Add screenshots showing the configuration of the static IP address in versions of Windows commonly used by Tucson Mesh admin members
     - Add screenshots showing the Netinstall interface in versions of Windows commonly used by Tucson Mesh admin members
 
 RouterOS is the operating system that runs on MicroTik devices such as the [OmniTIK](../../hardware/omnitik.md).
 
-As of June 2026, we don't have a configuration for RouterOS 7, the latest version of the operating system that runs on MicroTik routers, that properly meshes over WDS. However, recent [OmniTIK](../../hardware/omnitik.md) devices come preinstalled with RouterOS 7. We need to downgrade it to a recenter version of RouterOS 6.
+As of November 2026, we don't have a configuration for RouterOS 7, the latest version of the operating system that runs on MicroTik routers, that properly meshes over WDS. However, recent [OmniTIK](../../hardware/omnitik.md) devices come preinstalled with RouterOS 7. We need to downgrade it to a recenter version of RouterOS 6.
 
 However, we have found that the typical firmware installation process doesn't work for downgrading. Instead, we have to use a method called [Netinstall](https://manual.mikrotik.com/docs/getting-started/netinstall) to downgrade the operating system.
 
@@ -33,6 +33,7 @@ This method can be used generally to install various versions of
 - Access to a power outlet
 - Ethernet adapter. To use the netinstall process, we need to connect to the device via ethernet, not wireless.
 - The netinstall program installed on your computer. It can be downloaded from the Mikrotik [downloads page](https://mikrotik.com/download/tools). See the Mikrotik [Netinstall documentation](https://manual.mikrotik.com/docs/getting-started/installation-and-upgrade/netinstall) for information on unpacking the release downloads.
+- Firmware binary for RouterOS version 6.49.18. 
 
 !!! warning "Some USB ethernet adapters don't work"
 
@@ -57,15 +58,29 @@ These are the broad steps you'll be taking to install an appropriate version of 
 
 ## Download the package file for an appropriate version of RouterOS
 
-Go to the Mikrotik [downloads](https://mikrotik.com/download) page.
+You can download the firmware for RouterOS version 6.49.18 here: [`routeros-mipsbe-6.49.18.npk`](https://drive.google.com/file/d/16G4tkdVZ7nY67TMfVy0f23MMflGP1XEP/view?usp=sharing)
 
-In the RouterOS section of the page, select `MIPSBE` for the `Architecture` and `6.49.18` for the `Version`.
+This is an archived copy we maintain since it is no available on the Mikrotik [downloads](https://mikrotik.com/download) page.
+
+This will download a file named `routeros-mipsbe-6.49.18.npk`.
 
 !!! info "Why version 6.49.18?"
 
-    As of June 2026, version 6.49.19 is the latest version of RouterOS 6. However, we've found that after installing it using netinstall, the wireless packages are not installed, which means the default management wireless network doesn't come up after the install.
+    As of November 2026, version 6.49.23 is the latest version of RouterOS 6. However, we've found that after installing it using netinstall, the wireless packages are not installed, which means our configuration script will fail and the default management wireless network doesn't come up after the install.
 
-This will download a file named `routeros-mipsbe-6.49.18.npk`.
+Optionally, you can verify the 6.49.18 firmware version you downloaded using its MD5 checksum:
+
+On Linux machines, you can run:
+
+```
+md5sum routeros-mipsbe-6.49.18.npk
+``` 
+
+The checksum should match the first field in the output below:
+
+```
+aa7281e8119a09e5fca9353e02cb094a  routeros-mipsbe-6.49.18.npk
+```
 
 ## Configure your network adapter to have a static IP
 
@@ -154,5 +169,9 @@ The interface `eth0` may differ depending on your device and the MAC addresses w
 
 ## Finish up
 
-The router should reboot and you should see the management WiFi network appear. Disconnect the ethernet cable from your computer's ethernet adapter. You can now upgrade to the latest version of RouterOS 6 through WinBox or the web interface, as well as install a configuration file. See [MikroTik OmniTIK 5 PoE ac Router Configuration Guide](omnitik.md) for detailed instructions. 
+The router should reboot and you should see the management WiFi network appear. Disconnect the ethernet cable from your computer's ethernet adapter. You can now upgrade to the latest long term version of RouterOS 6 through WinBox or the web interface, as well as install a configuration file. See [MikroTik OmniTIK 5 PoE ac Router Configuration Guide](omnitik.md) for detailed instructions.
+
+!!! info "Don't forget to upgrade to the latest version of RouterOS 6"
+
+    There have been important security updates since version 6.49.18. Be sure to install the latest long term release of RouterOS 6. 
 
